@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>音视频通讯SDK API参考手册: tencent::av::AVEndpoint类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">音视频通讯SDK API参考手册
+   &#160;<span id="projectnumber">Windows 1.7.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classtencent_1_1av_1_1_a_v_endpoint.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="classtencent_1_1av_1_1_a_v_endpoint-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">tencent::av::AVEndpoint类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>房间成员类。  
+ <a href="classtencent_1_1av_1_1_a_v_endpoint.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="av__endpoint_8h_source.html">av_endpoint.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html">Info</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">房间成员信息。  <a href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:aea2fe9f6ad89ba261d36c510aadf20f6"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_endpoint.html#aea2fe9f6ad89ba261d36c510aadf20f6">RequestViewListCompleteCallback</a>) (std::vector&lt; std::string &gt; identifier_list, std::vector&lt; <a class="el" href="structtencent_1_1av_1_1_view.html">View</a> &gt; view_list, int32 ret_code, void *custom_data)</td></tr>
+<tr class="memdesc:aea2fe9f6ad89ba261d36c510aadf20f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">RequestViewList()的回调函数。  <a href="#aea2fe9f6ad89ba261d36c510aadf20f6">更多...</a><br /></td></tr>
+<tr class="separator:aea2fe9f6ad89ba261d36c510aadf20f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e8441358bf150306dbdb3ef8a6d6281"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_endpoint.html#a4e8441358bf150306dbdb3ef8a6d6281">CancelAllViewCompleteCallback</a>) (int32 ret_code, void *custom_data)</td></tr>
+<tr class="memdesc:a4e8441358bf150306dbdb3ef8a6d6281"><td class="mdescLeft">&#160;</td><td class="mdescRight">CancelAllView()的回调函数。  <a href="#a4e8441358bf150306dbdb3ef8a6d6281">更多...</a><br /></td></tr>
+<tr class="separator:a4e8441358bf150306dbdb3ef8a6d6281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:af89c4fc31ec44ace78cc2ae41641eb79"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_endpoint.html#af89c4fc31ec44ace78cc2ae41641eb79">GetId</a> () const =0</td></tr>
+<tr class="memdesc:af89c4fc31ec44ace78cc2ae41641eb79"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得成员id。  <a href="#af89c4fc31ec44ace78cc2ae41641eb79">更多...</a><br /></td></tr>
+<tr class="separator:af89c4fc31ec44ace78cc2ae41641eb79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa048523a551acacfcaae0019cbac5953"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html">Info</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_endpoint.html#aa048523a551acacfcaae0019cbac5953">GetInfo</a> () const =0</td></tr>
+<tr class="memdesc:aa048523a551acacfcaae0019cbac5953"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得成员信息。  <a href="#aa048523a551acacfcaae0019cbac5953">更多...</a><br /></td></tr>
+<tr class="separator:aa048523a551acacfcaae0019cbac5953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abccc184fc33dcb2d9dc08359f7425ce5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_endpoint.html#abccc184fc33dcb2d9dc08359f7425ce5">MuteAudio</a> (bool is_mute=false)=0</td></tr>
+<tr class="memdesc:abccc184fc33dcb2d9dc08359f7425ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">屏蔽成员音频。  <a href="#abccc184fc33dcb2d9dc08359f7425ce5">更多...</a><br /></td></tr>
+<tr class="separator:abccc184fc33dcb2d9dc08359f7425ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9832889ff60e373ce8032d454b1ab333"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_endpoint.html#a9832889ff60e373ce8032d454b1ab333">IsAudioMute</a> ()=0</td></tr>
+<tr class="memdesc:a9832889ff60e373ce8032d454b1ab333"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否已屏蔽音频。  <a href="#a9832889ff60e373ce8032d454b1ab333">更多...</a><br /></td></tr>
+<tr class="separator:a9832889ff60e373ce8032d454b1ab333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fcc93787527251232ab30f74850bd18"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_endpoint.html#a3fcc93787527251232ab30f74850bd18">HasAudio</a> ()=0</td></tr>
+<tr class="memdesc:a3fcc93787527251232ab30f74850bd18"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否正在发音频。  <a href="#a3fcc93787527251232ab30f74850bd18">更多...</a><br /></td></tr>
+<tr class="separator:a3fcc93787527251232ab30f74850bd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac094c68c32a24378098b53a67aed3e81"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_endpoint.html#ac094c68c32a24378098b53a67aed3e81">HasCameraVideo</a> ()=0</td></tr>
+<tr class="memdesc:ac094c68c32a24378098b53a67aed3e81"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否正在发来自摄像头或外部视频捕获设备的视频。  <a href="#ac094c68c32a24378098b53a67aed3e81">更多...</a><br /></td></tr>
+<tr class="separator:ac094c68c32a24378098b53a67aed3e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1c9d3de5c9d900d0f344f5c208000d5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_endpoint.html#af1c9d3de5c9d900d0f344f5c208000d5">HasScreenVideo</a> ()=0</td></tr>
+<tr class="memdesc:af1c9d3de5c9d900d0f344f5c208000d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否正在发来自屏幕的视频。  <a href="#af1c9d3de5c9d900d0f344f5c208000d5">更多...</a><br /></td></tr>
+<tr class="separator:af1c9d3de5c9d900d0f344f5c208000d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a9a6ca1ee7a79ad1fcbd27b05f0b7e97d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_endpoint.html#a9a6ca1ee7a79ad1fcbd27b05f0b7e97d">~AVEndpoint</a> ()</td></tr>
+<tr class="separator:a9a6ca1ee7a79ad1fcbd27b05f0b7e97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>房间成员对象由SDK侧负责创建和销毁，业务侧不能创建和销毁它们，只能通过获取成员对象引用来使用它们。</p>
+<dl class="section remark"><dt>备注</dt><dd>建议业务侧不要一直持有成员对象引用，即显式地把成员对象引用保存到另一个容器，可以只在需要的时候再去重新获取它们即可。因为随着成员加入和退出房间，SDK侧会自动创建和销毁成员对象，如果业务侧一直持有成员对象引用，则可能持有的是一个已经被销毁的对象的引用，而使用这样的错误的引用很可能导致程序异常。 </dd></dl>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a class="anchor" id="a4e8441358bf150306dbdb3ef8a6d6281"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* tencent::av::AVEndpoint::CancelAllViewCompleteCallback) (int32 ret_code, void *custom_data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CancelAllView()的回调函数，用来返回CancelAllView()的异步操作结果。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ret_code</td><td>返回码。 </td></tr>
+    <tr><td class="paramname">custom_data</td><td>业务侧自定义的参数，会在执行回调函数时原封不动地返回给业务侧。由于回调函数通常是某个类的静态函数，可以通过该参数指定当前所对应的类的具体对象。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aea2fe9f6ad89ba261d36c510aadf20f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* tencent::av::AVEndpoint::RequestViewListCompleteCallback) (std::vector&lt; std::string &gt; identifier_list, std::vector&lt; <a class="el" href="structtencent_1_1av_1_1_view.html">View</a> &gt; view_list, int32 ret_code, void *custom_data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RequestViewList()的回调函数，用来返回RequestViewList()的异步操作结果。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">identifier_list</td><td>成员id列表。 </td></tr>
+    <tr><td class="paramname">view_list</td><td>视频画面参数列表。 </td></tr>
+    <tr><td class="paramname">ret_code</td><td>返回码。 </td></tr>
+    <tr><td class="paramname">custom_data</td><td>业务侧自定义的参数，会在执行回调函数时原封不动地返回给业务侧。由于回调函数通常是某个类的静态函数，可以通过该参数指定当前所对应的类的具体对象。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a9a6ca1ee7a79ad1fcbd27b05f0b7e97d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual tencent::av::AVEndpoint::~AVEndpoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="af89c4fc31ec44ace78cc2ae41641eb79"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::string&amp; tencent::av::AVEndpoint::GetId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>返回成员id。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa048523a551acacfcaae0019cbac5953"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html">Info</a>&amp; tencent::av::AVEndpoint::GetInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>返回成员信息。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3fcc93787527251232ab30f74850bd18"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool tencent::av::AVEndpoint::HasAudio </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>是否正在发音频。</p>
+<dl class="section return"><dt>返回</dt><dd>true表示是，false表示否。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac094c68c32a24378098b53a67aed3e81"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool tencent::av::AVEndpoint::HasCameraVideo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>是否正在发来自摄像头或外部视频捕获设备的视频。</p>
+<dl class="section return"><dt>返回</dt><dd>true表示是，false表示否。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af1c9d3de5c9d900d0f344f5c208000d5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool tencent::av::AVEndpoint::HasScreenVideo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>是否正在发来自屏幕的视频。</p>
+<dl class="section return"><dt>返回</dt><dd>true表示是，false表示否。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9832889ff60e373ce8032d454b1ab333"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool tencent::av::AVEndpoint::IsAudioMute </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>true表示是，false表示否。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abccc184fc33dcb2d9dc08359f7425ce5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool tencent::av::AVEndpoint::MuteAudio </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_mute</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>屏蔽成员音频。这边的屏蔽是指会接收他的音频流，但不把其音频流送去解码和播放，也就听不到他的声音。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is_mute</td><td>是否屏蔽。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>true表示操作成功，false表示操作失败。</dd></dl>
+<dl class="section remark"><dt>备注</dt><dd>不支持控制房间其他成员是否发送音频，只支持控制是否屏蔽它们的音频。 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacetencent.html">tencent</a></li><li class="navelem"><a class="el" href="namespacetencent_1_1av.html">av</a></li><li class="navelem"><a class="el" href="classtencent_1_1av_1_1_a_v_endpoint.html">AVEndpoint</a></li>
+    <li class="footer">生成于 2016年 二月 22日 星期一 14:41:37 , 为 音视频通讯SDK API参考手册使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

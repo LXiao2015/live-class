@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>音视频通讯SDK API参考手册: G:/AVSDK/PC/AVSdk_OpenSdk_1.7/OpenSDK/include/avsdk/av_endpoint.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">音视频通讯SDK API参考手册
+   &#160;<span id="projectnumber">Windows 1.7.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('av__endpoint_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">av_endpoint.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef AV_ENDPOINT_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define AV_ENDPOINT_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;av_common.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacetencent.html">tencent</a> {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>av {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classtencent_1_1av_1_1_a_v_endpoint.html">   16</a></span>&#160;<span class="keyword">class </span>AV_EXPORT <a class="code" href="classtencent_1_1av_1_1_a_v_endpoint.html">AVEndpoint</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html">   19</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html">Info</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#a72f248bc08122ddc2943fb32ce6fdd30">   20</a></span>&#160;    <a class="code" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#a72f248bc08122ddc2943fb32ce6fdd30">Info</a>()</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      : sdk_version(0)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      , terminal_type(0)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      , has_audio(false)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      , is_mute(false)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      , has_camera_video(false)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      , has_screen_video(false) {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#a8fb019793533526f275723a70fb48da2">   29</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#a8fb019793533526f275723a70fb48da2">~Info</a>() {}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#a216fe1e010e9dff40c3b74ba701f3536">   31</a></span>&#160;    std::string <a class="code" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#a216fe1e010e9dff40c3b74ba701f3536">identifier</a>; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#a77567aea2c2179c1da35d6c9e0988c40">   32</a></span>&#160;    uint32 <a class="code" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#a77567aea2c2179c1da35d6c9e0988c40">sdk_version</a>; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#a9a1f4ee4e2fbea79cf2d52de51775e24">   33</a></span>&#160;    uint32 <a class="code" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#a9a1f4ee4e2fbea79cf2d52de51775e24">terminal_type</a>; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#a13b6a43e9acd9146b304f7173842df9c">   34</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#a13b6a43e9acd9146b304f7173842df9c">has_audio</a>; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#acb3045d39d905bb76f4ac470b7644a04">   35</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#acb3045d39d905bb76f4ac470b7644a04">is_mute</a>; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#aa03776f58871a95748151cb545d3fa23">   36</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#aa03776f58871a95748151cb545d3fa23">has_camera_video</a>; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#acc244d64ec8bd25b340628751321ff31">   37</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#acc244d64ec8bd25b340628751321ff31">has_screen_video</a>; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  };</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classtencent_1_1av_1_1_a_v_endpoint.html#aea2fe9f6ad89ba261d36c510aadf20f6">   51</a></span>&#160;  <span class="keyword">typedef</span> void (*RequestViewListCompleteCallback)(std::vector&lt;std::string&gt; identifier_list, std::vector&lt;View&gt; view_list,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      int32 ret_code, <span class="keywordtype">void</span>* custom_data);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classtencent_1_1av_1_1_a_v_endpoint.html#a4e8441358bf150306dbdb3ef8a6d6281">   62</a></span>&#160;  <span class="keyword">typedef</span> void (*CancelAllViewCompleteCallback)(int32 ret_code, <span class="keywordtype">void</span>* custom_data);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> std::string&amp; GetId() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html">Info</a>&amp; GetInfo() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#ifndef WIN32</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">static</span> int32 RequestViewList(std::vector&lt;std::string&gt; identifier_list, std::vector&lt;View&gt; view_list,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                               RequestViewListCompleteCallback complete_callback, <span class="keywordtype">void</span>* custom_data);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keyword">static</span> int32 CancelAllView(CancelAllViewCompleteCallback complete_callback, <span class="keywordtype">void</span>* custom_data);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> MuteAudio(<span class="keywordtype">bool</span> is_mute = <span class="keyword">false</span>) = 0;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsAudioMute() = 0;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> HasAudio() = 0;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> HasCameraVideo() = 0;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> HasScreenVideo() = 0;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="classtencent_1_1av_1_1_a_v_endpoint.html#a9a6ca1ee7a79ad1fcbd27b05f0b7e97d">  170</a></span>&#160;  DISALLOW_EVIL_DESTRUCTIONS(<a class="code" href="classtencent_1_1av_1_1_a_v_endpoint.html">AVEndpoint</a>)</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;};</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;} <span class="comment">// namespace av</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;} <span class="comment">// namespace tencent</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">#endif // #ifndef AV_ENDPOINT_H_</span></div>
+<div class="ttc" id="namespacetencent_html"><div class="ttname"><a href="namespacetencent.html">tencent</a></div><div class="ttdef"><b>Definition:</b> av_audio_ctrl.h:6</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_endpoint_1_1_info_html_a72f248bc08122ddc2943fb32ce6fdd30"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#a72f248bc08122ddc2943fb32ce6fdd30">tencent::av::AVEndpoint::Info::Info</a></div><div class="ttdeci">Info()</div><div class="ttdef"><b>Definition:</b> av_endpoint.h:20</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_endpoint_1_1_info_html_aa03776f58871a95748151cb545d3fa23"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#aa03776f58871a95748151cb545d3fa23">tencent::av::AVEndpoint::Info::has_camera_video</a></div><div class="ttdeci">bool has_camera_video</div><div class="ttdoc">是否有发来自摄像头或外部视频捕获设备的视频。 </div><div class="ttdef"><b>Definition:</b> av_endpoint.h:36</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_endpoint_1_1_info_html_a216fe1e010e9dff40c3b74ba701f3536"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#a216fe1e010e9dff40c3b74ba701f3536">tencent::av::AVEndpoint::Info::identifier</a></div><div class="ttdeci">std::string identifier</div><div class="ttdoc">成员id。 </div><div class="ttdef"><b>Definition:</b> av_endpoint.h:31</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_endpoint_1_1_info_html_a9a1f4ee4e2fbea79cf2d52de51775e24"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#a9a1f4ee4e2fbea79cf2d52de51775e24">tencent::av::AVEndpoint::Info::terminal_type</a></div><div class="ttdeci">uint32 terminal_type</div><div class="ttdoc">终端类型。 </div><div class="ttdef"><b>Definition:</b> av_endpoint.h:33</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_endpoint_1_1_info_html_acc244d64ec8bd25b340628751321ff31"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#acc244d64ec8bd25b340628751321ff31">tencent::av::AVEndpoint::Info::has_screen_video</a></div><div class="ttdeci">bool has_screen_video</div><div class="ttdoc">是否有发来自屏幕的视频。 </div><div class="ttdef"><b>Definition:</b> av_endpoint.h:37</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_endpoint_html"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_endpoint.html">tencent::av::AVEndpoint</a></div><div class="ttdoc">房间成员类。 </div><div class="ttdef"><b>Definition:</b> av_endpoint.h:16</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_endpoint_1_1_info_html_a77567aea2c2179c1da35d6c9e0988c40"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#a77567aea2c2179c1da35d6c9e0988c40">tencent::av::AVEndpoint::Info::sdk_version</a></div><div class="ttdeci">uint32 sdk_version</div><div class="ttdoc">SDK版本号。 </div><div class="ttdef"><b>Definition:</b> av_endpoint.h:32</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_endpoint_1_1_info_html_acb3045d39d905bb76f4ac470b7644a04"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#acb3045d39d905bb76f4ac470b7644a04">tencent::av::AVEndpoint::Info::is_mute</a></div><div class="ttdeci">bool is_mute</div><div class="ttdoc">是否屏蔽这个成员的音频。这边的屏蔽是指会接收他的音频流，但不把其音频流送去解码和播放，也就听不到他的�...</div><div class="ttdef"><b>Definition:</b> av_endpoint.h:35</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_endpoint_1_1_info_html"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html">tencent::av::AVEndpoint::Info</a></div><div class="ttdoc">房间成员信息。 </div><div class="ttdef"><b>Definition:</b> av_endpoint.h:19</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_endpoint_1_1_info_html_a8fb019793533526f275723a70fb48da2"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#a8fb019793533526f275723a70fb48da2">tencent::av::AVEndpoint::Info::~Info</a></div><div class="ttdeci">virtual ~Info()</div><div class="ttdef"><b>Definition:</b> av_endpoint.h:29</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_endpoint_1_1_info_html_a13b6a43e9acd9146b304f7173842df9c"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#a13b6a43e9acd9146b304f7173842df9c">tencent::av::AVEndpoint::Info::has_audio</a></div><div class="ttdeci">bool has_audio</div><div class="ttdoc">是否有发音频。 </div><div class="ttdef"><b>Definition:</b> av_endpoint.h:34</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_15ae8acb17aa02612b36ce8da1cae9b5.html">avsdk</a></li><li class="navelem"><b>av_endpoint.h</b></li>
+    <li class="footer">生成于 2016年 二月 22日 星期一 14:41:37 , 为 音视频通讯SDK API参考手册使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

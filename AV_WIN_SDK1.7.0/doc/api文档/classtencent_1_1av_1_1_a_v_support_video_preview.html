@@ -1,0 +1,428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>音视频通讯SDK API参考手册: tencent::av::AVSupportVideoPreview类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">音视频通讯SDK API参考手册
+   &#160;<span id="projectnumber">Windows 1.7.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classtencent_1_1av_1_1_a_v_support_video_preview.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classtencent_1_1av_1_1_a_v_support_video_preview-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">tencent::av::AVSupportVideoPreview类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>视频预览能力的封装类。  
+ <a href="classtencent_1_1av_1_1_a_v_support_video_preview.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="av__device_8h_source.html">av_device.h</a>&gt;</code></p>
+<div class="dynheader">
+类 tencent::av::AVSupportVideoPreview 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classtencent_1_1av_1_1_a_v_support_video_preview.png" usemap="#tencent::av::AVSupportVideoPreview_map" alt=""/>
+  <map id="tencent::av::AVSupportVideoPreview_map" name="tencent::av::AVSupportVideoPreview_map">
+<area href="classtencent_1_1av_1_1_a_v_camera_device.html" title="摄像头的封装类。 " alt="tencent::av::AVCameraDevice" shape="rect" coords="0,56,252,80"/>
+<area href="classtencent_1_1av_1_1_a_v_local_screen_video_device.html" title="本地屏幕视频设备的封装类。 " alt="tencent::av::AVLocalScreenVideoDevice" shape="rect" coords="262,56,514,80"/>
+<area href="classtencent_1_1av_1_1_a_v_remote_screen_video_device.html" title="远端屏幕视频设备的封装类。 " alt="tencent::av::AVRemoteScreenVideoDevice" shape="rect" coords="524,56,776,80"/>
+<area href="classtencent_1_1av_1_1_a_v_remote_video_device.html" title="远端视频设备的封装类。 " alt="tencent::av::AVRemoteVideoDevice" shape="rect" coords="786,56,1038,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:structtencent_1_1av_1_1_a_v_support_video_preview_1_1_preview_param"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_support_video_preview.html#structtencent_1_1av_1_1_a_v_support_video_preview_1_1_preview_param">PreviewParam</a></td></tr>
+<tr class="memdesc:structtencent_1_1av_1_1_a_v_support_video_preview_1_1_preview_param"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频预览能力的封装类。  <a href="classtencent_1_1av_1_1_a_v_support_video_preview.html#structtencent_1_1av_1_1_a_v_support_video_preview_1_1_preview_param">更多...</a><br /></td></tr>
+<tr class="separator:structtencent_1_1av_1_1_a_v_support_video_preview_1_1_preview_param"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:aa0b74f3773d6da90c6a88b3efd7fb146"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_support_video_preview.html#aa0b74f3773d6da90c6a88b3efd7fb146">PreviewCallback</a>) (<a class="el" href="structtencent_1_1av_1_1_video_frame.html">VideoFrame</a> *video_frame, void *custom_data)</td></tr>
+<tr class="memdesc:aa0b74f3773d6da90c6a88b3efd7fb146"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classtencent_1_1av_1_1_a_v_support_video_preview.html#ab4e7dca91b4fa41dd9eddc69e18b5aaf" title="设置视频预览回调。 ">SetPreviewCallback()</a>的回调函数。  <a href="#aa0b74f3773d6da90c6a88b3efd7fb146">更多...</a><br /></td></tr>
+<tr class="separator:aa0b74f3773d6da90c6a88b3efd7fb146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ab4e7dca91b4fa41dd9eddc69e18b5aaf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_support_video_preview.html#ab4e7dca91b4fa41dd9eddc69e18b5aaf">SetPreviewCallback</a> (<a class="el" href="classtencent_1_1av_1_1_a_v_support_video_preview.html#aa0b74f3773d6da90c6a88b3efd7fb146">PreviewCallback</a> frame_callback, void *custom_data=NULL)=0</td></tr>
+<tr class="memdesc:ab4e7dca91b4fa41dd9eddc69e18b5aaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置视频预览回调。  <a href="#ab4e7dca91b4fa41dd9eddc69e18b5aaf">更多...</a><br /></td></tr>
+<tr class="separator:ab4e7dca91b4fa41dd9eddc69e18b5aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a523a5ceb88c96ffd40742bd28ce693af"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_support_video_preview.html#a523a5ceb88c96ffd40742bd28ce693af">SetPreviewParam</a> (std::string id, uint32 width, uint32 height, <a class="el" href="namespacetencent_1_1av.html#ad467475bcfae3e2208bc642086ebd386">ColorFormat</a> color_format)=0</td></tr>
+<tr class="memdesc:a523a5ceb88c96ffd40742bd28ce693af"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置预览视频画面的参数。  <a href="#a523a5ceb88c96ffd40742bd28ce693af">更多...</a><br /></td></tr>
+<tr class="separator:a523a5ceb88c96ffd40742bd28ce693af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc9606c74863e290866da12a560074e"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_support_video_preview.html#adbc9606c74863e290866da12a560074e">ClearPreviewParam</a> ()=0</td></tr>
+<tr class="memdesc:adbc9606c74863e290866da12a560074e"><td class="mdescLeft">&#160;</td><td class="mdescRight">清空所有预览视频画面的参数。  <a href="#adbc9606c74863e290866da12a560074e">更多...</a><br /></td></tr>
+<tr class="separator:adbc9606c74863e290866da12a560074e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71bb12e4e05bbcdf38b2d3ddb58cf018"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_support_video_preview.html#aa0b74f3773d6da90c6a88b3efd7fb146">PreviewCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_support_video_preview.html#a71bb12e4e05bbcdf38b2d3ddb58cf018">GetPreviewCallback</a> ()=0</td></tr>
+<tr class="memdesc:a71bb12e4e05bbcdf38b2d3ddb58cf018"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取视频预览回调函数。  <a href="#a71bb12e4e05bbcdf38b2d3ddb58cf018">更多...</a><br /></td></tr>
+<tr class="separator:a71bb12e4e05bbcdf38b2d3ddb58cf018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a18300f6862167d0c54c9517cd07d84"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_support_video_preview.html#a4a18300f6862167d0c54c9517cd07d84">GetPreviewCustomData</a> ()=0</td></tr>
+<tr class="memdesc:a4a18300f6862167d0c54c9517cd07d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取视频预览回调自定义数据。  <a href="#a4a18300f6862167d0c54c9517cd07d84">更多...</a><br /></td></tr>
+<tr class="separator:a4a18300f6862167d0c54c9517cd07d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>SDK的各种视频设备封装类，通过继承AVSupportVideoPreview，向App提供视频预览能力。 App可以通过AVSupportVideoPreview获得视频设备的输入/输出数据。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device_id</td><td>当为空字符串时，代表这个设备的所有画面都用这组设置的参数；当不为空时，如果该设备是AVRemoteVideoDevice时，将device_id设置为远端设备对应的成员identifier，就可以针对每个成员的画面设置这些参数。 </td></tr>
+    <tr><td class="paramname">width</td><td>预览画面宽度。如果设置为0，代表用视频图像的默认宽度和高度。 </td></tr>
+    <tr><td class="paramname">height</td><td>预览画面高度。如果设置为0，代表用视频图像的默认宽度和高度。 </td></tr>
+    <tr><td class="paramname">color_format</td><td>预览视频图像的颜色格式。 如果设置为COLOR_FORMAT_NONE，代表用视频图像默认的颜色格式。 </td></tr>
+    <tr><td class="paramname">src_type</td><td>视频源类型。每个设备的视频源类型是固定的。 </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><hr/><h2 class="groupheader">类说明</h2>
+<a name="structtencent_1_1av_1_1_a_v_support_video_preview_1_1_preview_param" id="structtencent_1_1av_1_1_a_v_support_video_preview_1_1_preview_param"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct tencent::av::AVSupportVideoPreview::PreviewParam</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>通过SetPreviewParam设置，通过ClearPreviewParam来清空设置，当有图像数据时，SDK会根据设置参数进行转换。</p>
+<p>如果没有设置过任何参数，则拿到的图像数据为原始图像数据。 </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">类成员</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a94e2c9f3be7d9ab84c337fef6bda05ff"></a><a class="el" href="namespacetencent_1_1av.html#ad467475bcfae3e2208bc642086ebd386">ColorFormat</a></td>
+<td class="fieldname">
+color_format</td>
+<td class="fielddoc">
+预览期望图像像素宽 </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ad5a6a7e5d1dd5bebf835ede07f68eeb7"></a>string</td>
+<td class="fieldname">
+device_id</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aee3e192c5ea34f78c57e2ec106ad3f6c"></a>uint32</td>
+<td class="fieldname">
+height</td>
+<td class="fielddoc">
+预览期望图像像素高 </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a0d470f61f67d0e786dca83f327358255"></a><a class="el" href="namespacetencent_1_1av.html#aeb6ba00210cf2e03eb544a9c62d7ef2c">VideoSrcType</a></td>
+<td class="fieldname">
+src_type</td>
+<td class="fielddoc">
+预览期望图像格式 </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a0a5c07e9657a8a875a0e4246fb318a52"></a>uint32</td>
+<td class="fieldname">
+width</td>
+<td class="fielddoc">
+预览设备id </td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">成员类型定义说明</h2>
+<a class="anchor" id="aa0b74f3773d6da90c6a88b3efd7fb146"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* tencent::av::AVSupportVideoPreview::PreviewCallback) (<a class="el" href="structtencent_1_1av_1_1_video_frame.html">VideoFrame</a> *video_frame, void *custom_data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>此函数是和SetPreviewCallback()一起使用的回调函数，用来向App回传视频数据。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">video_frame</td><td>视频帧对象。 </td></tr>
+    <tr><td class="paramname">custom_data</td><td>值等于调用SetPreviewCallback()时的入参custom_data。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="adbc9606c74863e290866da12a560074e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int tencent::av::AVSupportVideoPreview::ClearPreviewParam </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section remark"><dt>备注</dt><dd>清空后，预览接口将返回原始图像。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a71bb12e4e05bbcdf38b2d3ddb58cf018"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_support_video_preview.html#aa0b74f3773d6da90c6a88b3efd7fb146">PreviewCallback</a> tencent::av::AVSupportVideoPreview::GetPreviewCallback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section remark"><dt>备注</dt><dd>App可以通过获取上次设置的视频预览回调，没有设置过返回NULL。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4a18300f6862167d0c54c9517cd07d84"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void* tencent::av::AVSupportVideoPreview::GetPreviewCustomData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section remark"><dt>备注</dt><dd>App可以通过获取上次设置的自定义的参数，没有设置过返回NULL </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab4e7dca91b4fa41dd9eddc69e18b5aaf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void tencent::av::AVSupportVideoPreview::SetPreviewCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtencent_1_1av_1_1_a_v_support_video_preview.html#aa0b74f3773d6da90c6a88b3efd7fb146">PreviewCallback</a>&#160;</td>
+          <td class="paramname"><em>frame_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>custom_data</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>App可以通过设置视频预览回调，在回调函数中获得视频设备的输入/输出数据。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame_callback</td><td>函数指针，指向App定义的回调函数，NULL表示取消回调。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">custom_data</td><td>业务侧自定义的参数，会在执行回调函数时原封不动地返回给业务侧。由于回调函数通常是某个类的静态函数，可以通过该参数指定当前所对应的类的具体对象。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a523a5ceb88c96ffd40742bd28ce693af"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int tencent::av::AVSupportVideoPreview::SetPreviewParam </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacetencent_1_1av.html#ad467475bcfae3e2208bc642086ebd386">ColorFormat</a>&#160;</td>
+          <td class="paramname"><em>color_format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>画面Id。如果是本地摄像头画面，因为只有一路，可以填""。如果是远端视频画面，填每个画面的成员id即可。 </td></tr>
+    <tr><td class="paramname">width</td><td>预览画面宽度，最好是4的倍数。 </td></tr>
+    <tr><td class="paramname">height</td><td>预览画面高度，最好是4的倍数。 </td></tr>
+    <tr><td class="paramname">color_format</td><td>色彩格式，SDK目前只支持RGB24、I420。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>目前仅Windows平台支持设置预览视频画面的参数。可以给每路成员分别设置，也可以给所有成员统一设置。如果是给所有成员设置, 则id填""即可。 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacetencent.html">tencent</a></li><li class="navelem"><a class="el" href="namespacetencent_1_1av.html">av</a></li><li class="navelem"><a class="el" href="classtencent_1_1av_1_1_a_v_support_video_preview.html">AVSupportVideoPreview</a></li>
+    <li class="footer">生成于 2016年 二月 22日 星期一 14:41:37 , 为 音视频通讯SDK API参考手册使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

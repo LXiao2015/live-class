@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<link href="LVBCss.css" rel="stylesheet" type="text/css">
+	<title>北京邮电大学在线教育</title>
+</head>
+<body>
+	<div class="container">
+		<div class="haed">
+			<img src="headimg.jpg" width="1012px" height="281px">
+		</div>
+		<div class="body">
+			<div id="search">
+				<script src="http://qzonestyle.gtimg.cn/open/qcloud/video/live/h5/live_connect.js"></script>
+				<script type="text/javascript">
+					(function(){
+						var option ={
+							"live_url": ''
+							,"width":"1024","height":"581"
+							, 'cache_time': 0.3
+							,"debug": 1
+						};
+
+						window.toPlayer = function(){
+							option['live_url'] = document.getElementById('rtmp_url').value;
+							new qcVideo.Player(
+									"search",
+									option, {
+										playStatus: function(status){
+											if(status === 'ready'){
+												//此时调用弹幕功能
+											}
+										}
+									}
+							);
+						};
+					})()
+				</script>
+				输入地址：<input type="text" name="rtmp_url" id="rtmp_url" class="input" value=""/>
+				<input type="button" value="开始播放" onclick="toPlayer()"/>
+			</div>
+			<div class="form">
+				<p><strong>正在直播  </strong><a id="more" href="#">更多>></a></p>
+				<div>
+					<iframe src="DescribeLVBChannelList.php" width="1000px" height="500px"></iframe>
+					<table border="1" align="center" cellpadding="27" cellspacing="0">
+						<tr>
+							<th>频道名称</th>
+							<th>开课班级</th>
+							<th>授课教师</th>
+							<th>创建时间</th>
+							<th>我要听课</th>
+							<th>观看人数</th>
+						</tr>
+						<tr>
+							<td>Network Engineering</td>
+							<td>2012211311-13</td>
+							<td>梁霄</td>
+							<td>2016-5-12 10:41</td>
+							<td>
+								<a href="#">
+									<img src="play.png" width="20px" height="20px">
+								</a>
+							</td>
+							<td>23</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="footing">
+			<p id="contact"><br/>给我们提建议3360281447@qq.com</p>
+		</div>
+	</div>
+</body>
+</html>

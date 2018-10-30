@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['data',['data',['../structtencent_1_1av_1_1_audio_frame.html#a7bac65e6cc7bbb07850610906f65578a',1,'tencent::av::AudioFrame::data()'],['../structtencent_1_1av_1_1_video_frame.html#a317c4b2b6627e49f52b891a9809c4b51',1,'tencent::av::VideoFrame::data()']]],
+  ['data_5fsize',['data_size',['../structtencent_1_1av_1_1_audio_frame.html#aa2a51566bf37a09f7b7319d4bca51d4a',1,'tencent::av::AudioFrame::data_size()'],['../structtencent_1_1av_1_1_video_frame.html#a5d39e23f86196b64079f2b641340fbf7',1,'tencent::av::VideoFrame::data_size()']]],
+  ['decode_5fcount',['decode_count',['../namespacetencent_1_1av.html#a6d48380ed8783aea2628545ceeb43d3c',1,'tencent::av::VideoStatParam']]],
+  ['decode_5fparams',['decode_params',['../namespacetencent_1_1av.html#a550fce4aef19e7374a92248fc0341906',1,'tencent::av::VideoStatParam']]],
+  ['delegate',['Delegate',['../structtencent_1_1av_1_1_a_v_room_1_1_delegate.html',1,'tencent::av::AVRoom']]],
+  ['delegate',['Delegate',['../structtencent_1_1av_1_1_a_v_room_multi_1_1_delegate.html',1,'tencent::av::AVRoomMulti']]],
+  ['desc',['desc',['../structtencent_1_1av_1_1_audio_frame.html#af56da8e135aea2f562cca6ec4edab90d',1,'tencent::av::AudioFrame::desc()'],['../structtencent_1_1av_1_1_video_frame.html#a5371733030bf327c21c2135e5fe9f8cd',1,'tencent::av::VideoFrame::desc()']]],
+  ['description',['description',['../structtencent_1_1av_1_1_a_v_device_1_1_info.html#a237e2b0203318d58313a0353e338f739',1,'tencent::av::AVDevice::Info']]],
+  ['destroycontext',['DestroyContext',['../classtencent_1_1av_1_1_a_v_context.html#a1ddf4cf38e55380037ba55ca474e22ae',1,'tencent::av::AVContext']]],
+  ['detect_5fmic',['Detect_Mic',['../namespacetencent_1_1av.html#ae7f6c5cac42229320a6559e8b2f0f8f3aa29d39079970c4ec7154be1cb68a0f93',1,'tencent::av']]],
+  ['detect_5fspeaker',['Detect_Speaker',['../namespacetencent_1_1av.html#ae7f6c5cac42229320a6559e8b2f0f8f3a2ae0f18da18d7269f281bbcc87cbf8f5',1,'tencent::av']]],
+  ['detecteddeviceinfo',['DetectedDeviceInfo',['../namespacetencent_1_1av.html#structtencent_1_1av_1_1_detected_device_info',1,'tencent::av']]],
+  ['detecteddevicetype',['DetectedDeviceType',['../namespacetencent_1_1av.html#ae7f6c5cac42229320a6559e8b2f0f8f3',1,'tencent::av']]],
+  ['device_5fid',['device_id',['../classtencent_1_1av_1_1_a_v_support_video_preview.html#ad5a6a7e5d1dd5bebf835ede07f68eeb7',1,'tencent::av::AVSupportVideoPreview::PreviewParam::device_id()'],['../namespacetencent_1_1av.html#a4365829807b2466d8845fee5b89bb03d',1,'tencent::av::CameraInfo::device_id()']]],
+  ['device_5foperation_5fclose',['DEVICE_OPERATION_CLOSE',['../classtencent_1_1av_1_1_a_v_device.html#a30defa389bbe29242605d46c80601d01a1366fe6ecfd3be8e538f6e7935be8cfe',1,'tencent::av::AVDevice']]],
+  ['device_5foperation_5fopen',['DEVICE_OPERATION_OPEN',['../classtencent_1_1av_1_1_a_v_device.html#a30defa389bbe29242605d46c80601d01a5eb23c286a27ec9863a272b836a971b3',1,'tencent::av::AVDevice']]],
+  ['device_5foperation_5funknown',['DEVICE_OPERATION_UNKNOWN',['../classtencent_1_1av_1_1_a_v_device.html#a30defa389bbe29242605d46c80601d01ab6c7ac2fd654fbbae32ca29582e64a40',1,'tencent::av::AVDevice']]],
+  ['devicechangecallback',['DeviceChangeCallback',['../classtencent_1_1av_1_1_a_v_device_mgr.html#a85631882e8686c9a4e527d1effde60cb',1,'tencent::av::AVDeviceMgr']]],
+  ['deviceoperation',['DeviceOperation',['../classtencent_1_1av_1_1_a_v_device.html#a30defa389bbe29242605d46c80601d01',1,'tencent::av::AVDevice']]],
+  ['deviceoperationcallback',['DeviceOperationCallback',['../classtencent_1_1av_1_1_a_v_device_mgr.html#a2afdf2237b1e3e160c1dd958fbdc9a94',1,'tencent::av::AVDeviceMgr::DeviceOperationCallback()'],['../classtencent_1_1av_1_1_a_v_device_test.html#a32576e53e7d1151c75bb204d1f846c95',1,'tencent::av::AVDeviceTest::DeviceOperationCallback()']]]
+];

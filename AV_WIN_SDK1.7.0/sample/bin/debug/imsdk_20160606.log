@@ -1,0 +1,342 @@
+[2016-6-6 9:57:56:575][INFO][tim.cc:171][imcore::TIMManager::Init]SDK Init ~!
+[2016-6-6 9:57:56:614][INFO][tim.cc:172][imcore::TIMManager::Init]SDK Version = TIMSDK:1.7:debug:drt:Mar  7 2016:17:03:56
+[2016-6-6 9:57:56:657][INFO][config_store.cc:93][imcore::ConfigStore::ReadFromFile]get config from file: 
+[2016-6-6 9:57:56:658][INFO][config_store.cc:94][imcore::ConfigStore::ReadFromFile]bytes_guid: "gf\250\006\020McK\261\001NR\032\313\002\n"
+msg_wifi_sso_addr_list {
+  rpt_tcp_sso_addr {
+    bytes_ip: "123.151.152.102"
+    uint32_port: 443
+  }
+  rpt_tcp_sso_addr {
+    bytes_ip: "59.37.116.121"
+    uint32_port: 80
+  }
+  rpt_tcp_sso_addr {
+    bytes_ip: "101.226.68.116"
+    uint32_port: 8080
+  }
+}
+
+[2016-6-6 9:57:56:794][INFO][tim.cc:196][imcore::TIMManager::Login]User Login
+[2016-6-6 9:57:56:807][INFO][auth.cc:297][imcore::TIMAuth::Login]send sdkinit req
+[2016-6-6 9:57:56:809][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: openim.pbsdkinit_emp|queue size: 1
+[2016-6-6 9:57:56:839][INFO][sso_conn.cc:601][imcore::SSOConn::CheckConn]try to connect...
+[2016-6-6 9:57:56:840][INFO][sso_conn.cc:156][imcore::SSOConn::Connect]connect to 123.151.152.102:443
+[2016-6-6 9:57:56:841][INFO][sso_conn.cc:819][imcore::SSOConn::set_status]conn has no callback to call! status :2
+[2016-6-6 9:57:56:866][INFO][http_conn.cc:282][imcore::HttpConn::ParseUrl]schema: http|host: configsvr.openmsf.3g.qq.com|port: 80|path: /configsvr/openlist.jsp|query: 
+[2016-6-6 9:57:56:887][INFO][sso_conn.cc:81][imcore::conn_cb]connect done: 0
+[2016-6-6 9:57:56:888][INFO][sso_conn.cc:819][imcore::SSOConn::set_status]conn has no callback to call! status :1
+[2016-6-6 9:57:56:896][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: openim.pbsdkinit_emp|seq: 22723|daedline: 4843326|now: 4838376|timeout: 5000
+[2016-6-6 9:57:56:897][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 0 servicecmd = openim.pbsdkinit_emp lower = openim.pbsdkinit_emp
+[2016-6-6 9:57:56:899][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: openim.pbsdkinit_emp|seq: 22723
+[2016-6-6 9:57:56:916][INFO][db_http.cpp:77][imcore::HTTPRequest::encode]out_len: 295
+[2016-6-6 9:57:56:957][INFO][http_conn.cc:145][imcore::on_message_begin]recv begin
+[2016-6-6 9:57:56:959][INFO][http_conn.cc:154][imcore::on_message_complete]recv complete
+[2016-6-6 9:57:56:996][INFO][sso_conn.cc:725][imcore::`anonymous-namespace'::<lambda2>::operator ()]UpdateSsoListByHttp get rsp
+[2016-6-6 9:57:56:997][INFO][sso_conn.cc:727][imcore::`anonymous-namespace'::<lambda2>::operator ()]get sso addr: 123.151.152.102 port: 443
+[2016-6-6 9:57:56:998][INFO][sso_conn.cc:727][imcore::`anonymous-namespace'::<lambda2>::operator ()]get sso addr: 59.37.116.121 port: 80
+[2016-6-6 9:57:56:999][INFO][sso_conn.cc:727][imcore::`anonymous-namespace'::<lambda2>::operator ()]get sso addr: 101.226.68.116 port: 8080
+[2016-6-6 9:57:57:0][INFO][sso_conn.cc:731][imcore::`anonymous-namespace'::<lambda2>::operator ()]UpdateSsoListByHttp succ
+[2016-6-6 9:57:57:1][ERROR][http_conn.cc:207][imcore::HttpConn::~HttpConn]dtor: httpconn
+[2016-6-6 9:57:57:3][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:255
+[2016-6-6 9:57:57:3][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: openim.pbsdkinit_emp|seq: 22723
+[2016-6-6 9:57:57:4][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 1 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 9:57:57:5][INFO][auth.cc:309][imcore::`anonymous-namespace'::<lambda1>::operator ()]get sdkinit rsp
+[2016-6-6 9:57:57:6][INFO][auth.cc:310][imcore::`anonymous-namespace'::<lambda1>::operator ()]get rsp size:176
+[2016-6-6 9:57:57:7][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: im_open_status.stat_reg|queue size: 1
+[2016-6-6 9:57:57:8][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 1 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 9:57:57:9][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: im_open_status.stat_reg|seq: 22724|daedline: 4843539|now: 4838539|timeout: 5000
+[2016-6-6 9:57:57:10][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = im_open_status.stat_reg lower = im_open_status.stat_reg
+[2016-6-6 9:57:57:11][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: im_open_status.stat_reg|seq: 22724
+[2016-6-6 9:57:57:127][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:136
+[2016-6-6 9:57:57:128][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: im_open_status.stat_reg|seq: 22724
+[2016-6-6 9:57:57:128][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 2 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 9:57:57:129][INFO][auth.cc:183][imcore::`anonymous-namespace'::<lambda0>::operator ()]get stat_reg rsp
+[2016-6-6 9:57:57:130][INFO][auth.cc:224][imcore::`anonymous-namespace'::<lambda0>::operator ()]login succ: 4000:1400007961:lx
+[2016-6-6 9:57:57:131][INFO][auth.cc:37][imcore::CreatePicCacheDic]PicCache dic is already exists
+[2016-6-6 9:57:57:134][INFO][ctx.cc:226][imcore::IMCoreCtx::InitOpenIM]IMCoreCtx init: build-Mar  7 2016...
+[2016-6-6 9:57:57:138][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: IMBDH.GetKeyAndIp|queue size: 1
+[2016-6-6 9:57:57:256][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 2 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 9:57:57:258][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: im_open_status.stat_hello|queue size: 2
+[2016-6-6 9:57:57:259][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: IMBDH.GetKeyAndIp|seq: 22725|daedline: 4843639|now: 4838794|timeout: 5000
+[2016-6-6 9:57:57:260][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = IMBDH.GetKeyAndIp lower = imbdh.getkeyandip
+[2016-6-6 9:57:57:261][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: IMBDH.GetKeyAndIp|seq: 22725
+[2016-6-6 9:57:57:262][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: im_open_status.stat_hello|seq: 22726|daedline: 4843794|now: 4838794|timeout: 5000
+[2016-6-6 9:57:57:263][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = im_open_status.stat_hello lower = im_open_status.stat_hello
+[2016-6-6 9:57:57:264][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: im_open_status.stat_hello|seq: 22726
+[2016-6-6 9:57:57:269][INFO][imcore_env.cc:157][imcore::IMCoreInitCallBack::Done]imcore init succ
+[2016-6-6 9:57:57:271][INFO][ctx.cc:273][imcore::`anonymous-namespace'::<lambda4>::operator ()]IMCoreCtx init done
+[2016-6-6 9:57:57:273][INFO][msg_manager.cc:1127][imcore::`anonymous-namespace'::<lambda35>::operator ()]ClearLog begin!
+[2016-6-6 9:57:57:274][INFO][msg_manager.cc:1183][imcore::`anonymous-namespace'::<lambda35>::operator ()]ClearLog end!
+[2016-6-6 9:57:57:276][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: im_open_msg.msg_sync|queue size: 1
+[2016-6-6 9:57:57:277][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: im_open_msg.msg_sync|seq: 22727|daedline: 4843794|now: 4838794|timeout: 5000
+[2016-6-6 9:57:57:277][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = im_open_msg.msg_sync lower = im_open_msg.msg_sync
+[2016-6-6 9:57:57:278][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: im_open_msg.msg_sync|seq: 22727
+[2016-6-6 9:57:57:302][INFO][tim_int.cc:350][imcore::TIMIntManager::Init]TIMIntManager::Init
+[2016-6-6 9:57:57:309][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: group_open_svc.get_group_list|queue size: 1
+[2016-6-6 9:57:57:310][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: group_open_svc.get_group_list|seq: 22728|daedline: 4843844|now: 4838844|timeout: 5000
+[2016-6-6 9:57:57:311][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = group_open_svc.get_group_list lower = group_open_svc.get_group_list
+[2016-6-6 9:57:57:312][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: group_open_svc.get_group_list|seq: 22728
+[2016-6-6 9:57:57:313][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:536
+[2016-6-6 9:57:57:314][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: IMBDH.GetKeyAndIp|seq: 22725
+[2016-6-6 9:57:57:315][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 3 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 9:57:57:354][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 3 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 9:57:57:435][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:264
+[2016-6-6 9:57:57:436][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: im_open_status.stat_hello|seq: 22726
+[2016-6-6 9:57:57:437][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 4 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 9:57:57:438][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 4 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 9:57:57:439][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: im_open_msg.msg_sync|seq: 22727
+[2016-6-6 9:57:57:440][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 5 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 9:57:57:441][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 5 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 9:57:57:452][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: im_open_msg.msg_sync|queue size: 1
+[2016-6-6 9:57:57:453][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: im_open_msg.msg_sync|seq: 22729|daedline: 4843936|now: 4838990|timeout: 5000
+[2016-6-6 9:57:57:454][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = im_open_msg.msg_sync lower = im_open_msg.msg_sync
+[2016-6-6 9:57:57:455][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: im_open_msg.msg_sync|seq: 22729
+[2016-6-6 9:57:57:500][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:120
+[2016-6-6 9:57:57:501][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: group_open_svc.get_group_list|seq: 22728
+[2016-6-6 9:57:57:502][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 6 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 9:57:57:502][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 6 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 9:57:57:531][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: Recentcontact.Get_PB|queue size: 1
+[2016-6-6 9:57:57:532][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: Recentcontact.Get_PB|seq: 22730|daedline: 4844044|now: 4839044|timeout: 5000
+[2016-6-6 9:57:57:533][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = Recentcontact.Get_PB lower = recentcontact.get_pb
+[2016-6-6 9:57:57:534][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: Recentcontact.Get_PB|seq: 22730
+[2016-6-6 9:57:57:579][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:104
+[2016-6-6 9:57:57:580][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: im_open_msg.msg_sync|seq: 22729
+[2016-6-6 9:57:57:581][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 7 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 9:57:57:581][INFO][imcore_env.cc:86][imcore::`anonymous-namespace'::<lambda1>::operator ()]operation don't need callback! cmd:im_open_msg.msg_sync req.seq():22729
+[2016-6-6 9:57:57:582][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 7 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 9:57:57:825][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:112
+[2016-6-6 9:57:57:826][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: Recentcontact.Get_PB|seq: 22730
+[2016-6-6 9:57:57:827][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 8 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 9:57:57:828][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 8 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 9:57:57:831][INFO][msg_sync_task.cc:391][imcore::RecentContactTask::run]ApiCall(Recentcontact.Get_PB) resp fail code:50602 info: display:
+[2016-6-6 9:57:57:832][INFO][msg_sync_task.cc:556][imcore::`anonymous-namespace'::<lambda1>::operator ()]login refresh nofity
+[2016-6-6 9:57:59:913][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:159
+[2016-6-6 9:57:59:914][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: ConfigPushSvc.PushReq|seq: -1542168842
+[2016-6-6 9:57:59:915][INFO][ctx.cc:524][imcore::IMCoreCtx::ParseSsoList]len: 78|ver: 1|mobcmd: 2|mobseq: 336879351
+[2016-6-6 9:57:59:915][INFO][sso_conn.cc:518][imcore::SSOConn::Recv]recv sso push:ConfigPushSvc.PushReq
+[2016-6-6 9:57:59:916][INFO][sso_conn.cc:520][imcore::SSOConn::Recv]get sso addr: 123.151.152.102 port: 443
+[2016-6-6 9:57:59:916][ERROR][ctx.cc:532][imcore::IMCoreCtx::ParseSsoList]ssolist rsp: 
+080812140a0f3132332e3135312e3135322e31303210bb0312110a0d35392e33372e3131362e313231105012130a0e3130312e3232362e36382e31313610903f
+[2016-6-6 9:57:59:917][INFO][sso_conn.cc:520][imcore::SSOConn::Recv]get sso addr: 59.37.116.121 port: 80
+[2016-6-6 9:57:59:917][INFO][sso_conn.cc:520][imcore::SSOConn::Recv]get sso addr: 101.226.68.116 port: 8080
+[2016-6-6 9:57:59:919][INFO][sso_conn.cc:523][imcore::SSOConn::Recv]update ssolist by push succ
+[2016-6-6 9:58:1:538][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: openim.pbvideoapp|queue size: 1
+[2016-6-6 9:58:1:539][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: openim.pbvideoapp|seq: 22731|daedline: 4848060|now: 4843060|timeout: 5000
+[2016-6-6 9:58:1:540][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = openim.pbvideoapp lower = openim.pbvideoapp
+[2016-6-6 9:58:1:541][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: openim.pbvideoapp|seq: 22731
+[2016-6-6 9:58:1:608][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:272
+[2016-6-6 9:58:1:609][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: openim.pbvideoapp|seq: 22731
+[2016-6-6 9:58:1:610][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 9 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 9:58:1:611][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 9 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 9:58:23:293][INFO][tim_int.cc:295][imcore::RequestMultiVideoStreamerRelay]RequestMultiVideoStreamerRelay! opr :1
+[2016-6-6 9:58:23:330][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: openim.pbvideoinfo|queue size: 1
+[2016-6-6 9:58:23:331][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: openim.pbvideoinfo|seq: 22732|daedline: 4869838|now: 4864838|timeout: 5000
+[2016-6-6 9:58:23:333][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = openim.pbvideoinfo lower = openim.pbvideoinfo
+[2016-6-6 9:58:23:334][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: openim.pbvideoinfo|seq: 22732
+[2016-6-6 9:58:23:668][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:288
+[2016-6-6 9:58:23:669][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: openim.pbvideoinfo|seq: 22732
+[2016-6-6 9:58:23:670][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 10 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 9:58:23:671][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 10 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 9:59:57:273][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: im_open_status.stat_hello|queue size: 1
+[2016-6-6 9:59:57:273][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: im_open_status.stat_hello|seq: 22733|daedline: 4963808|now: 4958808|timeout: 5000
+[2016-6-6 9:59:57:274][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = im_open_status.stat_hello lower = im_open_status.stat_hello
+[2016-6-6 9:59:57:275][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: im_open_status.stat_hello|seq: 22733
+[2016-6-6 9:59:57:324][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:136
+[2016-6-6 9:59:57:324][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: im_open_status.stat_hello|seq: 22733
+[2016-6-6 9:59:57:325][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 11 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 9:59:57:325][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 11 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 10:1:5:903][INFO][tim.cc:202][imcore::TIMManager::Logout]User Logout
+[2016-6-6 10:1:5:903][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: im_open_status.stat_reg|queue size: 1
+[2016-6-6 10:1:5:904][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: im_open_status.stat_reg|seq: 22734|daedline: 5032407|now: 5027407|timeout: 5000
+[2016-6-6 10:1:5:904][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = im_open_status.stat_reg lower = im_open_status.stat_reg
+[2016-6-6 10:1:5:905][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: im_open_status.stat_reg|seq: 22734
+[2016-6-6 10:1:5:907][INFO][tim_int.cc:364][imcore::TIMIntManager::Uninit]TIMIntManager::Uninit
+[2016-6-6 10:1:5:952][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:136
+[2016-6-6 10:1:5:952][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: im_open_status.stat_reg|seq: 22734
+[2016-6-6 10:1:5:953][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 12 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 10:1:5:953][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 12 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 10:1:5:953][INFO][tim.cc:184][imcore::TIMManager::Uninit]SDK Uninit
+[2016-6-6 10:1:5:953][INFO][sso_conn.cc:819][imcore::SSOConn::set_status]conn has no callback to call! status :0
+[2016-6-6 23:12:51:206][INFO][tim.cc:171][imcore::TIMManager::Init]SDK Init ~!
+[2016-6-6 23:12:51:272][INFO][tim.cc:172][imcore::TIMManager::Init]SDK Version = TIMSDK:1.7:debug:drt:Mar  7 2016:17:03:56
+[2016-6-6 23:12:51:327][INFO][config_store.cc:93][imcore::ConfigStore::ReadFromFile]get config from file: 
+[2016-6-6 23:12:51:328][INFO][config_store.cc:94][imcore::ConfigStore::ReadFromFile]bytes_guid: "gf\250\006\020McK\261\001NR\032\313\002\n"
+msg_wifi_sso_addr_list {
+  rpt_tcp_sso_addr {
+    bytes_ip: "123.151.152.102"
+    uint32_port: 443
+  }
+  rpt_tcp_sso_addr {
+    bytes_ip: "59.37.116.121"
+    uint32_port: 80
+  }
+  rpt_tcp_sso_addr {
+    bytes_ip: "101.226.68.116"
+    uint32_port: 8080
+  }
+}
+
+[2016-6-6 23:12:51:490][INFO][tim.cc:196][imcore::TIMManager::Login]User Login
+[2016-6-6 23:12:51:534][INFO][auth.cc:297][imcore::TIMAuth::Login]send sdkinit req
+[2016-6-6 23:12:51:557][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: openim.pbsdkinit_emp|queue size: 1
+[2016-6-6 23:12:51:603][INFO][http_conn.cc:282][imcore::HttpConn::ParseUrl]schema: http|host: configsvr.openmsf.3g.qq.com|port: 80|path: /configsvr/openlist.jsp|query: 
+[2016-6-6 23:12:51:656][INFO][sso_conn.cc:601][imcore::SSOConn::CheckConn]try to connect...
+[2016-6-6 23:12:51:657][INFO][sso_conn.cc:156][imcore::SSOConn::Connect]connect to 123.151.152.102:443
+[2016-6-6 23:12:51:657][INFO][sso_conn.cc:819][imcore::SSOConn::set_status]conn has no callback to call! status :2
+[2016-6-6 23:12:51:662][INFO][db_http.cpp:77][imcore::HTTPRequest::encode]out_len: 295
+[2016-6-6 23:12:51:706][INFO][sso_conn.cc:81][imcore::conn_cb]connect done: 0
+[2016-6-6 23:12:51:707][INFO][sso_conn.cc:819][imcore::SSOConn::set_status]conn has no callback to call! status :1
+[2016-6-6 23:12:51:722][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: openim.pbsdkinit_emp|seq: 9666|daedline: 34942925|now: 34938105|timeout: 5000
+[2016-6-6 23:12:51:723][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 0 servicecmd = openim.pbsdkinit_emp lower = openim.pbsdkinit_emp
+[2016-6-6 23:12:51:725][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: openim.pbsdkinit_emp|seq: 9666
+[2016-6-6 23:12:51:725][INFO][http_conn.cc:145][imcore::on_message_begin]recv begin
+[2016-6-6 23:12:51:726][INFO][http_conn.cc:154][imcore::on_message_complete]recv complete
+[2016-6-6 23:12:51:744][INFO][sso_conn.cc:725][imcore::`anonymous-namespace'::<lambda2>::operator ()]UpdateSsoListByHttp get rsp
+[2016-6-6 23:12:51:745][INFO][sso_conn.cc:727][imcore::`anonymous-namespace'::<lambda2>::operator ()]get sso addr: 123.151.152.102 port: 8080
+[2016-6-6 23:12:51:745][INFO][sso_conn.cc:727][imcore::`anonymous-namespace'::<lambda2>::operator ()]get sso addr: 59.37.116.121 port: 80
+[2016-6-6 23:12:51:746][INFO][sso_conn.cc:727][imcore::`anonymous-namespace'::<lambda2>::operator ()]get sso addr: 101.226.68.116 port: 8080
+[2016-6-6 23:12:51:747][INFO][sso_conn.cc:731][imcore::`anonymous-namespace'::<lambda2>::operator ()]UpdateSsoListByHttp succ
+[2016-6-6 23:12:51:748][ERROR][http_conn.cc:207][imcore::HttpConn::~HttpConn]dtor: httpconn
+[2016-6-6 23:12:51:795][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:255
+[2016-6-6 23:12:51:796][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: openim.pbsdkinit_emp|seq: 9666
+[2016-6-6 23:12:51:797][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 1 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 23:12:51:798][INFO][auth.cc:309][imcore::`anonymous-namespace'::<lambda1>::operator ()]get sdkinit rsp
+[2016-6-6 23:12:51:799][INFO][auth.cc:310][imcore::`anonymous-namespace'::<lambda1>::operator ()]get rsp size:176
+[2016-6-6 23:12:51:801][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: im_open_status.stat_reg|queue size: 1
+[2016-6-6 23:12:51:801][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 1 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 23:12:51:802][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: im_open_status.stat_reg|seq: 9667|daedline: 34943155|now: 34938155|timeout: 5000
+[2016-6-6 23:12:51:803][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = im_open_status.stat_reg lower = im_open_status.stat_reg
+[2016-6-6 23:12:51:804][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: im_open_status.stat_reg|seq: 9667
+[2016-6-6 23:12:51:928][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:136
+[2016-6-6 23:12:51:929][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: im_open_status.stat_reg|seq: 9667
+[2016-6-6 23:12:51:930][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 2 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 23:12:51:931][INFO][auth.cc:183][imcore::`anonymous-namespace'::<lambda0>::operator ()]get stat_reg rsp
+[2016-6-6 23:12:51:931][INFO][auth.cc:224][imcore::`anonymous-namespace'::<lambda0>::operator ()]login succ: 4000:1400007961:lx
+[2016-6-6 23:12:51:932][INFO][auth.cc:37][imcore::CreatePicCacheDic]PicCache dic is already exists
+[2016-6-6 23:12:51:935][INFO][ctx.cc:226][imcore::IMCoreCtx::InitOpenIM]IMCoreCtx init: build-Mar  7 2016...
+[2016-6-6 23:12:51:939][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: IMBDH.GetKeyAndIp|queue size: 1
+[2016-6-6 23:12:52:82][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 2 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 23:12:52:83][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: im_open_status.stat_hello|queue size: 2
+[2016-6-6 23:12:52:85][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: IMBDH.GetKeyAndIp|seq: 9668|daedline: 34943305|now: 34938482|timeout: 5000
+[2016-6-6 23:12:52:85][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = IMBDH.GetKeyAndIp lower = imbdh.getkeyandip
+[2016-6-6 23:12:52:86][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: IMBDH.GetKeyAndIp|seq: 9668
+[2016-6-6 23:12:52:87][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: im_open_status.stat_hello|seq: 9669|daedline: 34943482|now: 34938482|timeout: 5000
+[2016-6-6 23:12:52:88][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = im_open_status.stat_hello lower = im_open_status.stat_hello
+[2016-6-6 23:12:52:89][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: im_open_status.stat_hello|seq: 9669
+[2016-6-6 23:12:52:95][INFO][imcore_env.cc:157][imcore::IMCoreInitCallBack::Done]imcore init succ
+[2016-6-6 23:12:52:97][INFO][ctx.cc:273][imcore::`anonymous-namespace'::<lambda4>::operator ()]IMCoreCtx init done
+[2016-6-6 23:12:52:99][INFO][msg_manager.cc:1127][imcore::`anonymous-namespace'::<lambda35>::operator ()]ClearLog begin!
+[2016-6-6 23:12:52:100][INFO][msg_manager.cc:1183][imcore::`anonymous-namespace'::<lambda35>::operator ()]ClearLog end!
+[2016-6-6 23:12:52:104][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: im_open_msg.msg_sync|queue size: 1
+[2016-6-6 23:12:52:105][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: im_open_msg.msg_sync|seq: 9670|daedline: 34943482|now: 34938482|timeout: 5000
+[2016-6-6 23:12:52:106][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = im_open_msg.msg_sync lower = im_open_msg.msg_sync
+[2016-6-6 23:12:52:106][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: im_open_msg.msg_sync|seq: 9670
+[2016-6-6 23:12:52:127][INFO][tim_int.cc:350][imcore::TIMIntManager::Init]TIMIntManager::Init
+[2016-6-6 23:12:52:134][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: group_open_svc.get_group_list|queue size: 1
+[2016-6-6 23:12:52:135][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: group_open_svc.get_group_list|seq: 9671|daedline: 34943532|now: 34938532|timeout: 5000
+[2016-6-6 23:12:52:136][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = group_open_svc.get_group_list lower = group_open_svc.get_group_list
+[2016-6-6 23:12:52:137][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: group_open_svc.get_group_list|seq: 9671
+[2016-6-6 23:12:52:138][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:536
+[2016-6-6 23:12:52:138][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: IMBDH.GetKeyAndIp|seq: 9668
+[2016-6-6 23:12:52:139][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 3 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 23:12:52:179][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 3 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 23:12:52:262][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:264
+[2016-6-6 23:12:52:263][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: im_open_status.stat_hello|seq: 9669
+[2016-6-6 23:12:52:265][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 4 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 23:12:52:265][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 4 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 23:12:52:266][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: im_open_msg.msg_sync|seq: 9670
+[2016-6-6 23:12:52:267][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 5 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 23:12:52:268][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 5 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 23:12:52:278][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: im_open_msg.msg_sync|queue size: 1
+[2016-6-6 23:12:52:279][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: im_open_msg.msg_sync|seq: 9672|daedline: 34943624|now: 34938678|timeout: 5000
+[2016-6-6 23:12:52:280][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = im_open_msg.msg_sync lower = im_open_msg.msg_sync
+[2016-6-6 23:12:52:281][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: im_open_msg.msg_sync|seq: 9672
+[2016-6-6 23:12:52:325][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:120
+[2016-6-6 23:12:52:326][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: group_open_svc.get_group_list|seq: 9671
+[2016-6-6 23:12:52:327][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 6 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 23:12:52:328][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 6 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 23:12:52:379][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: Recentcontact.Get_PB|queue size: 1
+[2016-6-6 23:12:52:380][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: Recentcontact.Get_PB|seq: 9673|daedline: 34943732|now: 34938732|timeout: 5000
+[2016-6-6 23:12:52:383][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = Recentcontact.Get_PB lower = recentcontact.get_pb
+[2016-6-6 23:12:52:383][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: Recentcontact.Get_PB|seq: 9673
+[2016-6-6 23:12:52:431][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:104
+[2016-6-6 23:12:52:432][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: im_open_msg.msg_sync|seq: 9672
+[2016-6-6 23:12:52:433][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 7 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 23:12:52:433][INFO][imcore_env.cc:86][imcore::`anonymous-namespace'::<lambda1>::operator ()]operation don't need callback! cmd:im_open_msg.msg_sync req.seq():9672
+[2016-6-6 23:12:52:434][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 7 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 23:12:52:680][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:104
+[2016-6-6 23:12:52:681][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: Recentcontact.Get_PB|seq: 9673
+[2016-6-6 23:12:52:681][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 8 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 23:12:52:682][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 8 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 23:12:52:683][INFO][msg_sync_task.cc:556][imcore::`anonymous-namespace'::<lambda1>::operator ()]login refresh nofity
+[2016-6-6 23:12:54:92][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: openim.pbvideoapp|queue size: 1
+[2016-6-6 23:12:54:93][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: openim.pbvideoapp|seq: 9674|daedline: 34945468|now: 34940468|timeout: 5000
+[2016-6-6 23:12:54:94][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = openim.pbvideoapp lower = openim.pbvideoapp
+[2016-6-6 23:12:54:95][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: openim.pbvideoapp|seq: 9674
+[2016-6-6 23:12:54:180][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:272
+[2016-6-6 23:12:54:181][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: openim.pbvideoapp|seq: 9674
+[2016-6-6 23:12:54:182][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 9 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 23:12:54:183][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 9 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 23:12:54:717][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:159
+[2016-6-6 23:12:54:717][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: ConfigPushSvc.PushReq|seq: -1501357084
+[2016-6-6 23:12:54:718][INFO][ctx.cc:524][imcore::IMCoreCtx::ParseSsoList]len: 78|ver: 1|mobcmd: 2|mobseq: 377691109
+[2016-6-6 23:12:54:719][INFO][sso_conn.cc:518][imcore::SSOConn::Recv]recv sso push:ConfigPushSvc.PushReq
+[2016-6-6 23:12:54:719][ERROR][ctx.cc:532][imcore::IMCoreCtx::ParseSsoList]ssolist rsp: 
+080812140a0f3132332e3135312e3135322e31303210903f12110a0d35392e33372e3131362e313231105012130a0e3130312e3232362e36382e31313610903f
+[2016-6-6 23:12:54:720][INFO][sso_conn.cc:520][imcore::SSOConn::Recv]get sso addr: 59.37.116.121 port: 80
+[2016-6-6 23:12:54:721][INFO][sso_conn.cc:520][imcore::SSOConn::Recv]get sso addr: 101.226.68.116 port: 8080
+[2016-6-6 23:12:54:723][INFO][sso_conn.cc:523][imcore::SSOConn::Recv]update ssolist by push succ
+[2016-6-6 23:13:0:905][INFO][tim_int.cc:295][imcore::RequestMultiVideoStreamerRelay]RequestMultiVideoStreamerRelay! opr :1
+[2016-6-6 23:13:0:923][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: openim.pbvideoinfo|queue size: 1
+[2016-6-6 23:13:0:924][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: openim.pbvideoinfo|seq: 9675|daedline: 34952304|now: 34947304|timeout: 5000
+[2016-6-6 23:13:0:925][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = openim.pbvideoinfo lower = openim.pbvideoinfo
+[2016-6-6 23:13:0:926][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: openim.pbvideoinfo|seq: 9675
+[2016-6-6 23:13:1:260][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:200
+[2016-6-6 23:13:1:262][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: openim.pbvideoinfo|seq: 9675
+[2016-6-6 23:13:1:262][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 10 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 23:13:1:263][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 10 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 23:14:52:125][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: im_open_status.stat_hello|queue size: 1
+[2016-6-6 23:14:52:126][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: im_open_status.stat_hello|seq: 9676|daedline: 35063522|now: 35058522|timeout: 5000
+[2016-6-6 23:14:52:127][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = im_open_status.stat_hello lower = im_open_status.stat_hello
+[2016-6-6 23:14:52:128][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: im_open_status.stat_hello|seq: 9676
+[2016-6-6 23:14:52:181][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:136
+[2016-6-6 23:14:52:182][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: im_open_status.stat_hello|seq: 9676
+[2016-6-6 23:14:52:183][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 11 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 23:14:52:183][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 11 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 23:16:52:174][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: im_open_status.stat_hello|queue size: 1
+[2016-6-6 23:16:52:175][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: im_open_status.stat_hello|seq: 9677|daedline: 35183569|now: 35178569|timeout: 5000
+[2016-6-6 23:16:52:176][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = im_open_status.stat_hello lower = im_open_status.stat_hello
+[2016-6-6 23:16:52:177][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: im_open_status.stat_hello|seq: 9677
+[2016-6-6 23:16:52:227][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:136
+[2016-6-6 23:16:52:229][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: im_open_status.stat_hello|seq: 9677
+[2016-6-6 23:16:52:234][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 12 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 23:16:52:236][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 12 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 23:18:52:209][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: im_open_status.stat_hello|queue size: 1
+[2016-6-6 23:18:52:210][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: im_open_status.stat_hello|seq: 9678|daedline: 35303603|now: 35298603|timeout: 5000
+[2016-6-6 23:18:52:210][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = im_open_status.stat_hello lower = im_open_status.stat_hello
+[2016-6-6 23:18:52:211][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: im_open_status.stat_hello|seq: 9678
+[2016-6-6 23:18:52:270][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:136
+[2016-6-6 23:18:52:272][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: im_open_status.stat_hello|seq: 9678
+[2016-6-6 23:18:52:273][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 13 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 23:18:52:274][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 13 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 23:20:52:232][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: im_open_status.stat_hello|queue size: 1
+[2016-6-6 23:20:52:234][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: im_open_status.stat_hello|seq: 9679|daedline: 35423624|now: 35418624|timeout: 5000
+[2016-6-6 23:20:52:235][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = im_open_status.stat_hello lower = im_open_status.stat_hello
+[2016-6-6 23:20:52:236][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: im_open_status.stat_hello|seq: 9679
+[2016-6-6 23:20:52:285][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:136
+[2016-6-6 23:20:52:286][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: im_open_status.stat_hello|seq: 9679
+[2016-6-6 23:20:52:287][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 14 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 23:20:52:287][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 14 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 23:21:45:904][INFO][tim.cc:202][imcore::TIMManager::Logout]User Logout
+[2016-6-6 23:21:45:904][INFO][sso_conn.cc:327][imcore::SSOConn::Send]insert to wait_queue_|cmd: im_open_status.stat_reg|queue size: 1
+[2016-6-6 23:21:45:904][INFO][sso_conn.cc:295][imcore::SSOConn::SendRemained]add req to timeout queue: im_open_status.stat_reg|seq: 9680|daedline: 35477295|now: 35472295|timeout: 5000
+[2016-6-6 23:21:45:904][INFO][sso_data.cc:351][imcore::SSOData::serialize]uin = 144115197360545593 servicecmd = im_open_status.stat_reg lower = im_open_status.stat_reg
+[2016-6-6 23:21:45:904][INFO][sso_conn.cc:312][imcore::SSOConn::SendRemained]send cmd: im_open_status.stat_reg|seq: 9680
+[2016-6-6 23:21:45:904][INFO][tim_int.cc:364][imcore::TIMIntManager::Uninit]TIMIntManager::Uninit
+[2016-6-6 23:21:45:964][INFO][sso_conn.cc:49][imcore::read_cb]read callback receive data len:136
+[2016-6-6 23:21:45:964][INFO][sso_conn.cc:391][imcore::SSOConn::Recv]recv pkg|cmd: im_open_status.stat_reg|seq: 9680
+[2016-6-6 23:21:45:964][INFO][sso_conn.cc:405][imcore::SSOConn::Recv]CURRENT 15 TIMES CALLBACK! BEFORE CALLBACK!
+[2016-6-6 23:21:45:964][INFO][sso_conn.cc:407][imcore::SSOConn::Recv]CURRENT 15 TIMES CALLBACK! AFTER CALLBACK!
+[2016-6-6 23:21:45:964][INFO][tim.cc:184][imcore::TIMManager::Uninit]SDK Uninit
+[2016-6-6 23:21:45:964][INFO][sso_conn.cc:819][imcore::SSOConn::set_status]conn has no callback to call! status :0

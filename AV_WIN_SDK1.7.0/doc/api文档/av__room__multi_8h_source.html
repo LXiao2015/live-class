@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>音视频通讯SDK API参考手册: G:/AVSDK/PC/AVSdk_OpenSdk_1.7/OpenSDK/include/avsdk/av_room_multi.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">音视频通讯SDK API参考手册
+   &#160;<span id="projectnumber">Windows 1.7.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('av__room__multi_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">av_room_multi.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef AV_ROOM_MULTI_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define AV_ROOM_MULTI_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;av_common.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;av_room.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacetencent.html">tencent</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>av {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define AV_ROOM_MULTI(x) dynamic_cast&lt;AVRoomMulti*&gt;(x)</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classtencent_1_1av_1_1_a_v_room_multi.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classtencent_1_1av_1_1_a_v_room_multi.html">AVRoomMulti</a> : <span class="keyword">public</span> <a class="code" href="classtencent_1_1av_1_1_a_v_room.html">AVRoom</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_delegate.html">   20</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_delegate.html">Delegate</a> : <span class="keyword">public</span> <a class="code" href="structtencent_1_1av_1_1_a_v_room_1_1_delegate.html">AVRoom::Delegate</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  };</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html">   25</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html">EnterRoomParam</a> : <span class="keyword">public</span> <a class="code" href="structtencent_1_1av_1_1_a_v_room_1_1_enter_room_param.html">AVRoom::EnterRoomParam</a> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#a0da14e5d056d1515b16fb19da4c72feb">   26</a></span>&#160;    <a class="code" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#a0da14e5d056d1515b16fb19da4c72feb">EnterRoomParam</a>()</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      : <a class="code" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#ac592fc01210e184cf564d80366c17708">app_room_id</a>(0)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      , <a class="code" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#a274827efe7c3795fea8e258a3e7c444c">auth_bits</a>(AUTH_BITS_DEFUALT)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      , <a class="code" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#aad125ea61b97087b85837ad682c3831d">audio_category</a>(<a class="code" href="classtencent_1_1av_1_1_a_v_room.html#a12f33508e5b6efa767e53ff1f624577baeaa27e55a8cb17eef955db3b63d7b01e">AUDIO_CATEGORY_VOICECHAT</a>)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      , <a class="code" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#ac72d619366e48c1aaa9fd1dea2c5ab88">auto_create_room</a>(true) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <a class="code" href="structtencent_1_1av_1_1_a_v_room_1_1_enter_room_param.html#afa870b8255d63fdf818d8a537a1954dc">room_type</a> = <a class="code" href="classtencent_1_1av_1_1_a_v_room.html#a7656ec1015b94f3f34dc3786af057e86aea1b4c4bb59ba0ab35a84a91b057df6a">AVRoom::ROOM_TYPE_MULTI</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#ac592fc01210e184cf564d80366c17708">   34</a></span>&#160;    uint32 <a class="code" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#ac592fc01210e184cf564d80366c17708">app_room_id</a>; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#a274827efe7c3795fea8e258a3e7c444c">   35</a></span>&#160;    uint64 <a class="code" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#a274827efe7c3795fea8e258a3e7c444c">auth_bits</a>; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#a292f632ea2e85a3968f07f104423dbba">   36</a></span>&#160;    std::string <a class="code" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#a292f632ea2e85a3968f07f104423dbba">auth_buffer</a>; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#afd6aba9eaf8e8e51d6c808a91c52b6b6">   37</a></span>&#160;    std::string <a class="code" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#afd6aba9eaf8e8e51d6c808a91c52b6b6">av_control_role</a>; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#aad125ea61b97087b85837ad682c3831d">   38</a></span>&#160;    <a class="code" href="classtencent_1_1av_1_1_a_v_room.html#a12f33508e5b6efa767e53ff1f624577b">AudioCategory</a> <a class="code" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#aad125ea61b97087b85837ad682c3831d">audio_category</a>; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#ac72d619366e48c1aaa9fd1dea2c5ab88">   39</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#ac72d619366e48c1aaa9fd1dea2c5ab88">auto_create_room</a>; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  };</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">virtual</span> int32 <a class="code" href="classtencent_1_1av_1_1_a_v_room_multi.html#a7f2b28fc9825b3b10f2c6f4b20fea37a">GetEndpointCount</a>() = 0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">virtual</span> int32 <a class="code" href="classtencent_1_1av_1_1_a_v_room_multi.html#a9d8ace41eaa6945f626fd9c67d72269c">GetEndpointList</a>(<a class="code" href="classtencent_1_1av_1_1_a_v_endpoint.html">AVEndpoint</a>** endpoints[]) = 0;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classtencent_1_1av_1_1_a_v_endpoint.html">AVEndpoint</a>* <a class="code" href="classtencent_1_1av_1_1_a_v_room_multi.html#a369ff627b5429235dbdf915fae51b5ef">GetEndpointById</a>(<span class="keyword">const</span> std::string&amp; identifier) = 0;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classtencent_1_1av_1_1_a_v_room_multi.html#aac5f7f3c6545742a03d11d9ba4f1d1a7">   87</a></span>&#160;  <span class="keyword">typedef</span> void(*<a class="code" href="classtencent_1_1av_1_1_a_v_room_multi.html#aac5f7f3c6545742a03d11d9ba4f1d1a7">ChangeAuthorityCallback</a>)(int32 ret_code, <span class="keywordtype">void</span>* custom_data);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">virtual</span> int32 <a class="code" href="classtencent_1_1av_1_1_a_v_room_multi.html#a48cfc88241de1c0a155802db9095e32a">ChangeAuthority</a>(uint64 auth_bits, <span class="keyword">const</span> std::string&amp; auth_buffer, <a class="code" href="classtencent_1_1av_1_1_a_v_room_multi.html#aac5f7f3c6545742a03d11d9ba4f1d1a7">ChangeAuthorityCallback</a> callback,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                <span class="keywordtype">void</span>* custom_data) = 0;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classtencent_1_1av_1_1_a_v_room_multi.html#af7fff094800b402a3583c683efd63dcd">  107</a></span>&#160;  DISALLOW_EVIL_DESTRUCTIONS(<a class="code" href="classtencent_1_1av_1_1_a_v_room_multi.html">AVRoomMulti</a>)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;};</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;} <span class="comment">// namespace av</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;} <span class="comment">// namespace tencent</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif // #ifndef AV_ROOM_MULTI_H_</span></div>
+<div class="ttc" id="namespacetencent_html"><div class="ttname"><a href="namespacetencent.html">tencent</a></div><div class="ttdef"><b>Definition:</b> av_audio_ctrl.h:6</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_room_multi_1_1_delegate_html"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_room_multi_1_1_delegate.html">tencent::av::AVRoomMulti::Delegate</a></div><div class="ttdoc">房间委托类。业务侧需要实现该类来处理房间异步操作返回的结果。 </div><div class="ttdef"><b>Definition:</b> av_room_multi.h:20</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_room_multi_html_aac5f7f3c6545742a03d11d9ba4f1d1a7"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_room_multi.html#aac5f7f3c6545742a03d11d9ba4f1d1a7">tencent::av::AVRoomMulti::ChangeAuthorityCallback</a></div><div class="ttdeci">void(* ChangeAuthorityCallback)(int32 ret_code, void *custom_data)</div><div class="ttdoc">修改通话能力权限操作的回调函数。 </div><div class="ttdef"><b>Definition:</b> av_room_multi.h:87</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param_html"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html">tencent::av::AVRoomMulti::EnterRoomParam</a></div><div class="ttdoc">调用AVContext::EnterRoom()进入多人房间时所需传入的参数。 </div><div class="ttdef"><b>Definition:</b> av_room_multi.h:25</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_room_multi_html_a7f2b28fc9825b3b10f2c6f4b20fea37a"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_room_multi.html#a7f2b28fc9825b3b10f2c6f4b20fea37a">tencent::av::AVRoomMulti::GetEndpointCount</a></div><div class="ttdeci">virtual int32 GetEndpointCount()=0</div><div class="ttdoc">获取房间成员个数。 </div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_room_1_1_enter_room_param_html_afa870b8255d63fdf818d8a537a1954dc"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_room_1_1_enter_room_param.html#afa870b8255d63fdf818d8a537a1954dc">tencent::av::AVRoom::EnterRoomParam::room_type</a></div><div class="ttdeci">RoomType room_type</div><div class="ttdoc">房间类型，详见RoomType的定义。 </div><div class="ttdef"><b>Definition:</b> av_room.h:106</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_room_html_a12f33508e5b6efa767e53ff1f624577baeaa27e55a8cb17eef955db3b63d7b01e"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_room.html#a12f33508e5b6efa767e53ff1f624577baeaa27e55a8cb17eef955db3b63d7b01e">tencent::av::AVRoom::AUDIO_CATEGORY_VOICECHAT</a></div><div class="ttdoc">VoIP模式。适合于实时音频通信场景，如实时语音通话。 </div><div class="ttdef"><b>Definition:</b> av_room.h:44</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_room_1_1_delegate_html"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_room_1_1_delegate.html">tencent::av::AVRoom::Delegate</a></div><div class="ttdoc">房间委托基类。业务侧需要实现该基类来处理房间异步操作返回的结果。 </div><div class="ttdef"><b>Definition:</b> av_room.h:63</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param_html_ac72d619366e48c1aaa9fd1dea2c5ab88"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#ac72d619366e48c1aaa9fd1dea2c5ab88">tencent::av::AVRoomMulti::EnterRoomParam::auto_create_room</a></div><div class="ttdeci">bool auto_create_room</div><div class="ttdoc">是否自动创建音视频房间。如果SDK侧房间不存在，是否自动创建它。 </div><div class="ttdef"><b>Definition:</b> av_room_multi.h:39</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_endpoint_html"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_endpoint.html">tencent::av::AVEndpoint</a></div><div class="ttdoc">房间成员类。 </div><div class="ttdef"><b>Definition:</b> av_endpoint.h:16</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_room_multi_html_a48cfc88241de1c0a155802db9095e32a"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_room_multi.html#a48cfc88241de1c0a155802db9095e32a">tencent::av::AVRoomMulti::ChangeAuthority</a></div><div class="ttdeci">virtual int32 ChangeAuthority(uint64 auth_bits, const std::string &amp;auth_buffer, ChangeAuthorityCallback callback, void *custom_data)=0</div><div class="ttdoc">修改通话能力权限。 </div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_room_1_1_enter_room_param_html"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_room_1_1_enter_room_param.html">tencent::av::AVRoom::EnterRoomParam</a></div><div class="ttdoc">调用AVContext::EnterRoom()进入房间时所需传入的参数。 </div><div class="ttdef"><b>Definition:</b> av_room.h:105</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param_html_afd6aba9eaf8e8e51d6c808a91c52b6b6"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#afd6aba9eaf8e8e51d6c808a91c52b6b6">tencent::av::AVRoomMulti::EnterRoomParam::av_control_role</a></div><div class="ttdeci">std::string av_control_role</div><div class="ttdoc">角色名，web端音视频参数配置工具所设置的角色名。 </div><div class="ttdef"><b>Definition:</b> av_room_multi.h:37</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_room_multi_html_a369ff627b5429235dbdf915fae51b5ef"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_room_multi.html#a369ff627b5429235dbdf915fae51b5ef">tencent::av::AVRoomMulti::GetEndpointById</a></div><div class="ttdeci">virtual AVEndpoint * GetEndpointById(const std::string &amp;identifier)=0</div><div class="ttdoc">获取房间成员对象。 </div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_room_multi_html_a9d8ace41eaa6945f626fd9c67d72269c"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_room_multi.html#a9d8ace41eaa6945f626fd9c67d72269c">tencent::av::AVRoomMulti::GetEndpointList</a></div><div class="ttdeci">virtual int32 GetEndpointList(AVEndpoint **endpoints[])=0</div><div class="ttdoc">获取房间成员对象列表。 </div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param_html_a0da14e5d056d1515b16fb19da4c72feb"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#a0da14e5d056d1515b16fb19da4c72feb">tencent::av::AVRoomMulti::EnterRoomParam::EnterRoomParam</a></div><div class="ttdeci">EnterRoomParam()</div><div class="ttdef"><b>Definition:</b> av_room_multi.h:26</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param_html_a274827efe7c3795fea8e258a3e7c444c"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#a274827efe7c3795fea8e258a3e7c444c">tencent::av::AVRoomMulti::EnterRoomParam::auth_bits</a></div><div class="ttdeci">uint64 auth_bits</div><div class="ttdoc">通话能力权限位。 </div><div class="ttdef"><b>Definition:</b> av_room_multi.h:35</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_room_html"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_room.html">tencent::av::AVRoom</a></div><div class="ttdoc">音视频通话房间基类。 </div><div class="ttdef"><b>Definition:</b> av_room.h:26</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param_html_a292f632ea2e85a3968f07f104423dbba"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#a292f632ea2e85a3968f07f104423dbba">tencent::av::AVRoomMulti::EnterRoomParam::auth_buffer</a></div><div class="ttdeci">std::string auth_buffer</div><div class="ttdoc">通话能力权限位的加密串。 </div><div class="ttdef"><b>Definition:</b> av_room_multi.h:36</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param_html_ac592fc01210e184cf564d80366c17708"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#ac592fc01210e184cf564d80366c17708">tencent::av::AVRoomMulti::EnterRoomParam::app_room_id</a></div><div class="ttdeci">uint32 app_room_id</div><div class="ttdoc">业务侧的房间id，也就是由业务侧创建并维护的房间id，区别于SDK侧的房间id。该id可以是业务侧的讨论组号、群...</div><div class="ttdef"><b>Definition:</b> av_room_multi.h:34</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_room_html_a7656ec1015b94f3f34dc3786af057e86aea1b4c4bb59ba0ab35a84a91b057df6a"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_room.html#a7656ec1015b94f3f34dc3786af057e86aea1b4c4bb59ba0ab35a84a91b057df6a">tencent::av::AVRoom::ROOM_TYPE_MULTI</a></div><div class="ttdoc">多人房间。 </div><div class="ttdef"><b>Definition:</b> av_room.h:32</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param_html_aad125ea61b97087b85837ad682c3831d"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#aad125ea61b97087b85837ad682c3831d">tencent::av::AVRoomMulti::EnterRoomParam::audio_category</a></div><div class="ttdeci">AudioCategory audio_category</div><div class="ttdoc">音视场景策略。 </div><div class="ttdef"><b>Definition:</b> av_room_multi.h:38</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_room_multi_html"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_room_multi.html">tencent::av::AVRoomMulti</a></div><div class="ttdoc">多人音视频房间类。 </div><div class="ttdef"><b>Definition:</b> av_room_multi.h:16</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_room_html_a12f33508e5b6efa767e53ff1f624577b"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_room.html#a12f33508e5b6efa767e53ff1f624577b">tencent::av::AVRoom::AudioCategory</a></div><div class="ttdeci">AudioCategory</div><div class="ttdoc">音频场景策略。 </div><div class="ttdef"><b>Definition:</b> av_room.h:43</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_15ae8acb17aa02612b36ce8da1cae9b5.html">avsdk</a></li><li class="navelem"><b>av_room_multi.h</b></li>
+    <li class="footer">生成于 2016年 二月 22日 星期一 14:41:37 , 为 音视频通讯SDK API参考手册使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

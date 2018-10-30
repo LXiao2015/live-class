@@ -1,0 +1,964 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>音视频通讯SDK API参考手册: tencent::av::AVDeviceMgr类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">音视频通讯SDK API参考手册
+   &#160;<span id="projectnumber">Windows 1.7.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classtencent_1_1av_1_1_a_v_device_mgr.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="classtencent_1_1av_1_1_a_v_device_mgr-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">tencent::av::AVDeviceMgr类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>设备管理器的封装类。  
+ <a href="classtencent_1_1av_1_1_a_v_device_mgr.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="av__device__mgr_8h_source.html">av_device_mgr.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a2afdf2237b1e3e160c1dd958fbdc9a94"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a2afdf2237b1e3e160c1dd958fbdc9a94">DeviceOperationCallback</a>) (<a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html">AVDeviceMgr</a> *device_mgr, <a class="el" href="classtencent_1_1av_1_1_a_v_device.html#a30defa389bbe29242605d46c80601d01">AVDevice::DeviceOperation</a> oper, const std::string &amp;device_id, int32 result, void *custom_data)</td></tr>
+<tr class="memdesc:a2afdf2237b1e3e160c1dd958fbdc9a94"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a8126e63af6fefea5decc986366ab207f" title="设置设备操作回调。 ">SetDeviceOperationCallback()</a>的回调函数。  <a href="#a2afdf2237b1e3e160c1dd958fbdc9a94">更多...</a><br /></td></tr>
+<tr class="separator:a2afdf2237b1e3e160c1dd958fbdc9a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85631882e8686c9a4e527d1effde60cb"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a85631882e8686c9a4e527d1effde60cb">DeviceChangeCallback</a>) (<a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html">AVDeviceMgr</a> *device_mgr, void *custom_data)</td></tr>
+<tr class="memdesc:a85631882e8686c9a4e527d1effde60cb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#ab9e21ff5fe2e44579564872a5ffe5522" title="设置设备变更回调。 ">SetDeviceChangeCallback()</a>的回调函数。  <a href="#a85631882e8686c9a4e527d1effde60cb">更多...</a><br /></td></tr>
+<tr class="separator:a85631882e8686c9a4e527d1effde60cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75e48b8730d536125250c22224584b51"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a75e48b8730d536125250c22224584b51">OnDeviveDetectNotify</a>) (<a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html">AVDeviceMgr</a> *device_mgr, <a class="el" href="namespacetencent_1_1av.html#structtencent_1_1av_1_1_detected_device_info">DetectedDeviceInfo</a> &amp;info, bool *pbSelect, void *custom_data)</td></tr>
+<tr class="memdesc:a75e48b8730d536125250c22224584b51"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#aafb81eb1d02992c078f1855c3f11a929" title="设置设备热插拔通知回调。 ">SetDeviceDetectNotify()</a>的回调函数。  <a href="#a75e48b8730d536125250c22224584b51">更多...</a><br /></td></tr>
+<tr class="separator:a75e48b8730d536125250c22224584b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a8126e63af6fefea5decc986366ab207f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a8126e63af6fefea5decc986366ab207f">SetDeviceOperationCallback</a> (<a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a2afdf2237b1e3e160c1dd958fbdc9a94">DeviceOperationCallback</a> device_operation_callback, void *custom_data=NULL)=0</td></tr>
+<tr class="memdesc:a8126e63af6fefea5decc986366ab207f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置设备操作回调。  <a href="#a8126e63af6fefea5decc986366ab207f">更多...</a><br /></td></tr>
+<tr class="separator:a8126e63af6fefea5decc986366ab207f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9e21ff5fe2e44579564872a5ffe5522"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#ab9e21ff5fe2e44579564872a5ffe5522">SetDeviceChangeCallback</a> (<a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a85631882e8686c9a4e527d1effde60cb">DeviceChangeCallback</a> device_change_callback, void *custom_data=NULL)=0</td></tr>
+<tr class="memdesc:ab9e21ff5fe2e44579564872a5ffe5522"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置设备变更回调。  <a href="#ab9e21ff5fe2e44579564872a5ffe5522">更多...</a><br /></td></tr>
+<tr class="separator:ab9e21ff5fe2e44579564872a5ffe5522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafb81eb1d02992c078f1855c3f11a929"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#aafb81eb1d02992c078f1855c3f11a929">SetDeviceDetectNotify</a> (<a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a75e48b8730d536125250c22224584b51">OnDeviveDetectNotify</a> notify, void *custom_data=NULL)=0</td></tr>
+<tr class="memdesc:aafb81eb1d02992c078f1855c3f11a929"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置设备热插拔通知回调。  <a href="#aafb81eb1d02992c078f1855c3f11a929">更多...</a><br /></td></tr>
+<tr class="separator:aafb81eb1d02992c078f1855c3f11a929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac49cf5c71ed9c88b0ccc03ab672bb10c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#ac49cf5c71ed9c88b0ccc03ab672bb10c">EnableInputDevice</a> (bool is_enable=true)=0</td></tr>
+<tr class="memdesc:ac49cf5c71ed9c88b0ccc03ab672bb10c"><td class="mdescLeft">&#160;</td><td class="mdescRight">打开所有选中的输入设备。  <a href="#ac49cf5c71ed9c88b0ccc03ab672bb10c">更多...</a><br /></td></tr>
+<tr class="separator:ac49cf5c71ed9c88b0ccc03ab672bb10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadc8208dcdd7738ed7b8884a947998d8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#aadc8208dcdd7738ed7b8884a947998d8">EnableOutputDevice</a> (bool is_enable=true)=0</td></tr>
+<tr class="memdesc:aadc8208dcdd7738ed7b8884a947998d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">打开所有选中的输出设备。  <a href="#aadc8208dcdd7738ed7b8884a947998d8">更多...</a><br /></td></tr>
+<tr class="separator:aadc8208dcdd7738ed7b8884a947998d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af971701d395d6258e7b8b3ddd125e3d4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#af971701d395d6258e7b8b3ddd125e3d4">IsInputDeviceEnabled</a> ()=0</td></tr>
+<tr class="memdesc:af971701d395d6258e7b8b3ddd125e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">输入设备是否打开。  <a href="#af971701d395d6258e7b8b3ddd125e3d4">更多...</a><br /></td></tr>
+<tr class="separator:af971701d395d6258e7b8b3ddd125e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2fa604646d3e9bd9b1835fa78dfcbca"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#ab2fa604646d3e9bd9b1835fa78dfcbca">IsOutputDeviceEnabled</a> ()=0</td></tr>
+<tr class="memdesc:ab2fa604646d3e9bd9b1835fa78dfcbca"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出设备是否打开。  <a href="#ab2fa604646d3e9bd9b1835fa78dfcbca">更多...</a><br /></td></tr>
+<tr class="separator:ab2fa604646d3e9bd9b1835fa78dfcbca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b8fa31b3e0973aa6bfb44835829592"><td class="memItemLeft" align="right" valign="top">virtual int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a72b8fa31b3e0973aa6bfb44835829592">GetInputDeviceCount</a> ()=0</td></tr>
+<tr class="memdesc:a72b8fa31b3e0973aa6bfb44835829592"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得输入设备数量。  <a href="#a72b8fa31b3e0973aa6bfb44835829592">更多...</a><br /></td></tr>
+<tr class="separator:a72b8fa31b3e0973aa6bfb44835829592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3919301508daebea867a4dc5b25b1288"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_device.html">AVDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a3919301508daebea867a4dc5b25b1288">GetInputDevice</a> (int32 index)=0</td></tr>
+<tr class="memdesc:a3919301508daebea867a4dc5b25b1288"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得输入设备。  <a href="#a3919301508daebea867a4dc5b25b1288">更多...</a><br /></td></tr>
+<tr class="separator:a3919301508daebea867a4dc5b25b1288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad63c7720213834c7423edb161d1cd370"><td class="memItemLeft" align="right" valign="top">virtual int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#ad63c7720213834c7423edb161d1cd370">GetOutputDeviceCount</a> ()=0</td></tr>
+<tr class="memdesc:ad63c7720213834c7423edb161d1cd370"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得输出设备数量。  <a href="#ad63c7720213834c7423edb161d1cd370">更多...</a><br /></td></tr>
+<tr class="separator:ad63c7720213834c7423edb161d1cd370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b07aad22d7b14d7f693e906790e896"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_device.html">AVDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a24b07aad22d7b14d7f693e906790e896">GetOutputDevice</a> (int32 index)=0</td></tr>
+<tr class="memdesc:a24b07aad22d7b14d7f693e906790e896"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取输出设备。  <a href="#a24b07aad22d7b14d7f693e906790e896">更多...</a><br /></td></tr>
+<tr class="separator:a24b07aad22d7b14d7f693e906790e896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a452178373843afda9ff2ae5efb6d6415"><td class="memItemLeft" align="right" valign="top">virtual int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a452178373843afda9ff2ae5efb6d6415">SelectInputDevice</a> (const std::string &amp;device_id, bool is_select=true)=0</td></tr>
+<tr class="memdesc:a452178373843afda9ff2ae5efb6d6415"><td class="mdescLeft">&#160;</td><td class="mdescRight">选中/取消选中输入设备。  <a href="#a452178373843afda9ff2ae5efb6d6415">更多...</a><br /></td></tr>
+<tr class="separator:a452178373843afda9ff2ae5efb6d6415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b3f40c39985abeb1813f2de1136b630"><td class="memItemLeft" align="right" valign="top">virtual int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a9b3f40c39985abeb1813f2de1136b630">SelectOutputDevice</a> (const std::string &amp;device_id, bool is_select=true)=0</td></tr>
+<tr class="memdesc:a9b3f40c39985abeb1813f2de1136b630"><td class="mdescLeft">&#160;</td><td class="mdescRight">选中/取消选中输出设备。  <a href="#a9b3f40c39985abeb1813f2de1136b630">更多...</a><br /></td></tr>
+<tr class="separator:a9b3f40c39985abeb1813f2de1136b630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f745b37db1f255586c71d0947ded250"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a0f745b37db1f255586c71d0947ded250">ClearSelectedDevice</a> (bool is_output)=0</td></tr>
+<tr class="memdesc:a0f745b37db1f255586c71d0947ded250"><td class="mdescLeft">&#160;</td><td class="mdescRight">清空已选设备。  <a href="#a0f745b37db1f255586c71d0947ded250">更多...</a><br /></td></tr>
+<tr class="separator:a0f745b37db1f255586c71d0947ded250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f519a9777ba87f0f55f41e377b7bfeb"><td class="memItemLeft" align="right" valign="top">virtual int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a5f519a9777ba87f0f55f41e377b7bfeb">GetSelectedInputDeviceCount</a> ()=0</td></tr>
+<tr class="memdesc:a5f519a9777ba87f0f55f41e377b7bfeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得处于选中状态的输入设备数量。  <a href="#a5f519a9777ba87f0f55f41e377b7bfeb">更多...</a><br /></td></tr>
+<tr class="separator:a5f519a9777ba87f0f55f41e377b7bfeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af01a41fa655e2280c493a20f16a17fcd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_device.html">AVDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#af01a41fa655e2280c493a20f16a17fcd">GetSelectedInputDevice</a> (int32 index)=0</td></tr>
+<tr class="memdesc:af01a41fa655e2280c493a20f16a17fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取处于选中状态的输入设备。  <a href="#af01a41fa655e2280c493a20f16a17fcd">更多...</a><br /></td></tr>
+<tr class="separator:af01a41fa655e2280c493a20f16a17fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5132bafc337a325943999f22f44e6cb"><td class="memItemLeft" align="right" valign="top">virtual int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#af5132bafc337a325943999f22f44e6cb">GetSelectedOutputDeviceCount</a> ()=0</td></tr>
+<tr class="memdesc:af5132bafc337a325943999f22f44e6cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取处于选中状态的输出设备数量。  <a href="#af5132bafc337a325943999f22f44e6cb">更多...</a><br /></td></tr>
+<tr class="separator:af5132bafc337a325943999f22f44e6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8778cebf8b99100a29a96fc68cb20ce7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_device.html">AVDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a8778cebf8b99100a29a96fc68cb20ce7">GetSelectedOutputDevice</a> (int32 index)=0</td></tr>
+<tr class="memdesc:a8778cebf8b99100a29a96fc68cb20ce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得处于选中状态的输出设备。  <a href="#a8778cebf8b99100a29a96fc68cb20ce7">更多...</a><br /></td></tr>
+<tr class="separator:a8778cebf8b99100a29a96fc68cb20ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e211e61d460279fe81c0dd7a22d3465"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_device.html">AVDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a3e211e61d460279fe81c0dd7a22d3465">GetDeviceById</a> (const std::string &amp;device_id)=0</td></tr>
+<tr class="memdesc:a3e211e61d460279fe81c0dd7a22d3465"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据设备ID获取设备。  <a href="#a3e211e61d460279fe81c0dd7a22d3465">更多...</a><br /></td></tr>
+<tr class="separator:a3e211e61d460279fe81c0dd7a22d3465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81ac1da415290664a0ffaaa26c560785"><td class="memItemLeft" align="right" valign="top">virtual int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a81ac1da415290664a0ffaaa26c560785">GetDeviceByType</a> (const std::string &amp;device_type, <a class="el" href="classtencent_1_1av_1_1_a_v_device.html">AVDevice</a> **device_array[])=0</td></tr>
+<tr class="memdesc:a81ac1da415290664a0ffaaa26c560785"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据设备类型获取设备。  <a href="#a81ac1da415290664a0ffaaa26c560785">更多...</a><br /></td></tr>
+<tr class="separator:a81ac1da415290664a0ffaaa26c560785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a1ad482313d8eda340832da7dc3128d5e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a1ad482313d8eda340832da7dc3128d5e">~AVDeviceMgr</a> ()</td></tr>
+<tr class="separator:a1ad482313d8eda340832da7dc3128d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#ae5d4f3b56d8ac768ab2932041ef4450d" title="启动AVContext对象。 ">AVContext::StartContext()</a>执行成功之后，App可以：</p><ul>
+<li>通过AVContext::GetAudioDeviceMgr()获得音频对应的AVDeviceMgr对象；</li>
+<li>通过AVContext::GetVideoDeviceMgr()获得视频对应的AVDeviceMgr对象。 </li>
+</ul>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a class="anchor" id="a85631882e8686c9a4e527d1effde60cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* tencent::av::AVDeviceMgr::DeviceChangeCallback) (<a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html">AVDeviceMgr</a> *device_mgr, void *custom_data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>此函数是和SetDeviceChangeCallback()一起使用的回调函数，用来通知App发生设备变更。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device_mgr</td><td>发生设备变更的AVDeviceMgr对象。 </td></tr>
+    <tr><td class="paramname">custom_data</td><td>值等于调用SetDeviceOperationCallback()时的入参custom_data。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2afdf2237b1e3e160c1dd958fbdc9a94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* tencent::av::AVDeviceMgr::DeviceOperationCallback) (<a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html">AVDeviceMgr</a> *device_mgr, <a class="el" href="classtencent_1_1av_1_1_a_v_device.html#a30defa389bbe29242605d46c80601d01">AVDevice::DeviceOperation</a> oper, const std::string &amp;device_id, int32 result, void *custom_data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>此函数是和SetDeviceOperationCallback()一起使用的回调函数，用来异步返回设备操作的执行结果。 大部分设备操作都包含异步执行流程。为了避免App设置大量的异步回调，SDK统一把所有设备的异步回调集中到一起。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device_mgr</td><td>执行设备操作的AVDeviceMgr对象。 </td></tr>
+    <tr><td class="paramname">operation</td><td>设备操作类型，详情见DeviceOperation的定义。 </td></tr>
+    <tr><td class="paramname">device_id</td><td>操作对应的设备Id。 </td></tr>
+    <tr><td class="paramname">result</td><td>错误码。 </td></tr>
+    <tr><td class="paramname">custom_data</td><td>值等于调用SetDeviceOperationCallback()时的入参custom_data。</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a75e48b8730d536125250c22224584b51"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* tencent::av::AVDeviceMgr::OnDeviveDetectNotify) (<a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html">AVDeviceMgr</a> *device_mgr, <a class="el" href="namespacetencent_1_1av.html#structtencent_1_1av_1_1_detected_device_info">DetectedDeviceInfo</a> &amp;info, bool *pbSelect, void *custom_data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>此函数是和SetDeviceDetectNotify()一起使用的回调函数，用来通知App发生设备热插拔的通知。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device_mgr</td><td>发生设备变更的AVDeviceMgr对象。 </td></tr>
+    <tr><td class="paramname">info</td><td>热插拔的设备信息 具体可以查看DetectedDeviceInfo。 </td></tr>
+    <tr><td class="paramname">pbSelect</td><td>当新插入设备时，这个值表示是否自动选上新的设备。 当拔除设备时，这个值指的是第一个设备是否自动选上。 这里可以根据info.isUsedDevice和info.isNewDevice做处理，如果这两个都是true的话，就代表当前使用的设备被拔掉。 </td></tr>
+    <tr><td class="paramname">custom_data</td><td>值等于调用SetDeviceOperationCallback()时的入参custom_data。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a1ad482313d8eda340832da7dc3128d5e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual tencent::av::AVDeviceMgr::~AVDeviceMgr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a0f745b37db1f255586c71d0947ded250"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void tencent::av::AVDeviceMgr::ClearSelectedDevice </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_output</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is_output</td><td>true停用输出设备，false停用输入设备。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac49cf5c71ed9c88b0ccc03ab672bb10c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void tencent::av::AVDeviceMgr::EnableInputDevice </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_enable</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>同步返回结果。如果没有特别需要，App不需要调用此接口。平时在进入房间之后，SDK内部 默认会打开所有选中的设备。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_enable</td><td>true打开，false关闭。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aadc8208dcdd7738ed7b8884a947998d8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void tencent::av::AVDeviceMgr::EnableOutputDevice </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_enable</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>同步返回结果。如果没有特别需要，App不需要调用此接口。平时在进入房间之后，SDK内部 默认会打开所有选中的设备。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_enable</td><td>true打开，false关闭。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3e211e61d460279fe81c0dd7a22d3465"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_device.html">AVDevice</a>* tencent::av::AVDeviceMgr::GetDeviceById </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>device_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_id</td><td>设备Id。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>如果存在对应ID的设备，则返回设备，否则返回NULL。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a81ac1da415290664a0ffaaa26c560785"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int32 tencent::av::AVDeviceMgr::GetDeviceByType </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>device_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classtencent_1_1av_1_1_a_v_device.html">AVDevice</a> **&#160;</td>
+          <td class="paramname"><em>device_array</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_type</td><td>设备类型。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">device_array</td><td>设备列表。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>device_array对应的size。</dd></dl>
+<dl class="section remark"><dt>备注</dt><dd>device_array的内存由SDK内部分配，App在使用完device_array应该释放对应的内存。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3919301508daebea867a4dc5b25b1288"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_device.html">AVDevice</a>* tencent::av::AVDeviceMgr::GetInputDevice </td>
+          <td>(</td>
+          <td class="paramtype">int32&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>设备索引，不能超过GetInputDeviceCount()。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功返回AVDevice对象，超出索引返回NULL。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a72b8fa31b3e0973aa6bfb44835829592"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int32 tencent::av::AVDeviceMgr::GetInputDeviceCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>输入设备数量。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a24b07aad22d7b14d7f693e906790e896"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_device.html">AVDevice</a>* tencent::av::AVDeviceMgr::GetOutputDevice </td>
+          <td>(</td>
+          <td class="paramtype">int32&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>设备索引，不能超过GetOutputDeviceCount()。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功返回AVDevice对象，超出索引返回NULL。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad63c7720213834c7423edb161d1cd370"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int32 tencent::av::AVDeviceMgr::GetOutputDeviceCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>输出设备数量。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af01a41fa655e2280c493a20f16a17fcd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_device.html">AVDevice</a>* tencent::av::AVDeviceMgr::GetSelectedInputDevice </td>
+          <td>(</td>
+          <td class="paramtype">int32&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>设备索引。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功返回索引对应的设备，否则返回NULL。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5f519a9777ba87f0f55f41e377b7bfeb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int32 tencent::av::AVDeviceMgr::GetSelectedInputDeviceCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>输入设备数量。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8778cebf8b99100a29a96fc68cb20ce7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_device.html">AVDevice</a>* tencent::av::AVDeviceMgr::GetSelectedOutputDevice </td>
+          <td>(</td>
+          <td class="paramtype">int32&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>设备索引。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功则返回索引对应的设备，否则返回NULL。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af5132bafc337a325943999f22f44e6cb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int32 tencent::av::AVDeviceMgr::GetSelectedOutputDeviceCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>输出设备数量。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af971701d395d6258e7b8b3ddd125e3d4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool tencent::av::AVDeviceMgr::IsInputDeviceEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>true表示打开，false表示没打开。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab2fa604646d3e9bd9b1835fa78dfcbca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool tencent::av::AVDeviceMgr::IsOutputDeviceEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>true表示打开，false表示没打开。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a452178373843afda9ff2ae5efb6d6415"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int32 tencent::av::AVDeviceMgr::SelectInputDevice </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>device_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_select</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>同步返回结果。App调用此方法选中/取消设备，SDK会自动在合适的时机打开/关闭设备。 这里的时机主要分两种情况：</p><ul>
+<li>未进入房间时，选中/取消选中设备不会产生任何变化。</li>
+<li>进入房间后，选中/取消选中设备会进行对应的打开/关闭设备。</li>
+</ul>
+<p>结果会通过SetDeviceOperationCallback()传入的device_change_callback进行通知。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">device_id</td><td>设备Id。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_select</td><td>true选中，false取消选中。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>AV_OK表示成功，其他返回值表示失败： </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9b3f40c39985abeb1813f2de1136b630"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int32 tencent::av::AVDeviceMgr::SelectOutputDevice </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>device_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_select</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>同步返回结果。App调用此方法选中/取消设备，SDK会自动在合适的时机打开/关闭设备。 这里的时机主要分两种情况：</p><ul>
+<li>未进入房间时，选中/取消选中设备不会产生任何变化。</li>
+<li>进入房间后，选中/取消选中设备会进行对应的打开/关闭设备。</li>
+</ul>
+<p>结果会通过SetDeviceOperationCallback()传入的device_change_callback进行通知。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">device_id</td><td>设备Id。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_select</td><td>true选中，false取消选中。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>AV_OK表示成功，其他返回值表示失败。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab9e21ff5fe2e44579564872a5ffe5522"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void tencent::av::AVDeviceMgr::SetDeviceChangeCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a85631882e8686c9a4e527d1effde60cb">DeviceChangeCallback</a>&#160;</td>
+          <td class="paramname"><em>device_change_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>custom_data</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>App可以通过设置设备变更回调，在回调函数中处理设备变更。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_change_callback</td><td>函数指针，指向App定义的回调函数，NULL表示取消回调。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">custom_data</td><td>App指定的一个没有类型的指针，SDK会在回调函数中把该值回传给App。</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aafb81eb1d02992c078f1855c3f11a929"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void tencent::av::AVDeviceMgr::SetDeviceDetectNotify </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a75e48b8730d536125250c22224584b51">OnDeviveDetectNotify</a>&#160;</td>
+          <td class="paramname"><em>notify</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>custom_data</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>App可以通过设置设备热插拔通知回调，在回调函数中处理设备变更。注意当前仅PC和音频设备支持。 当进入房间后，mic或扬声器插拔会触发这个回调。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">notify</td><td>函数指针，指向App定义的回调函数，NULL表示取消回调。详细的说明请参考OnDeviveDetectNotify的注释 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">custom_data</td><td>App指定的一个没有类型的指针，SDK会在回调函数中把该值回传给App。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8126e63af6fefea5decc986366ab207f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void tencent::av::AVDeviceMgr::SetDeviceOperationCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a2afdf2237b1e3e160c1dd958fbdc9a94">DeviceOperationCallback</a>&#160;</td>
+          <td class="paramname"><em>device_operation_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>custom_data</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>App可以通过设置设备操作回调，在回调函数中获得设备操作的执行结果。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_operation_callback</td><td>函数指针，指向App定义的回调函数，NULL表示取消回调。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">custom_data</td><td>App指定的一个没有类型的指针，SDK会在回调函数中把该值回传给App。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacetencent.html">tencent</a></li><li class="navelem"><a class="el" href="namespacetencent_1_1av.html">av</a></li><li class="navelem"><a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html">AVDeviceMgr</a></li>
+    <li class="footer">生成于 2016年 二月 22日 星期一 14:41:37 , 为 音视频通讯SDK API参考手册使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

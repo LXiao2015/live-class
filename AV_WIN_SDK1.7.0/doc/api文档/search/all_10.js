@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['registaudiodatacallback',['RegistAudioDataCallback',['../classtencent_1_1av_1_1_a_v_audio_ctrl.html#af1666ad99f0f4fb52a005a76c2b36090',1,'tencent::av::AVAudioCtrl']]],
+  ['relation_5fid',['relation_id',['../structtencent_1_1av_1_1_a_v_room_1_1_info.html#a03d11b74e42ca9a1dff5093dc4888b30',1,'tencent::av::AVRoom::Info']]],
+  ['relation_5ftype',['relation_type',['../structtencent_1_1av_1_1_a_v_room_1_1_info.html#a0cfa49aefcae611a256bcd7dddd98f4a',1,'tencent::av::AVRoom::Info']]],
+  ['relation_5ftype_5fbuddy',['RELATION_TYPE_BUDDY',['../namespacetencent_1_1av.html#acec14806701ac8bb8c60f6daa6434c26a8680d1d73df92c4e0e303ee3db053a01',1,'tencent::av']]],
+  ['relation_5ftype_5fdiscuss',['RELATION_TYPE_DISCUSS',['../namespacetencent_1_1av.html#acec14806701ac8bb8c60f6daa6434c26ad5a425ef972e2fcbce949b443d7bc50f',1,'tencent::av']]],
+  ['relation_5ftype_5fgroup',['RELATION_TYPE_GROUP',['../namespacetencent_1_1av.html#acec14806701ac8bb8c60f6daa6434c26a46d789167bfed417e29094ba21a8d892',1,'tencent::av']]],
+  ['relation_5ftype_5fopensdk',['RELATION_TYPE_OPENSDK',['../namespacetencent_1_1av.html#acec14806701ac8bb8c60f6daa6434c26a441d9b55ce463828eb429bf826c78e69',1,'tencent::av']]],
+  ['relation_5ftype_5ftemp',['RELATION_TYPE_TEMP',['../namespacetencent_1_1av.html#acec14806701ac8bb8c60f6daa6434c26a957128769b8f316567fbb6f66df76d8a',1,'tencent::av']]],
+  ['relation_5ftype_5funknown',['RELATION_TYPE_UNKNOWN',['../namespacetencent_1_1av.html#acec14806701ac8bb8c60f6daa6434c26ab62b75d805dff4b9a21f2c26ccb75221',1,'tencent::av']]],
+  ['relationtype',['RelationType',['../namespacetencent_1_1av.html#acec14806701ac8bb8c60f6daa6434c26',1,'tencent::av']]],
+  ['requestviewlist',['RequestViewList',['../classtencent_1_1av_1_1_a_v_room.html#a719a2d13030dfad67634ac3954223031',1,'tencent::av::AVRoom']]],
+  ['requestviewlistcompletecallback',['RequestViewListCompleteCallback',['../classtencent_1_1av_1_1_a_v_endpoint.html#aea2fe9f6ad89ba261d36c510aadf20f6',1,'tencent::av::AVEndpoint']]],
+  ['room_5fid',['room_id',['../structtencent_1_1av_1_1_a_v_room_1_1_info.html#ab54ab743c97ca10a4e14ba6eb132c64c',1,'tencent::av::AVRoom::Info']]],
+  ['room_5ftype',['room_type',['../structtencent_1_1av_1_1_a_v_room_1_1_enter_room_param.html#afa870b8255d63fdf818d8a537a1954dc',1,'tencent::av::AVRoom::EnterRoomParam::room_type()'],['../structtencent_1_1av_1_1_a_v_room_1_1_info.html#af50ca918e772bb71d0c07b5c2d8ec8dd',1,'tencent::av::AVRoom::Info::room_type()']]],
+  ['room_5ftype_5fmulti',['ROOM_TYPE_MULTI',['../classtencent_1_1av_1_1_a_v_room.html#a7656ec1015b94f3f34dc3786af057e86aea1b4c4bb59ba0ab35a84a91b057df6a',1,'tencent::av::AVRoom']]],
+  ['room_5ftype_5fnone',['ROOM_TYPE_NONE',['../classtencent_1_1av_1_1_a_v_room.html#a7656ec1015b94f3f34dc3786af057e86a67934e6d79a9d12b1ebc582101a29ecc',1,'tencent::av::AVRoom']]],
+  ['room_5ftype_5fpair',['ROOM_TYPE_PAIR',['../classtencent_1_1av_1_1_a_v_room.html#a7656ec1015b94f3f34dc3786af057e86aeff056618554b1773c5f8411688d8f32',1,'tencent::av::AVRoom']]],
+  ['roomstatparam',['RoomStatParam',['../namespacetencent_1_1av.html#structtencent_1_1av_1_1_room_stat_param',1,'tencent::av']]],
+  ['roomtype',['RoomType',['../classtencent_1_1av_1_1_a_v_room.html#a7656ec1015b94f3f34dc3786af057e86',1,'tencent::av::AVRoom']]],
+  ['rotate',['rotate',['../structtencent_1_1av_1_1_video_frame_desc.html#ae514e815a04b38090e4423f0f8ce611c',1,'tencent::av::VideoFrameDesc']]],
+  ['rtt',['rtt',['../namespacetencent_1_1av.html#af415c066ff877d881a12a460d30497d0',1,'tencent::av::NetworkStatParam']]]
+];

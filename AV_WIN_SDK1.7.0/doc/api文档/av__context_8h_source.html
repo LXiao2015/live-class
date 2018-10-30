@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>音视频通讯SDK API参考手册: G:/AVSDK/PC/AVSdk_OpenSdk_1.7/OpenSDK/include/avsdk/av_context.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">音视频通讯SDK API参考手册
+   &#160;<span id="projectnumber">Windows 1.7.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('av__context_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">av_context.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef AV_CONTEXT_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define AV_CONTEXT_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;av_common.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;av_room.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;av_device_mgr.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;av_audio_ctrl.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;av_video_ctrl.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;av_device_test.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacetencent.html">tencent</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>av {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classtencent_1_1av_1_1_a_v_context.html">   21</a></span>&#160;<span class="keyword">class </span>AV_EXPORT <a class="code" href="classtencent_1_1av_1_1_a_v_context.html">AVContext</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classtencent_1_1av_1_1_a_v_context.html#a3ca7bdd23e53471df5a05526e23b964c">   23</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classtencent_1_1av_1_1_a_v_context.html#a3ca7bdd23e53471df5a05526e23b964c">~AVContext</a>() {}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">static</span> std::string GetSDKVersion();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html">   44</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html">Config</a> {</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#ab6ac6f7fb447a939e70bbab691d22875">   46</a></span>&#160;    <a class="code" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#ab6ac6f7fb447a939e70bbab691d22875">Config</a>() {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      sdk_app_id = 0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      account_type = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      app_id_at3rd = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      identifier = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#a45a92301a912f1e18dedc0baa09436b9">   54</a></span>&#160;    <a class="code" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#a45a92301a912f1e18dedc0baa09436b9">Config</a>(<span class="keyword">const</span> <a class="code" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html">Config</a>&amp; other) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      sdk_app_id = other.<a class="code" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#af91d7b81848921b5599988f17d3da8cb">sdk_app_id</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      account_type = other.<a class="code" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#ad6805bbfc8f540d67526df9066dda8c7">account_type</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      app_id_at3rd = other.<a class="code" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#a5cbb8182b3299a77ecfd6a0295cef888">app_id_at3rd</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      identifier = other.<a class="code" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#aa585d75dab383a4e726a17dcb35f5b06">identifier</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#a9de501bb14fb9108773cffde05f5f7d5">   61</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#a9de501bb14fb9108773cffde05f5f7d5">~Config</a>() {}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#af91d7b81848921b5599988f17d3da8cb">   63</a></span>&#160;    uint32 <a class="code" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#af91d7b81848921b5599988f17d3da8cb">sdk_app_id</a>; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#ad6805bbfc8f540d67526df9066dda8c7">   64</a></span>&#160;    std::string <a class="code" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#ad6805bbfc8f540d67526df9066dda8c7">account_type</a>; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#a5cbb8182b3299a77ecfd6a0295cef888">   65</a></span>&#160;    std::string <a class="code" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#a5cbb8182b3299a77ecfd6a0295cef888">app_id_at3rd</a>; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#aa585d75dab383a4e726a17dcb35f5b06">   66</a></span>&#160;    std::string <a class="code" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#aa585d75dab383a4e726a17dcb35f5b06">identifier</a>; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  };</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">static</span> <a class="code" href="classtencent_1_1av_1_1_a_v_context.html">AVContext</a>* CreateContext(<span class="keyword">const</span> <a class="code" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html">AVContext::Config</a>&amp; config);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> DestroyContext(<a class="code" href="classtencent_1_1av_1_1_a_v_context.html">AVContext</a>* context);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classtencent_1_1av_1_1_a_v_context.html#a02d48719fb3495af6a0d345eb7045239">  104</a></span>&#160;  <span class="keyword">typedef</span> void (*StartCompleteCallback)(int32 result, <span class="keywordtype">void</span>* custom_data);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keyword">virtual</span> int32 StartContext(StartCompleteCallback start_complete_callback, <span class="keywordtype">void</span>* custom_data = NULL) = 0;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keyword">virtual</span> int32 StopContext(<a class="code" href="namespacetencent_1_1av.html#a455fac4d6fbb386ce1270016a11dcc20">AVClosure</a> stop_complete_callback, <span class="keywordtype">void</span>* custom_data = NULL) = 0;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keyword">virtual</span> int32 EnterRoom(<a class="code" href="structtencent_1_1av_1_1_a_v_room_1_1_delegate.html">AVRoom::Delegate</a>* room_delegate, <span class="keyword">const</span> <a class="code" href="structtencent_1_1av_1_1_a_v_room_1_1_enter_room_param.html">AVRoom::EnterRoomParam</a>* param) = 0;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keyword">virtual</span> int32 ExitRoom() = 0;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classtencent_1_1av_1_1_a_v_room.html">AVRoom</a>* GetRoom() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classtencent_1_1av_1_1_a_v_audio_ctrl.html">AVAudioCtrl</a>* GetAudioCtrl() = 0;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classtencent_1_1av_1_1_a_v_device_mgr.html">AVDeviceMgr</a>* GetAudioDeviceMgr() = 0;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classtencent_1_1av_1_1_a_v_video_ctrl.html">AVVideoCtrl</a>* GetVideoCtrl() = 0;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classtencent_1_1av_1_1_a_v_device_mgr.html">AVDeviceMgr</a>* GetVideoDeviceMgr() = 0;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <span class="keyword">virtual</span> int32 StartDeviceTest(StartCompleteCallback start_complete_callback, <span class="keywordtype">void</span>* custom_data = NULL) = 0;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <span class="keyword">virtual</span> int32 StopDeviceTest(<a class="code" href="namespacetencent_1_1av.html#a455fac4d6fbb386ce1270016a11dcc20">AVClosure</a> stop_complete_callback, <span class="keywordtype">void</span>* custom_data = NULL) = 0;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classtencent_1_1av_1_1_a_v_device_test.html">AVDeviceTest</a>* GetDeviceTest() = 0;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="preprocessor">#if defined(ANDROID) || defined(TARGET_OS_IPHONE)</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> InitNetType(<span class="keywordtype">int</span> netType) = 0;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;};</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;} <span class="comment">// namespace av</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;} <span class="comment">// namespace tencent</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor">#endif // #ifndef AV_CONTEXT_H_</span></div>
+<div class="ttc" id="namespacetencent_html"><div class="ttname"><a href="namespacetencent.html">tencent</a></div><div class="ttdef"><b>Definition:</b> av_audio_ctrl.h:6</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_context_1_1_config_html_aa585d75dab383a4e726a17dcb35f5b06"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#aa585d75dab383a4e726a17dcb35f5b06">tencent::av::AVContext::Config::identifier</a></div><div class="ttdeci">std::string identifier</div><div class="ttdoc">帐号名(用户名)。 </div><div class="ttdef"><b>Definition:</b> av_context.h:66</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_context_1_1_config_html_a9de501bb14fb9108773cffde05f5f7d5"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#a9de501bb14fb9108773cffde05f5f7d5">tencent::av::AVContext::Config::~Config</a></div><div class="ttdeci">virtual ~Config()</div><div class="ttdef"><b>Definition:</b> av_context.h:61</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_device_test_html"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_device_test.html">tencent::av::AVDeviceTest</a></div><div class="ttdoc">设备测试的封装类。 </div><div class="ttdef"><b>Definition:</b> av_device_test.h:15</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_room_1_1_delegate_html"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_room_1_1_delegate.html">tencent::av::AVRoom::Delegate</a></div><div class="ttdoc">房间委托基类。业务侧需要实现该基类来处理房间异步操作返回的结果。 </div><div class="ttdef"><b>Definition:</b> av_room.h:63</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_video_ctrl_html"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_video_ctrl.html">tencent::av::AVVideoCtrl</a></div><div class="ttdoc">视频控制器的封装类。 </div><div class="ttdef"><b>Definition:</b> av_video_ctrl.h:39</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_room_1_1_enter_room_param_html"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_room_1_1_enter_room_param.html">tencent::av::AVRoom::EnterRoomParam</a></div><div class="ttdoc">调用AVContext::EnterRoom()进入房间时所需传入的参数。 </div><div class="ttdef"><b>Definition:</b> av_room.h:105</div></div>
+<div class="ttc" id="namespacetencent_1_1av_html_a455fac4d6fbb386ce1270016a11dcc20"><div class="ttname"><a href="namespacetencent_1_1av.html#a455fac4d6fbb386ce1270016a11dcc20">tencent::av::AVClosure</a></div><div class="ttdeci">void(* AVClosure)(void *custom_data)</div><div class="ttdoc">参数类型为void*的通用回调函数。 </div><div class="ttdef"><b>Definition:</b> av_common.h:31</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_room_html"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_room.html">tencent::av::AVRoom</a></div><div class="ttdoc">音视频通话房间基类。 </div><div class="ttdef"><b>Definition:</b> av_room.h:26</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_context_1_1_config_html_a5cbb8182b3299a77ecfd6a0295cef888"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#a5cbb8182b3299a77ecfd6a0295cef888">tencent::av::AVContext::Config::app_id_at3rd</a></div><div class="ttdeci">std::string app_id_at3rd</div><div class="ttdoc">App使用的OAuth授权体系分配的AppId。 </div><div class="ttdef"><b>Definition:</b> av_context.h:65</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_context_1_1_config_html_ad6805bbfc8f540d67526df9066dda8c7"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#ad6805bbfc8f540d67526df9066dda8c7">tencent::av::AVContext::Config::account_type</a></div><div class="ttdeci">std::string account_type</div><div class="ttdoc">腾讯为每个接入方分配的账号类型。 </div><div class="ttdef"><b>Definition:</b> av_context.h:64</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_context_1_1_config_html_af91d7b81848921b5599988f17d3da8cb"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#af91d7b81848921b5599988f17d3da8cb">tencent::av::AVContext::Config::sdk_app_id</a></div><div class="ttdeci">uint32 sdk_app_id</div><div class="ttdoc">腾讯为每个使用SDK的App分配的AppId。 </div><div class="ttdef"><b>Definition:</b> av_context.h:63</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_context_html_a3ca7bdd23e53471df5a05526e23b964c"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_context.html#a3ca7bdd23e53471df5a05526e23b964c">tencent::av::AVContext::~AVContext</a></div><div class="ttdeci">virtual ~AVContext()</div><div class="ttdef"><b>Definition:</b> av_context.h:23</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_context_html"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_context.html">tencent::av::AVContext</a></div><div class="ttdoc">AVContext对象代表着一个SDK运行实例。 </div><div class="ttdef"><b>Definition:</b> av_context.h:21</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_context_1_1_config_html_a45a92301a912f1e18dedc0baa09436b9"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#a45a92301a912f1e18dedc0baa09436b9">tencent::av::AVContext::Config::Config</a></div><div class="ttdeci">Config(const Config &amp;other)</div><div class="ttdoc">拷贝构造函数。 </div><div class="ttdef"><b>Definition:</b> av_context.h:54</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_audio_ctrl_html"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_audio_ctrl.html">tencent::av::AVAudioCtrl</a></div><div class="ttdoc">音频控制器的封装类。 </div><div class="ttdef"><b>Definition:</b> av_audio_ctrl.h:25</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_device_mgr_html"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_device_mgr.html">tencent::av::AVDeviceMgr</a></div><div class="ttdoc">设备管理器的封装类。 </div><div class="ttdef"><b>Definition:</b> av_device_mgr.h:17</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_context_1_1_config_html_ab6ac6f7fb447a939e70bbab691d22875"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#ab6ac6f7fb447a939e70bbab691d22875">tencent::av::AVContext::Config::Config</a></div><div class="ttdeci">Config()</div><div class="ttdoc">默认构造函数。 </div><div class="ttdef"><b>Definition:</b> av_context.h:46</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_a_v_context_1_1_config_html"><div class="ttname"><a href="structtencent_1_1av_1_1_a_v_context_1_1_config.html">tencent::av::AVContext::Config</a></div><div class="ttdoc">CreateContext()的入参。 </div><div class="ttdef"><b>Definition:</b> av_context.h:44</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_15ae8acb17aa02612b36ce8da1cae9b5.html">avsdk</a></li><li class="navelem"><b>av_context.h</b></li>
+    <li class="footer">生成于 2016年 二月 22日 星期一 14:41:37 , 为 音视频通讯SDK API参考手册使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{a5b6f99e-dadd-4392-9a89-b1bcbb989c7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDKWrapper">
+      <UniqueIdentifier>{590cb38f-b2eb-4a76-8136-c1728b70a2e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller">
+      <UniqueIdentifier>{16875449-904b-42b4-9014-6668a804ce6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="genByProject">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\QAVSDKDemo.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\QAVSDKDemo.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\MultiAVDemo.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>genByProject</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>genByProject</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>genByProject</Filter>
+    </ClInclude>
+    <ClInclude Include="SdkWrapper.h">
+      <Filter>SDKWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogAddAccount.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogAddAppConfig.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogQAVSDKDemo.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="QAVSDKApp.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoRender.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigInfoMgr.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ListBoxEndpoint.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomWinMsg.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog1v1VideoRender.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogAVQualityTips.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogAddChannel.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SdkWrapper.cpp">
+      <Filter>SDKWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>genByProject</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogAddAccount.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogAddAppConfig.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogQAVSDKDemo.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="QAVSDKApp.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoRender.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigInfoMgr.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ListBoxEndpoint.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog1v1VideoRender.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogAVQualityTips.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogAddChannel.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="QAVSDKDemo.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

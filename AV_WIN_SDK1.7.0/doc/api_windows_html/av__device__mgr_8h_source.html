@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>音视频通讯SDK API参考手册: G:/AVSDK/PC/AVSdk_OpenSdk_1.7/OpenSDK/include/avsdk/av_device_mgr.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">音视频通讯SDK API参考手册
+   &#160;<span id="projectnumber">Windows 1.7.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('av__device__mgr_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">av_device_mgr.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef AV_DEVICE_MGR_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define AV_DEVICE_MGR_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;av_common.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;av_device.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacetencent.html">tencent</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>av {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classtencent_1_1av_1_1_a_v_device_mgr.html">   17</a></span>&#160;<span class="keyword">class </span>AV_EXPORT <a class="code" href="classtencent_1_1av_1_1_a_v_device_mgr.html">AVDeviceMgr</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a2afdf2237b1e3e160c1dd958fbdc9a94">   34</a></span>&#160;  <span class="keyword">typedef</span> void (*DeviceOperationCallback)(<a class="code" href="classtencent_1_1av_1_1_a_v_device_mgr.html">AVDeviceMgr</a>* device_mgr, <a class="code" href="classtencent_1_1av_1_1_a_v_device.html#a30defa389bbe29242605d46c80601d01">AVDevice::DeviceOperation</a> oper,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                          <span class="keyword">const</span> std::string&amp; device_id,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                          int32 result, <span class="keywordtype">void</span>* custom_data);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetDeviceOperationCallback(DeviceOperationCallback device_operation_callback,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                          <span class="keywordtype">void</span>* custom_data = NULL) = 0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a85631882e8686c9a4e527d1effde60cb">   57</a></span>&#160;  <span class="keyword">typedef</span> void (*DeviceChangeCallback)(<a class="code" href="classtencent_1_1av_1_1_a_v_device_mgr.html">AVDeviceMgr</a>* device_mgr, <span class="keywordtype">void</span>* custom_data);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetDeviceChangeCallback(DeviceChangeCallback device_change_callback, <span class="keywordtype">void</span>* custom_data = NULL) = 0;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a75e48b8730d536125250c22224584b51">   83</a></span>&#160;  <span class="keyword">typedef</span> void (*OnDeviveDetectNotify)(<a class="code" href="classtencent_1_1av_1_1_a_v_device_mgr.html">AVDeviceMgr</a>* device_mgr, <a class="code" href="namespacetencent_1_1av.html#structtencent_1_1av_1_1_detected_device_info">DetectedDeviceInfo</a>&amp; info, <span class="keywordtype">bool</span>*pbSelect,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                       <span class="keywordtype">void</span>* custom_data);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetDeviceDetectNotify(OnDeviveDetectNotify notify, <span class="keywordtype">void</span>* custom_data = NULL) = 0;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> EnableInputDevice(<span class="keywordtype">bool</span> is_enable = <span class="keyword">true</span>) = 0;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> EnableOutputDevice(<span class="keywordtype">bool</span> is_enable = <span class="keyword">true</span>) = 0;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsInputDeviceEnabled() = 0;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsOutputDeviceEnabled() = 0;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keyword">virtual</span> int32 GetInputDeviceCount() = 0;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classtencent_1_1av_1_1_a_v_device.html">AVDevice</a>* GetInputDevice(int32 index) = 0;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keyword">virtual</span> int32 GetOutputDeviceCount() = 0;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classtencent_1_1av_1_1_a_v_device.html">AVDevice</a>* GetOutputDevice(int32 index) = 0;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keyword">virtual</span> int32 SelectInputDevice(<span class="keyword">const</span> std::string&amp; device_id, <span class="keywordtype">bool</span> is_select = <span class="keyword">true</span>) = 0;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keyword">virtual</span> int32 SelectOutputDevice(<span class="keyword">const</span> std::string&amp; device_id, <span class="keywordtype">bool</span> is_select = <span class="keyword">true</span>) = 0;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> ClearSelectedDevice(<span class="keywordtype">bool</span> is_output) = 0;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="keyword">virtual</span> int32 GetSelectedInputDeviceCount() = 0;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classtencent_1_1av_1_1_a_v_device.html">AVDevice</a>* GetSelectedInputDevice(int32 index) = 0;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keyword">virtual</span> int32 GetSelectedOutputDeviceCount() = 0;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classtencent_1_1av_1_1_a_v_device.html">AVDevice</a>* GetSelectedOutputDevice(int32 index) = 0;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classtencent_1_1av_1_1_a_v_device.html">AVDevice</a>* GetDeviceById(<span class="keyword">const</span> std::string&amp; device_id) = 0;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <span class="keyword">virtual</span> int32 GetDeviceByType(<span class="keyword">const</span> std::string&amp; device_type, <a class="code" href="classtencent_1_1av_1_1_a_v_device.html">AVDevice</a>** device_array[]) = 0;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="classtencent_1_1av_1_1_a_v_device_mgr.html#a1ad482313d8eda340832da7dc3128d5e">  259</a></span>&#160;  DISALLOW_EVIL_DESTRUCTIONS(<a class="code" href="classtencent_1_1av_1_1_a_v_device_mgr.html">AVDeviceMgr</a>)</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;};</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;} <span class="comment">// namespace av</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;} <span class="comment">// namespace tencent</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor">#endif // #ifndef AV_DEVICE_MGR_H_</span></div>
+<div class="ttc" id="namespacetencent_html"><div class="ttname"><a href="namespacetencent.html">tencent</a></div><div class="ttdef"><b>Definition:</b> av_audio_ctrl.h:6</div></div>
+<div class="ttc" id="namespacetencent_1_1av_html_structtencent_1_1av_1_1_detected_device_info"><div class="ttname"><a href="namespacetencent_1_1av.html#structtencent_1_1av_1_1_detected_device_info">tencent::av::DetectedDeviceInfo</a></div><div class="ttdoc">硬件检测信息。 </div><div class="ttdef"><b>Definition:</b> av_common.h:248</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_device_html"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_device.html">tencent::av::AVDevice</a></div><div class="ttdoc">音视频设备封装类的基类。 </div><div class="ttdef"><b>Definition:</b> av_device_base.h:18</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_device_mgr_html"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_device_mgr.html">tencent::av::AVDeviceMgr</a></div><div class="ttdoc">设备管理器的封装类。 </div><div class="ttdef"><b>Definition:</b> av_device_mgr.h:17</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_device_html_a30defa389bbe29242605d46c80601d01"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_device.html#a30defa389bbe29242605d46c80601d01">tencent::av::AVDevice::DeviceOperation</a></div><div class="ttdeci">DeviceOperation</div><div class="ttdoc">设备操作类型。 </div><div class="ttdef"><b>Definition:</b> av_device_base.h:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_15ae8acb17aa02612b36ce8da1cae9b5.html">avsdk</a></li><li class="navelem"><b>av_device_mgr.h</b></li>
+    <li class="footer">生成于 2016年 二月 22日 星期一 14:41:37 , 为 音视频通讯SDK API参考手册使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>音视频通讯SDK API参考手册: 类成员 - 变量</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">音视频通讯SDK API参考手册
+   &#160;<span id="projectnumber">Windows 1.7.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li class="current"><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li><a href="functions.html"><span>全部</span></a></li>
+      <li><a href="functions_func.html"><span>函数</span></a></li>
+      <li class="current"><a href="functions_vars.html"><span>变量</span></a></li>
+      <li><a href="functions_type.html"><span>类型定义</span></a></li>
+      <li><a href="functions_enum.html"><span>枚举</span></a></li>
+      <li><a href="functions_eval.html"><span>枚举值</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="#index_a"><span>a</span></a></li>
+      <li><a href="#index_b"><span>b</span></a></li>
+      <li><a href="#index_c"><span>c</span></a></li>
+      <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_e"><span>e</span></a></li>
+      <li><a href="#index_f"><span>f</span></a></li>
+      <li><a href="#index_h"><span>h</span></a></li>
+      <li><a href="#index_i"><span>i</span></a></li>
+      <li><a href="#index_k"><span>k</span></a></li>
+      <li><a href="#index_l"><span>l</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_n"><span>n</span></a></li>
+      <li><a href="#index_p"><span>p</span></a></li>
+      <li><a href="#index_q"><span>q</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
+      <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
+      <li><a href="#index_v"><span>v</span></a></li>
+      <li class="current"><a href="#index_w"><span>w</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_vars.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="contents">
+&#160;
+
+<h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
+<li>account_type
+: <a class="el" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#ad6805bbfc8f540d67526df9066dda8c7">tencent::av::AVContext::Config</a>
+</li>
+<li>app_id_at3rd
+: <a class="el" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#a5cbb8182b3299a77ecfd6a0295cef888">tencent::av::AVContext::Config</a>
+</li>
+<li>app_room_id
+: <a class="el" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#ac592fc01210e184cf564d80366c17708">tencent::av::AVRoomMulti::EnterRoomParam</a>
+</li>
+<li>audio_category
+: <a class="el" href="structtencent_1_1av_1_1_a_v_room_1_1_info.html#a6f5768e873c76df7b2593f8f2d32b517">tencent::av::AVRoom::Info</a>
+, <a class="el" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#aad125ea61b97087b85837ad682c3831d">tencent::av::AVRoomMulti::EnterRoomParam</a>
+</li>
+<li>audio_param
+: <a class="el" href="namespacetencent_1_1av.html#a366219b81b89a9bb76b40513003b611e">tencent::av::RoomStatParam</a>
+</li>
+<li>auth_bits
+: <a class="el" href="structtencent_1_1av_1_1_a_v_room_1_1_info.html#a214676d7bdc17174407fd7b88421564a">tencent::av::AVRoom::Info</a>
+, <a class="el" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#a274827efe7c3795fea8e258a3e7c444c">tencent::av::AVRoomMulti::EnterRoomParam</a>
+</li>
+<li>auth_buffer
+: <a class="el" href="structtencent_1_1av_1_1_a_v_room_1_1_info.html#ad9d2e5ffd5e3a68662dff476c9d5bf9e">tencent::av::AVRoom::Info</a>
+, <a class="el" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#a292f632ea2e85a3968f07f104423dbba">tencent::av::AVRoomMulti::EnterRoomParam</a>
+</li>
+<li>auto_create_room
+: <a class="el" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#ac72d619366e48c1aaa9fd1dea2c5ab88">tencent::av::AVRoomMulti::EnterRoomParam</a>
+</li>
+<li>av_control_role
+: <a class="el" href="structtencent_1_1av_1_1_a_v_room_1_1_info.html#ade28db6351ee956f60fd4dce537b3225">tencent::av::AVRoom::Info</a>
+, <a class="el" href="structtencent_1_1av_1_1_a_v_room_multi_1_1_enter_room_param.html#afd6aba9eaf8e8e51d6c808a91c52b6b6">tencent::av::AVRoomMulti::EnterRoomParam</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>bitrate
+: <a class="el" href="namespacetencent_1_1av.html#a1c84fd8b1ca2b678b0328c45000f1860">tencent::av::AudioQosParam</a>
+, <a class="el" href="namespacetencent_1_1av.html#a8865dc20bdbbe348818387a910f24e5d">tencent::av::VideoDecodeParam</a>
+, <a class="el" href="namespacetencent_1_1av.html#ad9db0e06a70dc832616422ec143dd09b">tencent::av::VideoEncodeParam</a>
+, <a class="el" href="namespacetencent_1_1av.html#a664d9db016d8d4c9c46c243d3954c7ec">tencent::av::VideoQosParam</a>
+</li>
+<li>bits
+: <a class="el" href="structtencent_1_1av_1_1_audio_frame_desc.html#a725cd18cf89834985b836437da543648">tencent::av::AudioFrameDesc</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>capture_param
+: <a class="el" href="namespacetencent_1_1av.html#a42dd56a0b700470476d4bb45c500cf93">tencent::av::VideoStatParam</a>
+</li>
+<li>channel_count
+: <a class="el" href="namespacetencent_1_1av.html#acc3dd9a73f0244397c4a02120ebc5e08">tencent::av::AudioQosParam</a>
+</li>
+<li>channel_num
+: <a class="el" href="structtencent_1_1av_1_1_audio_frame_desc.html#ad1512e9674e60ed7b0f68cd49cda2211">tencent::av::AudioFrameDesc</a>
+</li>
+<li>codec_type
+: <a class="el" href="namespacetencent_1_1av.html#a1899649e7779565102bdfab1dd0779c9">tencent::av::AudioQosParam</a>
+</li>
+<li>color_format
+: <a class="el" href="classtencent_1_1av_1_1_a_v_support_video_preview.html#a94e2c9f3be7d9ab84c337fef6bda05ff">tencent::av::AVSupportVideoPreview::PreviewParam</a>
+, <a class="el" href="structtencent_1_1av_1_1_video_frame_desc.html#a67c7a52ec608d4fa4daa465476a39a07">tencent::av::VideoFrameDesc</a>
+</li>
+<li>cpu_rate_app
+: <a class="el" href="namespacetencent_1_1av.html#aee1f10604c356bc8268d8253de30ae87">tencent::av::NetworkStatParam</a>
+</li>
+<li>cpu_rate_sys
+: <a class="el" href="namespacetencent_1_1av.html#acf9930c64f033fdadb2e236e989182e3">tencent::av::NetworkStatParam</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
+<li>data
+: <a class="el" href="structtencent_1_1av_1_1_audio_frame.html#a7bac65e6cc7bbb07850610906f65578a">tencent::av::AudioFrame</a>
+, <a class="el" href="structtencent_1_1av_1_1_video_frame.html#a317c4b2b6627e49f52b891a9809c4b51">tencent::av::VideoFrame</a>
+</li>
+<li>data_size
+: <a class="el" href="structtencent_1_1av_1_1_audio_frame.html#aa2a51566bf37a09f7b7319d4bca51d4a">tencent::av::AudioFrame</a>
+, <a class="el" href="structtencent_1_1av_1_1_video_frame.html#a5d39e23f86196b64079f2b641340fbf7">tencent::av::VideoFrame</a>
+</li>
+<li>decode_count
+: <a class="el" href="namespacetencent_1_1av.html#a6d48380ed8783aea2628545ceeb43d3c">tencent::av::VideoStatParam</a>
+</li>
+<li>decode_params
+: <a class="el" href="namespacetencent_1_1av.html#a550fce4aef19e7374a92248fc0341906">tencent::av::VideoStatParam</a>
+</li>
+<li>desc
+: <a class="el" href="structtencent_1_1av_1_1_audio_frame.html#af56da8e135aea2f562cca6ec4edab90d">tencent::av::AudioFrame</a>
+, <a class="el" href="structtencent_1_1av_1_1_video_frame.html#a5371733030bf327c21c2135e5fe9f8cd">tencent::av::VideoFrame</a>
+</li>
+<li>description
+: <a class="el" href="structtencent_1_1av_1_1_a_v_device_1_1_info.html#a237e2b0203318d58313a0353e338f739">tencent::av::AVDevice::Info</a>
+</li>
+<li>device_id
+: <a class="el" href="classtencent_1_1av_1_1_a_v_support_video_preview.html#ad5a6a7e5d1dd5bebf835ede07f68eeb7">tencent::av::AVSupportVideoPreview::PreviewParam</a>
+, <a class="el" href="namespacetencent_1_1av.html#a4365829807b2466d8845fee5b89bb03d">tencent::av::CameraInfo</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>encode_count
+: <a class="el" href="namespacetencent_1_1av.html#ab3ab566f7dd4174f65c63120be051ccd">tencent::av::VideoStatParam</a>
+</li>
+<li>encode_params
+: <a class="el" href="namespacetencent_1_1av.html#a120fe310e388f364eac6410ecb566519">tencent::av::VideoStatParam</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>flow
+: <a class="el" href="namespacetencent_1_1av.html#a12cc6535f005199f473994e7ae31a054">tencent::av::DetectedDeviceInfo</a>
+</li>
+<li>fps
+: <a class="el" href="namespacetencent_1_1av.html#a4c983b88d0bdac4550b64c4f48f22bc2">tencent::av::CameraInfo</a>
+, <a class="el" href="namespacetencent_1_1av.html#a721edd097559deba7ed9724dfc4b3b41">tencent::av::VideoCaptureParam</a>
+, <a class="el" href="namespacetencent_1_1av.html#ae2a8dcd7baccc8ec310fa316d4c856b8">tencent::av::VideoDecodeParam</a>
+, <a class="el" href="namespacetencent_1_1av.html#ae965ed94022f6cd2eb787c3d7180a2cf">tencent::av::VideoEncodeParam</a>
+, <a class="el" href="namespacetencent_1_1av.html#ac2d5c559596a2b55b9dcae722af1d6b0">tencent::av::VideoQosParam</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
+<li>has_audio
+: <a class="el" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#a13b6a43e9acd9146b304f7173842df9c">tencent::av::AVEndpoint::Info</a>
+</li>
+<li>has_camera_video
+: <a class="el" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#aa03776f58871a95748151cb545d3fa23">tencent::av::AVEndpoint::Info</a>
+</li>
+<li>has_screen_video
+: <a class="el" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#acc244d64ec8bd25b340628751321ff31">tencent::av::AVEndpoint::Info</a>
+</li>
+<li>height
+: <a class="el" href="classtencent_1_1av_1_1_a_v_support_video_preview.html#aee3e192c5ea34f78c57e2ec106ad3f6c">tencent::av::AVSupportVideoPreview::PreviewParam</a>
+, <a class="el" href="namespacetencent_1_1av.html#a4461beed443bdc4638e593fe824bd954">tencent::av::CameraInfo</a>
+, <a class="el" href="namespacetencent_1_1av.html#ac0383defb85d465638403e88ac14720d">tencent::av::VideoCaptureParam</a>
+, <a class="el" href="namespacetencent_1_1av.html#ac1e25a2ea32d728aec17b0d330f28f5d">tencent::av::VideoDecodeParam</a>
+, <a class="el" href="namespacetencent_1_1av.html#a4a952588c6463cf8673b5e4907103689">tencent::av::VideoEncodeParam</a>
+, <a class="el" href="structtencent_1_1av_1_1_video_frame_desc.html#a862a52c7dfc31f413cc38b8add8f0205">tencent::av::VideoFrameDesc</a>
+, <a class="el" href="namespacetencent_1_1av.html#a88215cc241aa643b87f877cbf3b8faf7">tencent::av::VideoQosParam</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+<li>identifier
+: <a class="el" href="structtencent_1_1av_1_1_audio_frame.html#a973c9faddad6f838a34a86414ab59555">tencent::av::AudioFrame</a>
+, <a class="el" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#aa585d75dab383a4e726a17dcb35f5b06">tencent::av::AVContext::Config</a>
+, <a class="el" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#a216fe1e010e9dff40c3b74ba701f3536">tencent::av::AVEndpoint::Info</a>
+, <a class="el" href="structtencent_1_1av_1_1_video_frame.html#a0b172e6ba0751512678ed33734ad9a24">tencent::av::VideoFrame</a>
+</li>
+<li>is_mute
+: <a class="el" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#acb3045d39d905bb76f4ac470b7644a04">tencent::av::AVEndpoint::Info</a>
+</li>
+<li>isNewDevice
+: <a class="el" href="namespacetencent_1_1av.html#a3e739b0b35c41da7a97090bc7110ee50">tencent::av::DetectedDeviceInfo</a>
+</li>
+<li>isUsedDevice
+: <a class="el" href="namespacetencent_1_1av.html#a8cb0233315bf52adef8ab46b26c29233">tencent::av::DetectedDeviceInfo</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_k"></a>- k -</h3><ul>
+<li>kbps_recv
+: <a class="el" href="namespacetencent_1_1av.html#a5ff111d7c134688ced454acce5affc20">tencent::av::NetworkStatParam</a>
+</li>
+<li>kbps_send
+: <a class="el" href="namespacetencent_1_1av.html#aaa75457a3c33e4f0f36dd53500aeebaf">tencent::av::NetworkStatParam</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
+<li>loss_model_recv
+: <a class="el" href="namespacetencent_1_1av.html#a0d01d7c7404b19af0fa92856cda77920">tencent::av::NetworkStatParam</a>
+</li>
+<li>loss_model_send
+: <a class="el" href="namespacetencent_1_1av.html#ae10e765484ceac763817a90b96ddc136">tencent::av::NetworkStatParam</a>
+</li>
+<li>loss_rate_recv
+: <a class="el" href="namespacetencent_1_1av.html#abc13d02dc48625fd53d292502f272cc1">tencent::av::NetworkStatParam</a>
+</li>
+<li>loss_rate_send
+: <a class="el" href="namespacetencent_1_1av.html#a23bb0a5ab57a9abfdd25d0379fb3681a">tencent::av::NetworkStatParam</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>mode
+: <a class="el" href="structtencent_1_1av_1_1_a_v_room_1_1_info.html#a5dd2eb8900f0b3f0c6e99d701fc4f147">tencent::av::AVRoom::Info</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
+<li>name
+: <a class="el" href="structtencent_1_1av_1_1_a_v_device_1_1_info.html#a95238ef54839617a7f37be5c52435379">tencent::av::AVDevice::Info</a>
+</li>
+<li>network_param
+: <a class="el" href="namespacetencent_1_1av.html#aa8a29fb9eb561a03373846fd9a4a4c13">tencent::av::RoomStatParam</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>packet_recv
+: <a class="el" href="namespacetencent_1_1av.html#a986ce7d20de5c34ef3697302b3d9b6f3">tencent::av::NetworkStatParam</a>
+</li>
+<li>packet_send
+: <a class="el" href="namespacetencent_1_1av.html#a251fec1526068c2c38198ef31794fa47">tencent::av::NetworkStatParam</a>
+</li>
+<li>peer_identifier
+: <a class="el" href="structtencent_1_1av_1_1_a_v_room_1_1_info.html#a1f2651c885b0bbbf5e8e280675174a4e">tencent::av::AVRoom::Info</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_q"></a>- q -</h3><ul>
+<li>qos_param
+: <a class="el" href="namespacetencent_1_1av.html#a9355d99a7b08d3fd062759a80669f440">tencent::av::AudioStatParam</a>
+</li>
+<li>qos_param_big
+: <a class="el" href="namespacetencent_1_1av.html#ae05abb95e5fd3d6fafe9442965586c3a">tencent::av::VideoStatParam</a>
+</li>
+<li>qos_param_small
+: <a class="el" href="namespacetencent_1_1av.html#ab230c1dbd17a540379461a0b1bfb7236">tencent::av::VideoStatParam</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>relation_id
+: <a class="el" href="structtencent_1_1av_1_1_a_v_room_1_1_info.html#a03d11b74e42ca9a1dff5093dc4888b30">tencent::av::AVRoom::Info</a>
+</li>
+<li>relation_type
+: <a class="el" href="structtencent_1_1av_1_1_a_v_room_1_1_info.html#a0cfa49aefcae611a256bcd7dddd98f4a">tencent::av::AVRoom::Info</a>
+</li>
+<li>room_id
+: <a class="el" href="structtencent_1_1av_1_1_a_v_room_1_1_info.html#ab54ab743c97ca10a4e14ba6eb132c64c">tencent::av::AVRoom::Info</a>
+</li>
+<li>room_type
+: <a class="el" href="structtencent_1_1av_1_1_a_v_room_1_1_enter_room_param.html#afa870b8255d63fdf818d8a537a1954dc">tencent::av::AVRoom::EnterRoomParam</a>
+, <a class="el" href="structtencent_1_1av_1_1_a_v_room_1_1_info.html#af50ca918e772bb71d0c07b5c2d8ec8dd">tencent::av::AVRoom::Info</a>
+</li>
+<li>rotate
+: <a class="el" href="structtencent_1_1av_1_1_video_frame_desc.html#ae514e815a04b38090e4423f0f8ce611c">tencent::av::VideoFrameDesc</a>
+</li>
+<li>rtt
+: <a class="el" href="namespacetencent_1_1av.html#af415c066ff877d881a12a460d30497d0">tencent::av::NetworkStatParam</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>sample_rate
+: <a class="el" href="structtencent_1_1av_1_1_audio_frame_desc.html#af253a3182f15c0f47f9bce8e27318e4a">tencent::av::AudioFrameDesc</a>
+, <a class="el" href="namespacetencent_1_1av.html#a0eef0bb084a71e712a94251f179efee3">tencent::av::AudioQosParam</a>
+</li>
+<li>sdk_app_id
+: <a class="el" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#af91d7b81848921b5599988f17d3da8cb">tencent::av::AVContext::Config</a>
+</li>
+<li>sdk_version
+: <a class="el" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#a77567aea2c2179c1da35d6c9e0988c40">tencent::av::AVEndpoint::Info</a>
+</li>
+<li>size_type
+: <a class="el" href="structtencent_1_1av_1_1_view.html#ac18f2b77831deae1bc3c5867088c5ae9">tencent::av::View</a>
+</li>
+<li>src_type
+: <a class="el" href="structtencent_1_1av_1_1_audio_frame_desc.html#a2a5fcfb0f4ada2c16aa63ea4fa09dfda">tencent::av::AudioFrameDesc</a>
+, <a class="el" href="classtencent_1_1av_1_1_a_v_support_video_preview.html#a0d470f61f67d0e786dca83f327358255">tencent::av::AVSupportVideoPreview::PreviewParam</a>
+, <a class="el" href="structtencent_1_1av_1_1_video_frame_desc.html#ae8ab5f9eb1cc241f6416164c6c8ad66d">tencent::av::VideoFrameDesc</a>
+</li>
+<li>strGuid
+: <a class="el" href="namespacetencent_1_1av.html#a80462fb428a1ae7ef120c05407da9807">tencent::av::DetectedDeviceInfo</a>
+</li>
+<li>string_id
+: <a class="el" href="structtencent_1_1av_1_1_a_v_device_1_1_info.html#afc55903aa3f6ea9c06c03eba6b34f297">tencent::av::AVDevice::Info</a>
+</li>
+<li>strName
+: <a class="el" href="namespacetencent_1_1av.html#ae82c7b1b7679879ebe58b596f5e156d3">tencent::av::DetectedDeviceInfo</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
+<li>terminal_type
+: <a class="el" href="structtencent_1_1av_1_1_a_v_endpoint_1_1_info.html#a9a1f4ee4e2fbea79cf2d52de51775e24">tencent::av::AVEndpoint::Info</a>
+</li>
+<li>tick_count_begin
+: <a class="el" href="namespacetencent_1_1av.html#a9dc99282492896ceab49ac65bbea8e8d">tencent::av::RoomStatParam</a>
+</li>
+<li>tick_count_end
+: <a class="el" href="namespacetencent_1_1av.html#a0047e71cd2e68a0aa86beefc92619ba6">tencent::av::RoomStatParam</a>
+</li>
+<li>tiny_id
+: <a class="el" href="namespacetencent_1_1av.html#a6a435b26839c92a237f162c9a39acf57">tencent::av::VideoDecodeParam</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_v"></a>- v -</h3><ul>
+<li>video_param
+: <a class="el" href="namespacetencent_1_1av.html#a568ef391cc4ba8aa60a94673642f22ff">tencent::av::RoomStatParam</a>
+</li>
+<li>video_src_type
+: <a class="el" href="structtencent_1_1av_1_1_view.html#ab44b466129abc83aa1db89e592a014e3">tencent::av::View</a>
+</li>
+<li>view_type
+: <a class="el" href="namespacetencent_1_1av.html#af931b01eaedcba01ed2c0bba8d898026">tencent::av::VideoDecodeParam</a>
+, <a class="el" href="namespacetencent_1_1av.html#a993ceb389711655930286b762b64a39e">tencent::av::VideoEncodeParam</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
+<li>width
+: <a class="el" href="classtencent_1_1av_1_1_a_v_support_video_preview.html#a0a5c07e9657a8a875a0e4246fb318a52">tencent::av::AVSupportVideoPreview::PreviewParam</a>
+, <a class="el" href="namespacetencent_1_1av.html#a7a9ea5dd87190cd3ceea7571bcf6eb41">tencent::av::CameraInfo</a>
+, <a class="el" href="namespacetencent_1_1av.html#a961061f1dffafe763fd10459715a88c5">tencent::av::VideoCaptureParam</a>
+, <a class="el" href="namespacetencent_1_1av.html#a815cf66aa1498c816f6dd620aba5bc8a">tencent::av::VideoDecodeParam</a>
+, <a class="el" href="namespacetencent_1_1av.html#a7d3dd20e83a52c07f667c9f5af9b59f8">tencent::av::VideoEncodeParam</a>
+, <a class="el" href="structtencent_1_1av_1_1_video_frame_desc.html#a9715ded74ac5457bdfbd043949f1bca7">tencent::av::VideoFrameDesc</a>
+, <a class="el" href="namespacetencent_1_1av.html#a84191f804e836a2e942b965f5f3da980">tencent::av::VideoQosParam</a>
+</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">生成于 2016年 二月 22日 星期一 14:41:37 , 为 音视频通讯SDK API参考手册使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

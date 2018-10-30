@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>音视频通讯SDK API参考手册: G:/AVSDK/PC/AVSdk_OpenSdk_1.7/OpenSDK/include/avsdk/av_video_ctrl.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">音视频通讯SDK API参考手册
+   &#160;<span id="projectnumber">Windows 1.7.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('av__video__ctrl_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">av_video_ctrl.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef AV_VIDEO_CTRL_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define AV_VIDEO_CTRL_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;av_common.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if defined(ANDROID)</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;jni.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacetencent.html">tencent</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>av {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespacetencent_1_1av.html#a282889528c810aacce2922f7a8993fcf">   18</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacetencent_1_1av.html#a282889528c810aacce2922f7a8993fcf">VideoCodecType</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespacetencent_1_1av.html#a282889528c810aacce2922f7a8993fcfa20c5b6034fb698d50b9508f8ce07996c">   19</a></span>&#160;  <a class="code" href="namespacetencent_1_1av.html#a282889528c810aacce2922f7a8993fcfa20c5b6034fb698d50b9508f8ce07996c">VIDEO_CODEC_TYPE_H264</a> = 5, <span class="comment">// h264</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespacetencent_1_1av.html">   27</a></span>&#160;<span class="keyword">struct </span><a class="code" href="namespacetencent_1_1av.html#structtencent_1_1av_1_1_camera_info">CameraInfo</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="namespacetencent_1_1av.html#a4365829807b2466d8845fee5b89bb03d">   28</a></span>&#160;  std::string <a class="code" href="namespacetencent_1_1av.html#a4365829807b2466d8845fee5b89bb03d">device_id</a>; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="namespacetencent_1_1av.html#a7a9ea5dd87190cd3ceea7571bcf6eb41">   29</a></span>&#160;  uint32 <a class="code" href="namespacetencent_1_1av.html#a7a9ea5dd87190cd3ceea7571bcf6eb41">width</a>;  </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="namespacetencent_1_1av.html#a4461beed443bdc4638e593fe824bd954">   30</a></span>&#160;  uint32 <a class="code" href="namespacetencent_1_1av.html#a4461beed443bdc4638e593fe824bd954">height</a>; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="namespacetencent_1_1av.html#a4c983b88d0bdac4550b64c4f48f22bc2">   31</a></span>&#160;  uint32 <a class="code" href="namespacetencent_1_1av.html#a4c983b88d0bdac4550b64c4f48f22bc2">fps</a>; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classtencent_1_1av_1_1_a_v_video_ctrl.html">   39</a></span>&#160;<span class="keyword">class </span>AV_EXPORT <a class="code" href="classtencent_1_1av_1_1_a_v_video_ctrl.html">AVVideoCtrl</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classtencent_1_1av_1_1_a_v_video_ctrl.html#a92877e47a5d9118da0784b834cfd4c97">   41</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classtencent_1_1av_1_1_a_v_video_ctrl.html#a92877e47a5d9118da0784b834cfd4c97">~AVVideoCtrl</a>() {}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">virtual</span> std::string GetQualityTips() = 0;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> SetExternalCapAbility(<a class="code" href="namespacetencent_1_1av.html#structtencent_1_1av_1_1_camera_info">CameraInfo</a>* info) = 0;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#if defined(ANDROID) || defined(TARGET_OS_IPHONE)</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="comment">//摄像头设备相关</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">typedef</span> void (*EnableCameraCompleteCallback)(<span class="keywordtype">bool</span> is_enable, <span class="keywordtype">int</span> ret_code, <span class="keywordtype">void</span>* custom_data);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">typedef</span> void (*SwitchCameraCompleteCallback)(<span class="keywordtype">int</span> camera_id, <span class="keywordtype">int</span> ret_code, <span class="keywordtype">void</span>* custom_data);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">int</span> EnableCamera(<span class="keywordtype">int</span> camera_id, <span class="keywordtype">bool</span> is_enable, EnableCameraCompleteCallback callback, <span class="keywordtype">void</span>* custom_data) = 0;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">int</span> SwitchCamera(<span class="keywordtype">int</span> camera_id, SwitchCameraCompleteCallback callback, <span class="keywordtype">void</span>* custom_data) = 0;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetCameraNum() = 0;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetRotation(<span class="keywordtype">int</span> rotation) = 0;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#if defined(ANDROID)</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetCameraPara(jobject cameraPara) = 0;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keyword">virtual</span> jobject GetCameraPara() = 0;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetCameraPreviewChangeCallback(jobject cameraPreviewChangeCallback) = 0;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keyword">virtual</span> jobject GetCamera() = 0;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keyword">virtual</span> jobject GetCameraHandler() = 0;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> SetLocalVideoPreviewCallback(<a class="code" href="classtencent_1_1av_1_1_a_v_support_video_preview.html#aa0b74f3773d6da90c6a88b3efd7fb146">AVSupportVideoPreview::PreviewCallback</a> callback, <span class="keywordtype">void</span> *custom_data) = 0;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> SetLocalVideoPreProcessCallback(<a class="code" href="classtencent_1_1av_1_1_a_v_support_video_pre_treatment.html#a1d5c1ad89b75055318dea82e6c584596">AVSupportVideoPreTreatment::PreTreatmentFun</a> callback,</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <span class="keywordtype">void</span> *custom_data) = 0;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> SetRemoteVideoPreviewCallback(<a class="code" href="classtencent_1_1av_1_1_a_v_support_video_preview.html#aa0b74f3773d6da90c6a88b3efd7fb146">AVSupportVideoPreview::PreviewCallback</a> callback, <span class="keywordtype">void</span> *custom_data) = 0;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> SetRemoteScreenVideoPreviewCallback(<a class="code" href="classtencent_1_1av_1_1_a_v_support_video_preview.html#aa0b74f3773d6da90c6a88b3efd7fb146">AVSupportVideoPreview::PreviewCallback</a> callback,</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      <span class="keywordtype">void</span> *custom_data) = 0;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="comment">//外部视频捕获设备相关</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keyword">typedef</span> void (*EnableExternalCaptureCompleteCallback)(bool, int, <span class="keywordtype">void</span>*);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">int</span> EnableExternalCapture(<span class="keywordtype">bool</span> is_enable, EnableExternalCaptureCompleteCallback callback,</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                                    <span class="keywordtype">void</span>* custom_data) = 0;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">int</span> FillExternalCaptureFrame(<a class="code" href="structtencent_1_1av_1_1_video_frame.html">VideoFrame</a> &amp;frame) = 0;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> EnableBeauty(<span class="keywordtype">bool</span> isEnable) = 0;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> InputBeautyParam(<span class="keywordtype">float</span> param) = 0;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor">#if defined(TARGET_OS_IPHONE)</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isFrontcamera() = 0;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;};</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;} <span class="comment">// namespace av</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;} <span class="comment">// namespace tencent</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor">#endif // #ifndef AV_VIDEO_CTRL_H_</span></div>
+<div class="ttc" id="namespacetencent_html"><div class="ttname"><a href="namespacetencent.html">tencent</a></div><div class="ttdef"><b>Definition:</b> av_audio_ctrl.h:6</div></div>
+<div class="ttc" id="namespacetencent_1_1av_html_a282889528c810aacce2922f7a8993fcf"><div class="ttname"><a href="namespacetencent_1_1av.html#a282889528c810aacce2922f7a8993fcf">tencent::av::VideoCodecType</a></div><div class="ttdeci">VideoCodecType</div><div class="ttdoc">视频编码器类型。 </div><div class="ttdef"><b>Definition:</b> av_video_ctrl.h:18</div></div>
+<div class="ttc" id="namespacetencent_1_1av_html_a282889528c810aacce2922f7a8993fcfa20c5b6034fb698d50b9508f8ce07996c"><div class="ttname"><a href="namespacetencent_1_1av.html#a282889528c810aacce2922f7a8993fcfa20c5b6034fb698d50b9508f8ce07996c">tencent::av::VIDEO_CODEC_TYPE_H264</a></div><div class="ttdef"><b>Definition:</b> av_video_ctrl.h:19</div></div>
+<div class="ttc" id="namespacetencent_1_1av_html_a4461beed443bdc4638e593fe824bd954"><div class="ttname"><a href="namespacetencent_1_1av.html#a4461beed443bdc4638e593fe824bd954">tencent::av::CameraInfo::height</a></div><div class="ttdeci">uint32 height</div><div class="ttdoc">采集画面高度 </div><div class="ttdef"><b>Definition:</b> av_video_ctrl.h:30</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_video_ctrl_html_a92877e47a5d9118da0784b834cfd4c97"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_video_ctrl.html#a92877e47a5d9118da0784b834cfd4c97">tencent::av::AVVideoCtrl::~AVVideoCtrl</a></div><div class="ttdeci">virtual ~AVVideoCtrl()</div><div class="ttdef"><b>Definition:</b> av_video_ctrl.h:41</div></div>
+<div class="ttc" id="structtencent_1_1av_1_1_video_frame_html"><div class="ttname"><a href="structtencent_1_1av_1_1_video_frame.html">tencent::av::VideoFrame</a></div><div class="ttdoc">视频帧。 </div><div class="ttdef"><b>Definition:</b> av_common.h:207</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_video_ctrl_html"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_video_ctrl.html">tencent::av::AVVideoCtrl</a></div><div class="ttdoc">视频控制器的封装类。 </div><div class="ttdef"><b>Definition:</b> av_video_ctrl.h:39</div></div>
+<div class="ttc" id="namespacetencent_1_1av_html_a4365829807b2466d8845fee5b89bb03d"><div class="ttname"><a href="namespacetencent_1_1av.html#a4365829807b2466d8845fee5b89bb03d">tencent::av::CameraInfo::device_id</a></div><div class="ttdeci">std::string device_id</div><div class="ttdoc">摄像头设备id </div><div class="ttdef"><b>Definition:</b> av_video_ctrl.h:28</div></div>
+<div class="ttc" id="namespacetencent_1_1av_html_structtencent_1_1av_1_1_camera_info"><div class="ttname"><a href="namespacetencent_1_1av.html#structtencent_1_1av_1_1_camera_info">tencent::av::CameraInfo</a></div><div class="ttdoc">摄像头信息。 </div><div class="ttdef"><b>Definition:</b> av_video_ctrl.h:27</div></div>
+<div class="ttc" id="namespacetencent_1_1av_html_a7a9ea5dd87190cd3ceea7571bcf6eb41"><div class="ttname"><a href="namespacetencent_1_1av.html#a7a9ea5dd87190cd3ceea7571bcf6eb41">tencent::av::CameraInfo::width</a></div><div class="ttdeci">uint32 width</div><div class="ttdoc">采集画面宽度 </div><div class="ttdef"><b>Definition:</b> av_video_ctrl.h:29</div></div>
+<div class="ttc" id="namespacetencent_1_1av_html_a4c983b88d0bdac4550b64c4f48f22bc2"><div class="ttname"><a href="namespacetencent_1_1av.html#a4c983b88d0bdac4550b64c4f48f22bc2">tencent::av::CameraInfo::fps</a></div><div class="ttdeci">uint32 fps</div><div class="ttdoc">采集帧率 </div><div class="ttdef"><b>Definition:</b> av_video_ctrl.h:31</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_support_video_pre_treatment_html_a1d5c1ad89b75055318dea82e6c584596"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_support_video_pre_treatment.html#a1d5c1ad89b75055318dea82e6c584596">tencent::av::AVSupportVideoPreTreatment::PreTreatmentFun</a></div><div class="ttdeci">void(* PreTreatmentFun)(VideoFrame *video_frame, void *custom_data)</div><div class="ttdoc">SetPreTreatmentFun()的回调函数。 </div><div class="ttdef"><b>Definition:</b> av_device.h:396</div></div>
+<div class="ttc" id="classtencent_1_1av_1_1_a_v_support_video_preview_html_aa0b74f3773d6da90c6a88b3efd7fb146"><div class="ttname"><a href="classtencent_1_1av_1_1_a_v_support_video_preview.html#aa0b74f3773d6da90c6a88b3efd7fb146">tencent::av::AVSupportVideoPreview::PreviewCallback</a></div><div class="ttdeci">void(* PreviewCallback)(VideoFrame *video_frame, void *custom_data)</div><div class="ttdoc">SetPreviewCallback()的回调函数。 </div><div class="ttdef"><b>Definition:</b> av_device.h:335</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_15ae8acb17aa02612b36ce8da1cae9b5.html">avsdk</a></li><li class="navelem"><b>av_video_ctrl.h</b></li>
+    <li class="footer">生成于 2016年 二月 22日 星期一 14:41:37 , 为 音视频通讯SDK API参考手册使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

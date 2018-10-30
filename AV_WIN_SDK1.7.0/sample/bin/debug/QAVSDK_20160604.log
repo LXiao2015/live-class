@@ -1,0 +1,694 @@
+
+************************************************************************************************************************************************
+Start to print log. Process ID[8152]
+Time                    | L | Thread       | Module  | Source File:Line:Function                                          | Content
+2016/06/04 21:10:08.573 | E | Thread:8232  | Client  | av_context_impl.cpp:141:tencent::av::AVContextImpl::AVContextImpl  | Server Environment Type = Publish Env.
+2016/06/04 21:10:08.588 | E | Thread:8232  | Client  | av_context_impl.cpp:144:tencent::av::AVContextImpl::AVContextImpl  | SDK Version = 1.7.0.2016031516.
+2016/06/04 21:10:08.588 | E | Thread:8232  | Client  | av_context_impl.cpp:166:tencent::av::AVContextImpl::AVContextImpl  | CreateContext. sdk_app_id = 1400007961, account_type = 4000, app_id_at3rd = 1400007961, identifier = lx.
+2016/06/04 21:10:08.588 | I | Thread:8232  | Client  | av_context_impl.cpp:393:tencent::av::AVContextImpl::StartContext   | ******StartContext. start_complete_callback = 00FC636E, custom_data = 0035EFEC.
+2016/06/04 21:10:08.588 | E | Thread:8232  | Client  | av_context_impl.cpp:396:tencent::av::AVContextImpl::StartContext   | Platform: Windows.
+2016/06/04 21:10:08.588 | E | Thread:8232  | Client  | av_context_impl.cpp:432:tencent::av::AVContextImpl::StartContext   | THREAD. Create Main Thread. Main Thread Id = 8232.
+2016/06/04 21:10:08.588 | I | Thread:8232  | Client  | av_context_impl.cpp:451:tencent::av::AVContextImpl::StartContext   | ******StartContexting...
+2016/06/04 21:10:08.588 | E | Thread:8232  | Client  | av_context_impl.cpp:664:IMChannelInitComplete                      | IMChannelInitComplete. errCode=0, desc=
+2016/06/04 21:10:08.682 | E | AVControlCon | Client  | av_context_impl.cpp:1386:OnReadComplete                            | control_config_ OnReadComplete
+2016/06/04 21:10:08.682 | E | AVControlCon | Client  | av_avcontrol_config.cpp:324:AsyncUpdate                            | http://conf.voice.qcloud.com/index.php?sdk_appid=1400007961&sdk_version=115&interface=Voice_Conf_Download&last_update_sequence=4&platform=0
+2016/06/04 21:10:08.698 | E | Thread:8232  | Client  | av_context_impl.cpp:458:OnStartContextComplete                     | ******OnStartContextComplete. ret_code = 0.
+2016/06/04 21:10:08.698 | E | Thread:8232  | Client  | av_context_impl.cpp:987:tencent::av::AVContextImpl::InitAVCtrl     | InitAVCtrl
+2016/06/04 21:10:08.698 | E | Thread:8232  | Client  | av_audio_ctrl_impl.cpp:42:AVAudioCtrlImpl                          | AVAudioCtrlImpl::AVAudioCtrlImpl
+2016/06/04 21:10:08.698 | E | Thread:8232  | Client  | av_video_ctrl_impl.cpp:53:AVVideoCtrlImpl                          | AVVideoCtrlImpl::AVVideoCtrlImpl
+2016/06/04 21:10:08.698 | I | Thread:8232  | Client  | av_context_impl.cpp:483:OnStartContextComplete                     | ******StartContext OK.
+2016/06/04 21:10:09.041 | E | AVControlCon | Client  | av_avcontrol_config.cpp:414:OnDownloadComplete                     | OnDownloadComplete succ
+2016/06/04 21:10:09.056 | E | AVControlCon | Client  | av_context_impl.cpp:1444:OnUpdateComplete                          | control_config_ OnUpdateComplete
+2016/06/04 21:10:09.072 | E | AVControlCon | Client  | av_context_impl.cpp:1429:OnWriteComplete                           | control_config_ OnWriteComplete
+2016/06/04 21:10:10.213 | I | Thread:8232  | Client  | av_context_impl.cpp:750:tencent::av::AVContextImpl::EnterRoom      | ******EnterRoom. room_delegate = 0035EFEC, param = 0035B5C8.
+2016/06/04 21:10:10.228 | E | Thread:8232  | Client  | av_context_impl.cpp:827:tencent::av::AVContextImpl::EnterRoom      | PrepareEncParam tagAudCategory:0
+2016/06/04 21:10:10.228 | E | Thread:8232  | Client  | av_context_impl.cpp:836:tencent::av::AVContextImpl::EnterRoom      | ******EnterRoom. room_delegate = 0035EFEC, room type = 2, room id = 0, relation type = 6, relation id = 100005, peer_identifier = , mode = 1, auth_bits = ffffffffffffffff, auth_buffer = , auth_buffer_len = 0, audio_category = 0, av_control_role = , auto_create_room = 1.
+2016/06/04 21:10:10.618 | E | Thread:8232  | Client  | av_context_impl.cpp:1828:AppEnterRoomCompelete                     | roomSvrCount=8
+2016/06/04 21:10:10.618 | E | Thread:8232  | Client  | av_context_impl.cpp:1836:AppEnterRoomCompelete                     | int_server_info. i = 1, ip = 123.151.178.66, port = 8000, is tcp = 0
+2016/06/04 21:10:10.618 | E | Thread:8232  | Client  | av_context_impl.cpp:1836:AppEnterRoomCompelete                     | int_server_info. i = 2, ip = 123.151.178.66, port = 443, is tcp = 1
+2016/06/04 21:10:10.618 | E | Thread:8232  | Client  | av_context_impl.cpp:1836:AppEnterRoomCompelete                     | int_server_info. i = 3, ip = 123.151.178.16, port = 8000, is tcp = 0
+2016/06/04 21:10:10.618 | E | Thread:8232  | Client  | av_context_impl.cpp:1836:AppEnterRoomCompelete                     | int_server_info. i = 4, ip = 123.151.178.16, port = 443, is tcp = 1
+2016/06/04 21:10:10.618 | E | Thread:8232  | Client  | av_context_impl.cpp:1836:AppEnterRoomCompelete                     | int_server_info. i = 5, ip = 123.151.72.164, port = 8000, is tcp = 0
+2016/06/04 21:10:10.618 | E | Thread:8232  | Client  | av_context_impl.cpp:1836:AppEnterRoomCompelete                     | int_server_info. i = 6, ip = 123.151.72.164, port = 443, is tcp = 1
+2016/06/04 21:10:10.618 | E | Thread:8232  | Client  | av_context_impl.cpp:1836:AppEnterRoomCompelete                     | int_server_info. i = 7, ip = 123.151.14.39, port = 8000, is tcp = 0
+2016/06/04 21:10:10.618 | E | Thread:8232  | Client  | av_context_impl.cpp:1836:AppEnterRoomCompelete                     | int_server_info. i = 8, ip = 123.151.14.39, port = 443, is tcp = 1
+2016/06/04 21:10:10.618 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:136:AVRoomMultiImpl                         | AVRoomMultiImpl::AVRoomMultiImpl
+2016/06/04 21:10:10.618 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:196:tencent::av::AVRoomMultiImpl::Init      | AVRoomMultiImpl::Init()
+2016/06/04 21:10:10.618 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:217:tencent::av::AVRoomMultiImpl::Init      | exePath = C:\Users\Administrator\Desktop\AV_WIN_SDK1.7.0\sample\bin\debug\.
+2016/06/04 21:10:10.618 | E | Thread:8232  | AVGSDK  | avgenvparam.cpp:47:AVGAPI_SetSDKEnv                                | AVGAPI_SetSDKEnv Uin=144115197360545593, Type=5, Ver=1, DataDir=C:\Users\Administrator\Desktop\AV_WIN_SDK1.7.0\sample\bin\debug\
+2016/06/04 21:10:10.618 | E | Thread:8232  | AVGSDK  | avgsession.cpp:25:CAVGSession::CAVGSession                         | CAVGSession::CAVGSession
+2016/06/04 21:10:10.650 | E | Thread:8232  | AVGSDK  | avgsession.cpp:90:CAVGSession::Create                              | CreateSession(dwRoomID=0)
+2016/06/04 21:10:10.650 | E | Thread:8232  | AVGSDK  | avgroomlogicproxy.cpp:72:CAVGRoomLogicProxy::CAVGRoomLogicProxy    | CAVGRoomLogicProxy::CAVGRoomLogicProxy
+2016/06/04 21:10:10.665 | E | Thread:8232  | AVGSDK  | avgroomlogic.cpp:75:CAVGRoomLogic::CAVGRoomLogic                   | CAVGRoomLogic::CAVGRoomLogic
+2016/06/04 21:10:10.665 | E | Thread:8232  | AVGSDK  | avgroomlogic.cpp:113:CAVGRoomLogic::Create                         | Create. room id = 0
+2016/06/04 21:10:10.665 | E | Thread:8232  | AVGSDK  | avgroomlogic.cpp:134:CAVGRoomLogic::Create                         | udp server 123.151.178.66:8000
+2016/06/04 21:10:10.665 | E | Thread:8232  | AVGSDK  | avgroomlogic.cpp:132:CAVGRoomLogic::Create                         | tcp server 123.151.178.66:443
+2016/06/04 21:10:10.665 | E | Thread:8232  | AVGSDK  | avgroomlogic.cpp:134:CAVGRoomLogic::Create                         | udp server 123.151.178.16:8000
+2016/06/04 21:10:10.665 | E | Thread:8232  | AVGSDK  | avgroomlogic.cpp:132:CAVGRoomLogic::Create                         | tcp server 123.151.178.16:443
+2016/06/04 21:10:10.665 | E | Thread:8232  | AVGSDK  | avgroomlogic.cpp:134:CAVGRoomLogic::Create                         | udp server 123.151.72.164:8000
+2016/06/04 21:10:10.665 | E | Thread:8232  | AVGSDK  | avgroomlogic.cpp:132:CAVGRoomLogic::Create                         | tcp server 123.151.72.164:443
+2016/06/04 21:10:10.665 | E | Thread:8232  | AVGSDK  | avgroomlogic.cpp:134:CAVGRoomLogic::Create                         | udp server 123.151.14.39:8000
+2016/06/04 21:10:10.665 | E | Thread:8232  | AVGSDK  | avgroomlogic.cpp:132:CAVGRoomLogic::Create                         | tcp server 123.151.14.39:443
+2016/06/04 21:10:10.665 | E | Thread:8232  | AVGSDK  | avgroomlogicproxy.cpp:178:CAVGRoomLogicProxy::Create               | room logic proxy create roomlogic
+2016/06/04 21:10:11.008 | E | Thread:8232  | LocalFl | localflowctrl.cpp:239:CSubVideoLocalFlowCtrl                       | Init VideoParams:
+2016/06/04 21:10:11.008 | E | Thread:8232  | LocalFl | localflowctrl.cpp:241:CSubVideoLocalFlowCtrl                       | wDefaultRate[160] wHighRate[250] wLowRate[140] wAdjustPeriod[6]
+2016/06/04 21:10:11.008 | E | Thread:8232  | LocalFl | localflowctrl.cpp:245:CSubVideoLocalFlowCtrl                       | wAscendLostRate[1] wDescendLostRate[3] wAscendDelay[100] wDescendDelay[300] wAscendRate[10] wDescendRate[10]
+2016/06/04 21:10:11.008 | E | Thread:8232  | LocalFl | localflowctrl.cpp:247:CSubVideoLocalFlowCtrl                       | w1stDescendRate[200] w10AscendRate[180] w5DescendRate[140]
+2016/06/04 21:10:11.008 | E | Thread:8232  | LocalFl | localflowctrl.cpp:249:CSubVideoLocalFlowCtrl                       | wGop[120] wFecI[15] wFecP[15] wFecSP[15] wQP[35]
+2016/06/04 21:10:11.008 | E | Thread:8232  | CAVGVid | avgvideologic.cpp:102:CAVGVideoLogic::CAVGVideoLogic               | CAVGVideoLogic::CAVGVideoLogic
+2016/06/04 21:10:11.008 | E | Thread:8232  | CAVGVid | avgvideologic.cpp:143:CAVGVideoLogic::Create                       | CAVGVideoLogic::Create. pMediaEngine = 00AEFA08, pSessionProxy = 00AED1C0, pSink = 00A23260.
+2016/06/04 21:10:11.008 | E | Thread:8232  | LocalFl | localflowctrl.cpp:1033:CVideoLocalFlowCtrl::CVideoLocalFlowCtrl    | CVideoLocalFlowCtrl::initParam:
+2016/06/04 21:10:11.008 | E | Thread:8232  | LocalFl | localflowctrl.cpp:1035:CVideoLocalFlowCtrl::CVideoLocalFlowCtrl    | CVideoLocalFlowCtrl wDefaultRate[200] wHighRate[320] wLowRate[150] wAdjustPeriod[6]
+2016/06/04 21:10:11.008 | E | Thread:8232  | LocalFl | localflowctrl.cpp:1039:CVideoLocalFlowCtrl::CVideoLocalFlowCtrl    | CVideoLocalFlowCtrl wAscendLostRate[150] wDescendLostRate[400] wAscendDelay[100] wDescendDelay[250] wAscendRate[10] wDescendRate[10]
+2016/06/04 21:10:11.008 | E | Thread:8232  | LocalFl | localflowctrl.cpp:1041:CVideoLocalFlowCtrl::CVideoLocalFlowCtrl    | CVideoLocalFlowCtrl w1stDescendRate[300] w10AscendRate[180] w5DescendRate[140 wUdtUpLoss[20] wUdtDownLoss[100]]
+2016/06/04 21:10:11.008 | E | Thread:8232  | LocalFl | localflowctrl.cpp:1043:CVideoLocalFlowCtrl::CVideoLocalFlowCtrl    | CVideoLocalFlowCtrl wGop[30] wFecI[15] wFecP[15] wFecSP[15] wQP[40]
+2016/06/04 21:10:11.008 | E | Thread:8232  | AVGSDK  | avgaudiologic.cpp:285:CAVGAudioLogic::CAVGAudioLogic               | CAVGAudioLogic::CAVGAudioLogic
+2016/06/04 21:10:11.008 | E | Thread:8232  | AVGSDK  | avgaudiologic.cpp:307:CAVGAudioLogic::Create                       | CAVGAudioLogic::Create. pMediaEngine = 00AEFA08, pSessionProxy = 00AED1C0, pSink = 00A23100
+2016/06/04 21:10:11.008 | E | Thread:8232  | Client  | av_context_impl.cpp:1001:tencent::av::AVContextImpl::InitDevice    | InitDevice
+2016/06/04 21:10:11.008 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:213:AVAudioDeviceMgrImpl                    | AVAudioDeviceMgrImpl::AVAudioDeviceMgrImpl
+2016/06/04 21:10:11.008 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:232:AVAudioDeviceMgrImpl                    | THREAD. AVAudioDeviceMgrImpl task start. thread id = 0.
+2016/06/04 21:10:11.040 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:1464:AVVideoDeviceMgrImpl                   | AVVideoDeviceMgrImpl::AVVideoDeviceMgrImpl
+2016/06/04 21:10:11.040 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:272:tencent::av::AVAudioDeviceMgrImpl::Init | Init. init_callback == 03BF8858, is_inited_ = 0
+2016/06/04 21:10:11.102 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] OS Version: [Microsoft Windows 7 Service Pack 1][10060101]
+2016/06/04 21:10:11.102 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TRAE Version: [1.6.9000.1]
+2016/06/04 21:10:11.102 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TRAE: InitEngine() [0x00aefee8]
+2016/06/04 21:10:11.102 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info] linkparsers start
+2016/06/04 21:10:11.102 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [NetSrc[0](0) ==> dmx[1](0), type=[CAT_MUX : TYPE_QT : [] ]]
+2016/06/04 21:10:11.102 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [tee[3](0) ==> WinWasapiRender[4](0), type=[CAT_AUDIO : TYPE_PCM : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.102 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [mix[2](0) ==> tee[3](0), type=[CAT_AUDIO : TYPE_PCM : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [AutoDec[18](0) ==> mix[2](0), type=[CAT_AUDIO : TYPE_PCM : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [jitter[17](0) ==> AutoDec[18](0), type=[CAT_AUDIO : TYPE_CELT : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [dmx[1](0) ==> FEC Dec[15](0), type=[CAT_MUX : TYPE_QT : [] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [FEC Dec[15](0) ==> QT Dec[16](0), type=[CAT_MUX : TYPE_QT : [] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [QT Dec[16](0) ==> jitter[17](0), type=[CAT_AUDIO : TYPE_UNKNOWN : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [AutoDec[23](0) ==> mix[2](1), type=[CAT_AUDIO : TYPE_PCM : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [jitter[22](0) ==> AutoDec[23](0), type=[CAT_AUDIO : TYPE_CELT : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [dmx[1](1) ==> FEC Dec[20](0), type=[CAT_MUX : TYPE_QT : [] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [FEC Dec[20](0) ==> QT Dec[21](0), type=[CAT_MUX : TYPE_QT : [] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [QT Dec[21](0) ==> jitter[22](0), type=[CAT_AUDIO : TYPE_UNKNOWN : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [AutoDec[28](0) ==> mix[2](2), type=[CAT_AUDIO : TYPE_PCM : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [jitter[27](0) ==> AutoDec[28](0), type=[CAT_AUDIO : TYPE_CELT : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [dmx[1](2) ==> FEC Dec[25](0), type=[CAT_MUX : TYPE_QT : [] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [FEC Dec[25](0) ==> QT Dec[26](0), type=[CAT_MUX : TYPE_QT : [] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [QT Dec[26](0) ==> jitter[27](0), type=[CAT_AUDIO : TYPE_UNKNOWN : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [AutoDec[33](0) ==> mix[2](3), type=[CAT_AUDIO : TYPE_PCM : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [jitter[32](0) ==> AutoDec[33](0), type=[CAT_AUDIO : TYPE_CELT : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [dmx[1](3) ==> FEC Dec[30](0), type=[CAT_MUX : TYPE_QT : [] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [FEC Dec[30](0) ==> QT Dec[31](0), type=[CAT_MUX : TYPE_QT : [] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [QT Dec[31](0) ==> jitter[32](0), type=[CAT_AUDIO : TYPE_UNKNOWN : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [AutoDec[38](0) ==> mix[2](4), type=[CAT_AUDIO : TYPE_PCM : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [jitter[37](0) ==> AutoDec[38](0), type=[CAT_AUDIO : TYPE_CELT : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [dmx[1](4) ==> FEC Dec[35](0), type=[CAT_MUX : TYPE_QT : [] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [FEC Dec[35](0) ==> QT Dec[36](0), type=[CAT_MUX : TYPE_QT : [] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [QT Dec[36](0) ==> jitter[37](0), type=[CAT_AUDIO : TYPE_UNKNOWN : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [AutoDec[43](0) ==> mix[2](5), type=[CAT_AUDIO : TYPE_PCM : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [jitter[42](0) ==> AutoDec[43](0), type=[CAT_AUDIO : TYPE_CELT : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [dmx[1](5) ==> FEC Dec[40](0), type=[CAT_MUX : TYPE_QT : [] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [FEC Dec[40](0) ==> QT Dec[41](0), type=[CAT_MUX : TYPE_QT : [] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [QT Dec[41](0) ==> jitter[42](0), type=[CAT_AUDIO : TYPE_UNKNOWN : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [WARNING] CWinWasapiCapture::GetOutputType: Device support multiple channels [2]
+2016/06/04 21:10:11.133 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [!!!!!]TRAE CWinWasapiCapture::GetOutputType output type sr= 44100,ch = 2
+2016/06/04 21:10:11.149 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [WinWasapiCapture[5](0) ==> ec[6](0), type=[CAT_AUDIO : TYPE_PCM : [sr=44100, ch=2, b=16] ]]
+2016/06/04 21:10:11.149 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [tee[3](1) ==> ec[6](1), type=[CAT_AUDIO : TYPE_PCM : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.149 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [ec[6](0) ==> CaptureMix[7](0), type=[CAT_AUDIO : TYPE_PCM : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.149 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [CaptureMix[7](0) ==> prep[8](0), type=[CAT_AUDIO : TYPE_PCM : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.149 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [prep[8](0) ==> AuxInMix[14](0), type=[CAT_AUDIO : TYPE_PCM : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.149 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [AuxInMix[14](0) ==> AutoEnc[10](0), type=[CAT_AUDIO : TYPE_PCM : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.149 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [AutoEnc[10](0) ==> QTEnc[11](0), type=[CAT_AUDIO : TYPE_CELT : [sr=48000, ch=2, b=16] ]]
+2016/06/04 21:10:11.149 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [QTEnc[11](0) ==> FEC Enc[13](0), type=[CAT_MUX : TYPE_QT : [] ]]
+2016/06/04 21:10:11.149 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TopoNode: LINK [FEC Enc[13](0) ==> NetSink[12](0), type=[CAT_MUX : TYPE_QT : [] ]]
+2016/06/04 21:10:11.149 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info] linkparsers end
+2016/06/04 21:10:11.211 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][WinWasapiCapture][SetOutputFormat]: Request Format [SR=8000, CH=1], Actual Format [SR=44100, CH=2]
+2016/06/04 21:10:11.211 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog CSpkCtrl, CSpkCtrl::SelectDevice
+2016/06/04 21:10:11.211 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] WinWasapiRender -- SelDev index -2.
+2016/06/04 21:10:11.211 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] WinWasapiRender -- Real index 0.
+2016/06/04 21:10:11.211 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][TRAE] CAuxInMix::SetMicOpen = on
+2016/06/04 21:10:11.211 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableMic On
+2016/06/04 21:10:11.211 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableSpeaker On
+2016/06/04 21:10:11.211 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog CSpkCtrl, CSpkCtrl::SelectDevice OK
+2016/06/04 21:10:11.211 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog CMicCtrl, CMicCtrl::SelectDevice
+2016/06/04 21:10:11.211 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] WinWasapiCapture -- SelDev index -2.
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] WinWasapiCapture -- Real index 0.
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [WARNING] CWinWasapiCapture::GetOutputType: Device support multiple channels [2]
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [!!!!!]TRAE CWinWasapiCapture::GetOutputType output type sr= 44100,ch = 2
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [!!!!!]TRAE nSr = 44100, nCh = 2
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [!!!!!]TRAE m_nFrameSize = 3528
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][TRAE] CAuxInMix::SetMicOpen = on
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableMic On
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableSpeaker On
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog CMicCtrl, CMicCtrl::SelectDevice OK
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TRAE: StartEngine() [0x00aefee8]
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]UnregAll src = eSrcMic 
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]SetDataSrc eSrcMic to 0
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer] Clear old data,Src = eSrcMic
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]UnregAll src = eSrcMixToSend 
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]SetDataSrc eSrcMixToSend to 0
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer] Clear old data,Src = eSrcMixToSend
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer] emit bitstrem signal
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][TRAE] CAuxInMix::SetMicOpen = on
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableMic On
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] Prep -- VAD [OFF]
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]UnregAll src = eSrcSend 
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]SetDataSrc eSrcSend to 0
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer] Clear old data,Src = eSrcSend
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]UnregAll src = eSrcMixToPlay 
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]SetDataSrc eSrcMixToPlay to 0
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer] Clear old data,Src = eSrcMixToPlay
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]UnregAll src = eSrcPlay 
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]SetDataSrc eSrcPlay to 0
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer] Clear old data,Src = eSrcPlay
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]UnregAll src = eSrcNetStream 
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]SetDataSrc eSrcNetStream to 0
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer] Clear old data,Src = eSrcNetStream
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObserver] Destroy DataObserver Thread Success and Dataobserver stop working
+2016/06/04 21:10:11.227 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] CCELTEnc: Create [SampleRate=48000, Ch=2, BitRate=40000, EncodedSize=100]
+2016/06/04 21:10:11.677 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender] Success Set Digtal Volume = 65535
+2016/06/04 21:10:11.677 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender][SpeakerCfg] DigtalVolume = 65535 volume range [0-65535]
+2016/06/04 21:10:11.777 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender][SpeakerCfg] RenderSeesionVolume = 100 volume range [0-100]
+2016/06/04 21:10:11.787 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender][SpeakerCfg] RenderSeesionMute IsMute = 0 
+2016/06/04 21:10:11.787 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender][SpeakerCfg] AudioEndpointVolume = 20 volume range [0-100]
+2016/06/04 21:10:11.787 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender][SpeakerCfg] AudioEndpointMute IsMute = 0 
+2016/06/04 21:10:11.787 | A | Thread:8636  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] AudRnd -- State Change [STOPPED  -> STARTING]
+2016/06/04 21:10:11.787 | A | Thread:8636  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] AudRnd -- State Change [STARTING -> STARTED ]
+2016/06/04 21:10:11.787 | A | Thread:8636  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info] SetOutputFormat CParser = mix  OutputIdx = 0 nSampleRate = 48000 nCh = 2
+2016/06/04 21:10:11.787 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][NetSrc] Start RecvAudCnt = 0
+2016/06/04 21:10:11.787 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [!!!!!]TRAE nSr = 44100, nCh = 2
+2016/06/04 21:10:11.787 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [!!!!!]TRAE m_nFrameSize = 3528
+2016/06/04 21:10:11.797 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [WARNING] CWinWasapiCapture::GetOutputType: Device support multiple channels [2]
+2016/06/04 21:10:11.797 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [!!!!!]TRAE CWinWasapiCapture::GetOutputType output type sr= 44100,ch = 2
+2016/06/04 21:10:12.126 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog capture vol = 65535
+2016/06/04 21:10:12.128 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][Error][CoreCapture] SetMute Failed
+2016/06/04 21:10:12.129 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]UnregAll src = eSrcMic 
+2016/06/04 21:10:12.129 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]SetDataSrc eSrcMic to 0
+2016/06/04 21:10:12.129 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer] Clear old data,Src = eSrcMic
+2016/06/04 21:10:12.129 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]UnregAll src = eSrcMixToSend 
+2016/06/04 21:10:12.129 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]SetDataSrc eSrcMixToSend to 0
+2016/06/04 21:10:12.129 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer] Clear old data,Src = eSrcMixToSend
+2016/06/04 21:10:12.129 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer] emit bitstrem signal
+2016/06/04 21:10:12.129 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][TRAE] CAuxInMix::SetMicOpen = on
+2016/06/04 21:10:12.129 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableMic On
+2016/06/04 21:10:12.129 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]UnregAll src = eSrcSend 
+2016/06/04 21:10:12.130 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]SetDataSrc eSrcSend to 0
+2016/06/04 21:10:12.130 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer] Clear old data,Src = eSrcSend
+2016/06/04 21:10:12.130 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]UnregAll src = eSrcMixToPlay 
+2016/06/04 21:10:12.130 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]SetDataSrc eSrcMixToPlay to 0
+2016/06/04 21:10:12.130 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer] Clear old data,Src = eSrcMixToPlay
+2016/06/04 21:10:12.130 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]UnregAll src = eSrcPlay 
+2016/06/04 21:10:12.130 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]SetDataSrc eSrcPlay to 0
+2016/06/04 21:10:12.130 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer] Clear old data,Src = eSrcPlay
+2016/06/04 21:10:12.130 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]UnregAll src = eSrcNetStream 
+2016/06/04 21:10:12.130 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]SetDataSrc eSrcNetStream to 0
+2016/06/04 21:10:12.130 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer] Clear old data,Src = eSrcNetStream
+2016/06/04 21:10:12.130 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObserver] Destroy DataObserver Thread Success and Dataobserver stop working
+2016/06/04 21:10:12.130 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObserver] Create DataObserver Thread Success and Dataobserver start working
+2016/06/04 21:10:12.130 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObserver]src = eSrcMic,ringbuf format audioparam sr= 48000,ch = 2,bits = 16
+2016/06/04 21:10:12.131 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObserver]src = eSrcMic,ringbuf capacity= 15360,buffered Size = 0
+2016/06/04 21:10:12.131 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObserver]src = eSrcMixToSend,ringbuf format audioparam sr= 48000,ch = 2,bits = 16
+2016/06/04 21:10:12.131 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObserver]src = eSrcMixToSend,ringbuf capacity= 15360,buffered Size = 0
+2016/06/04 21:10:12.131 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObserver]src = eSrcSend,ringbuf format audioparam sr= 48000,ch = 2,bits = 16
+2016/06/04 21:10:12.131 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObserver]src = eSrcSend,ringbuf capacity= 15360,buffered Size = 0
+2016/06/04 21:10:12.131 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObserver]src = eSrcMixToPlay,ringbuf format audioparam sr= 48000,ch = 2,bits = 16
+2016/06/04 21:10:12.131 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObserver]src = eSrcMixToPlay,ringbuf capacity= 15360,buffered Size = 0
+2016/06/04 21:10:12.131 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObserver]src = eSrcPlay,ringbuf format audioparam sr= 48000,ch = 2,bits = 16
+2016/06/04 21:10:12.131 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObserver]src = eSrcPlay,ringbuf capacity= 15360,buffered Size = 0
+2016/06/04 21:10:12.131 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObserver]src = eSrcNetStream,ringbuf format audioparam sr= 48000,ch = 2,bits = 16
+2016/06/04 21:10:12.131 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObserver]src = eSrcNetStream,ringbuf capacity= 15360,buffered Size = 0
+2016/06/04 21:10:12.131 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][TRAE] CAuxInMix::SetMicOpen = off
+2016/06/04 21:10:12.131 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableMic Off
+2016/06/04 21:10:12.131 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableSpeaker Off
+2016/06/04 21:10:12.131 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][TRAE] CAuxInMix::SetMicOpen = on
+2016/06/04 21:10:12.131 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableMic On
+2016/06/04 21:10:12.132 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog CMicCtrl, CMicCtrl::SelectDevice
+2016/06/04 21:10:12.136 | A | Thread:8816  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] Prep -- VAD Voice [Active] Detected
+2016/06/04 21:10:12.136 | E | Thread:8816  | AVGSDK  | avgsession.cpp:149:CAVGSession::OnMEEvent                          | MediaEngine Event. event = 14, index = 0, param0 = 0, param1 = 0.
+2016/06/04 21:10:12.136 | A | Thread:8816  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CAuxInMix]: Cap, ProcessInput, New Format: 48000 -- 2
+2016/06/04 21:10:12.140 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] WinWasapiCapture -- SelDev index -1.
+2016/06/04 21:10:12.146 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] WinWasapiCapture -- Real index 0.
+2016/06/04 21:10:12.148 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [WARNING] CWinWasapiCapture::GetOutputType: Device support multiple channels [2]
+2016/06/04 21:10:12.148 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [!!!!!]TRAE CWinWasapiCapture::GetOutputType output type sr= 44100,ch = 2
+2016/06/04 21:10:12.148 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [!!!!!]TRAE nSr = 44100, nCh = 2
+2016/06/04 21:10:12.148 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [!!!!!]TRAE m_nFrameSize = 3528
+2016/06/04 21:10:12.155 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [!!!!!]TRAE nSr = 44100, nCh = 2
+2016/06/04 21:10:12.155 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [!!!!!]TRAE m_nFrameSize = 3528
+2016/06/04 21:10:12.156 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [WARNING] CWinWasapiCapture::GetOutputType: Device support multiple channels [2]
+2016/06/04 21:10:12.156 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [!!!!!]TRAE CWinWasapiCapture::GetOutputType output type sr= 44100,ch = 2
+2016/06/04 21:10:12.194 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog capture vol = 65535
+2016/06/04 21:10:12.195 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][Error][CoreCapture] SetMute Failed
+2016/06/04 21:10:12.196 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][TRAE] CAuxInMix::SetMicOpen = on
+2016/06/04 21:10:12.196 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableMic On
+2016/06/04 21:10:12.196 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableSpeaker Off
+2016/06/04 21:10:12.196 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog CMicCtrl, CMicCtrl::SelectDevice OK
+2016/06/04 21:10:12.196 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][TRAE] CAuxInMix::SetMicOpen = off
+2016/06/04 21:10:12.196 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableMic Off
+2016/06/04 21:10:12.196 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog CSpkCtrl, CSpkCtrl::SelectDevice
+2016/06/04 21:10:12.200 | A | Thread:8636  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] AudRnd -- State Change [STARTED  -> STOPPED ]
+2016/06/04 21:10:12.200 | A | Thread:8636  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO][CAudRndBase] ****** Playout Event Timeout Counts: 0, 49106160 ******.
+2016/06/04 21:10:12.208 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] WinWasapiRender -- SelDev index -2.
+2016/06/04 21:10:12.209 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] WinWasapiRender -- Real index 0.
+2016/06/04 21:10:12.209 | A | Thread:8644  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CPrep]: New Format: 8000 -- 1
+2016/06/04 21:10:12.209 | A | Thread:8644  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] Prep -- VAD Voice [Inactive] Detected
+2016/06/04 21:10:12.269 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender] Success Set Digtal Volume = 65535
+2016/06/04 21:10:12.269 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender][SpeakerCfg] DigtalVolume = 65535 volume range [0-65535]
+2016/06/04 21:10:12.269 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender][SpeakerCfg] RenderSeesionVolume = 100 volume range [0-100]
+2016/06/04 21:10:12.269 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender][SpeakerCfg] RenderSeesionMute IsMute = 0 
+2016/06/04 21:10:12.269 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender][SpeakerCfg] AudioEndpointVolume = 20 volume range [0-100]
+2016/06/04 21:10:12.269 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender][SpeakerCfg] AudioEndpointMute IsMute = 0 
+2016/06/04 21:10:12.269 | A | Thread:7932  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] AudRnd -- State Change [STOPPED  -> STARTING]
+2016/06/04 21:10:12.269 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][TRAE] CAuxInMix::SetMicOpen = off
+2016/06/04 21:10:12.269 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableMic Off
+2016/06/04 21:10:12.269 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableSpeaker Off
+2016/06/04 21:10:12.269 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog CSpkCtrl, CSpkCtrl::SelectDevice OK
+2016/06/04 21:10:12.269 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableSpeaker On
+2016/06/04 21:10:12.269 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog CSpkCtrl, CSpkCtrl::SelectDevice
+2016/06/04 21:10:12.279 | A | Thread:7932  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] AudRnd -- State Change [STARTING -> STARTED ]
+2016/06/04 21:10:12.279 | A | Thread:7932  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] AudRnd -- State Change [STARTED  -> STOPPED ]
+2016/06/04 21:10:12.279 | A | Thread:7932  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO][CAudRndBase] ****** Playout Event Timeout Counts: 0, 49106239 ******.
+2016/06/04 21:10:12.291 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] WinWasapiRender -- SelDev index -1.
+2016/06/04 21:10:12.292 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] WinWasapiRender -- Real index 0.
+2016/06/04 21:10:12.342 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender] Success Set Digtal Volume = 65535
+2016/06/04 21:10:12.342 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender][SpeakerCfg] DigtalVolume = 65535 volume range [0-65535]
+2016/06/04 21:10:12.352 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender][SpeakerCfg] RenderSeesionVolume = 100 volume range [0-100]
+2016/06/04 21:10:12.352 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender][SpeakerCfg] RenderSeesionMute IsMute = 0 
+2016/06/04 21:10:12.352 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender][SpeakerCfg] AudioEndpointVolume = 20 volume range [0-100]
+2016/06/04 21:10:12.352 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender][SpeakerCfg] AudioEndpointMute IsMute = 0 
+2016/06/04 21:10:12.352 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][TRAE] CAuxInMix::SetMicOpen = off
+2016/06/04 21:10:12.352 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableMic Off
+2016/06/04 21:10:12.352 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableSpeaker On
+2016/06/04 21:10:12.352 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog CSpkCtrl, CSpkCtrl::SelectDevice OK
+2016/06/04 21:10:12.352 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableSpeaker Off
+2016/06/04 21:10:12.352 | E | CWorkTaskSer | AVGSDK  | avgaudiologic.cpp:2061:CAVGAudioLogic::InitDefaultDeviceId         | InitDefaultDeviceId. defaultMicId = {0.0.1.00000000}.{4924d6ed-651d-4958-abe2-948e6f7c0e81}, m_defaultPlayerId = {0.0.0.00000000}.{b7bd7120-6851-412c-943e-c32aee12ee53}.
+2016/06/04 21:10:12.352 | A | Thread:3104  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] AudRnd -- State Change [STOPPED  -> STARTING]
+2016/06/04 21:10:12.352 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:1218:OnEnumCallbackInternal                 | OnEnumCallbackInternal
+2016/06/04 21:10:12.352 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:1062:EnumMicAndPlayerDeviceForWin           | EnumDevice. audio mic device count = 1
+2016/06/04 21:10:12.352 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:1122:EnumMicAndPlayerDeviceForWin           | EnumDevice. audio mic device. device index = 0, device id = {0.0.1.00000000}.{4924d6ed-651d-4958-abe2-948e6f7c0e81}, device name = Âó¿Ë·ç (Realtek High Definition Audio). 
+2016/06/04 21:10:12.352 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:1127:EnumMicAndPlayerDeviceForWin           | EnumDevice. audio player device count = 1
+2016/06/04 21:10:12.352 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:1183:EnumMicAndPlayerDeviceForWin           | EnumDevice. audio player device. device index = 0, device id = {0.0.0.00000000}.{b7bd7120-6851-412c-943e-c32aee12ee53}, device name = ÑïÉùÆ÷ (Realtek High Definition Audio). 
+2016/06/04 21:10:12.352 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:1222:OnEnumCallbackInternal                 | add audio device. DEVICE_ACCOMPANY
+2016/06/04 21:10:12.352 | E | Thread:8232  | Client  | av_context_impl.cpp:1043:OnInitAudioDeviceCallback                 | Enum audio device successfully.
+2016/06/04 21:10:12.352 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:1506:Init                                   | Init. init_callback == 03BF8FA8, is_inited_ = 0
+2016/06/04 21:10:12.352 | A | Thread:3104  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] AudRnd -- State Change [STARTING -> STARTED ]
+2016/06/04 21:10:12.352 | A | Thread:3104  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info] SetOutputFormat CParser = mix  OutputIdx = 0 nSampleRate = 48000 nCh = 2
+2016/06/04 21:10:12.385 | E | CWorkTaskSer | CAVGVid | avgvideologic.cpp:2074:CAVGVideoLogic::GetCameraCtrller            | CAVGVideoLogic::GetCameraCtrller m_pCameraCtrller = 0531A1E8
+2016/06/04 21:10:12.387 | E | CWorkTaskSer | CAVGVid | avgvideologic.cpp:1288:CAVGVideoLogic::GetAVCamera                 | CAVGVideoLogic::GetAVCamera m_pAVCamera = 03C035B0
+2016/06/04 21:10:12.407 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [CaptureImpl] BindToDeviceByIdx(0))
+2016/06/04 21:10:12.423 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [Camera] Property: "FriendlyName"="USB2.0 0.3M UVC WebCam")
+2016/06/04 21:10:12.425 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [Camera] Property: "DevicePath"="\\?\usb#vid_04f2&pid_b2e3&mi_00#7&36e6906d&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global")
+2016/06/04 21:10:12.427 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [Camera] Property: "CLSID"="{17CCA71B-ECD7-11D0-B908-00A0C9223196}")
+2016/06/04 21:10:12.428 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [CPULevel] CPUID is supported!)
+2016/06/04 21:10:12.428 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [CPULevel] GetProcessorSpeedFromReg dwCpuSpeed=2494)
+2016/06/04 21:10:12.428 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [CPULevel] CPUID is supported!)
+2016/06/04 21:10:12.429 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [CPULevel] GetProcessorSpeedFromReg dwCpuSpeed=2494)
+2016/06/04 21:10:12.430 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [CaptureImpl] BindToDeviceByIdx(1))
+2016/06/04 21:10:12.461 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [Camera] Property: "FriendlyName"="XSplitBroadcaster")
+2016/06/04 21:10:12.464 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [Camera] Property: "DevicePath"="@device:sw:{860BB310-5D01-11D0-BD3B-00A0C911CE86}\{VHSplitProc}_XSplitBroadcaster_1_staticsource_VIDEO")
+2016/06/04 21:10:12.465 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [Camera] Property: "CLSID"="{65014ED9-3651-483A-94AA-0DDDE28B6154}")
+2016/06/04 21:10:12.466 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [CPULevel] CPUID is supported!)
+2016/06/04 21:10:12.466 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [CPULevel] GetProcessorSpeedFromReg dwCpuSpeed=2494)
+2016/06/04 21:10:12.467 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [CPULevel] CPUID is supported!)
+2016/06/04 21:10:12.467 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [CPULevel] GetProcessorSpeedFromReg dwCpuSpeed=2494)
+2016/06/04 21:10:12.468 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:2708:OnEnumVideoDeviceCallback              | OnEnumVideoDeviceCallback.
+2016/06/04 21:10:12.468 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:2583:EnumCameraDeviceForWin                 | EnumDevice. video camera device count = 2
+2016/06/04 21:10:12.468 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:2602:EnumCameraDeviceForWin                 | EnumDevice. video camera device. device index = 1, device id = @device:sw:{860BB310-5D01-11D0-BD3B-00A0C911CE86}\{VHSplitProc}_XSplitBroadcaster_1_staticsource_VIDEO, device name = XSplitBroadcaster. 
+2016/06/04 21:10:12.469 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:2602:EnumCameraDeviceForWin                 | EnumDevice. video camera device. device index = 0, device id = \\?\usb#vid_04f2&pid_b2e3&mi_00#7&36e6906d&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global, device name = USB2.0 0.3M UVC WebCam. 
+2016/06/04 21:10:12.469 | E | Thread:8232  | Client  | av_camera_device_win.cpp:54:AVCameraDeviceWin                      | AVCameraDeviceWin::AVCameraDeviceWin
+2016/06/04 21:10:12.469 | I | Thread:8232  | unnamed | av_local_screen_video_device.cpp:21:SetScreenCaptureParam          | left = 0, top = 0, right = 0, bottom = 0, fps = 0.
+2016/06/04 21:10:12.469 | I | Thread:8232  | unnamed | av_local_screen_video_device.cpp:73:SetScreenCaptureParam          | left_ = 0, top_ = 0, right_ = 1360, bottom_ = 768, fps_ = 10.
+2016/06/04 21:10:12.470 | E | Thread:8232  | Client  | av_context_impl.cpp:1070:OnInitVideoDeviceCallback                 | Enum video device successfully.
+2016/06/04 21:10:12.470 | E | Thread:8232  | Client  | av_context_impl.cpp:1084:RequestToEnterRoom                        | RequestToEnterRoom.
+2016/06/04 21:10:12.476 | E | Thread:8232  | Client  | av_context_impl.cpp:1558:PrepareEncParam                           | PrepareEncParam tagAudParam. dwAecFlag:1, dwAgcFlag:1, dwAnsFlag:1, dwVadFlag:1, dwFecFlag:1, dwDuration:0, dwFs:0, dwCh:1, dwCodec:4102, dwBitrate:0.dwAudJitterMinDelayMs:0, dwAudJitterMaxMaxDelayMs:0, dwAudJitterMinMaxDelayMs:0.
+2016/06/04 21:10:12.478 | E | Thread:8232  | Client  | av_context_impl.cpp:1595:PrepareEncParam                           | PrepareEncParam tagVideoParam. dwQCleargrade:0, dwQClearswh:-1, dwProto:-1, dwFecswh:-1, dwFps:-1, dwMaxqp:32, dwMinqp:-1, dwMaxbitrate:-1, dwMinbitrate:-1, dwBitrate:-1, dwGop:-1, dwSmallVideSwh:1, dwAnchorType:1, dwWidth:640, dwHeight:480, dwMaxwidth:-1, dwMaxheight:-1.
+2016/06/04 21:10:12.478 | E | Thread:8232  | CAVGVid | avgvideologic.cpp:2180:CAVGVideoLogic::SetCustomVideoCodecParam    | SetCustomVideoCodecParam. pVidParam = 0035B050
+2016/06/04 21:10:12.478 | E | Thread:8232  | CAVGVid | avgvideologic.cpp:2192:CAVGVideoLogic::SetCustomVideoCodecParam    | AVPARAM. LOCAL SET. MAINVIDEO. CUSTOM. dwProto = -1, dwWidth = 640, dwHeight = 480, dwFps = -1, dwBitrate = -1, dwMinqp = -1, dwMaxqp = 32, dwGop = -1, dwQClearswh = -1, dwQCleargrade = 0, dwFecswh = -1, dwMaxwidth = -1, dwMaxheight = -1, dwMinbitrate = -1, dwMaxbitrate = -1, dwSmallVideSwh = 1, dwAnchorType = 1.
+2016/06/04 21:10:12.479 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:319:tencent::av::AVRoomMultiImpl::EnterRoom | EnterRoom. room_delegate = 00AE9B44.
+2016/06/04 21:10:12.479 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:327:tencent::av::AVRoomMultiImpl::EnterRoom | EnterRoom. room_id = 0.
+2016/06/04 21:10:12.480 | E | Thread:8232  | AVGSDK  | avgroomlogicproxy.cpp:324:CAVGRoomLogicProxy::SaveAVGAbilityOption | save avg ability option
+2016/06/04 21:10:12.480 | E | Thread:8232  | AVGSDK  | avgroomlogic.cpp:342:CAVGRoomLogic::SetRoomState                   | Room State Changed - OldState = 0, NewState = 1
+2016/06/04 21:10:12.480 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:1416:RoomLogic_OnStateChanged               | eStateOld = 0, eStateNew = 1, room_state_ = 1.
+2016/06/04 21:10:12.480 | E | CWorkTaskSer | AVGSDK  | avgaudiologic.cpp:1912:CAVGAudioLogic::FillSpeciLimit              | FillAudioSpeciLimit Codec:4102 Fs:0 Ch:1 Duration:0 Bitrate:0 Aec:1 Agc:1 Ans:1 Vad:1 Fec:1, Jitter:0,0--0,0
+2016/06/04 21:10:12.480 | E | CWorkTaskSer | CAVGVid | avgvideologic.cpp:870:CAVGVideoLogic::FillVideoLimit               | CAVGVideoLogic::FillVideoLimit
+2016/06/04 21:10:12.480 | E | CWorkTaskSer | CAVGVid | avgvideologic.cpp:1269:CAVGVideoLogic::GetAVCamera                 | CAVGVideoLogic::GetAVCamera m_pAVCamera = 03C035B0
+2016/06/04 21:10:12.481 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [CaptureImpl] BindToDeviceByIdx(0))
+2016/06/04 21:10:12.495 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [Camera] Property: "FriendlyName"="USB2.0 0.3M UVC WebCam")
+2016/06/04 21:10:12.497 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [Camera] Property: "DevicePath"="\\?\usb#vid_04f2&pid_b2e3&mi_00#7&36e6906d&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global")
+2016/06/04 21:10:12.501 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [Camera] Property: "CLSID"="{17CCA71B-ECD7-11D0-B908-00A0C9223196}")
+2016/06/04 21:10:13.093 | E | CWorkTaskSer | CAVGVid | avgvideologic.cpp:2155:CAVGVideoLogic::FillSpeciLimit              | pAO = 06AED828, m_pCustomVidParam = 03C01F08
+2016/06/04 21:10:13.120 | E | CWorkTaskSer | CVideoQ | videoqosstrategy.cpp:174:CVideoQosStrategy::FillVideoLimit         | m_nVideoAbilityH264:0x00000fff m_nVideoAbilityVP8:0x00000fff nVideoAbilityH264Dec:0x0000ffff nVideoAbilityVP8Dec:0x0000ffff wCPUVideoAbility:12 wCameraAbility:1
+2016/06/04 21:10:13.120 | E | CWorkTaskSer | CAVGCsP | avgcsprocessor.cpp:174:CAVGCsProcessor::AsynConnect                | *******************UDP Channel Connect Start 123.151.178.66:8000
+2016/06/04 21:10:13.120 | E | CWorkTaskSer | CAVGCsP | avgcsprocessor.cpp:454:CAVGCsProcessor::SetCsState                 | Channel State Changed - OldState = 0, NewState = 1
+2016/06/04 21:10:13.122 | E | CWorkTaskSer | CAVGCsP | avgcsprocessor.cpp:477:CAVGCsProcessor::OnConnect                  | *******************Channel connected successfully.*******************
+2016/06/04 21:10:13.122 | E | CWorkTaskSer | CAVGCsP | avgcsprocessor.cpp:454:CAVGCsProcessor::SetCsState                 | Channel State Changed - OldState = 1, NewState = 2
+2016/06/04 21:10:13.123 | E | CWorkTaskSer | AVGSDK  | avgabilitycodec.cpp:372:AVGRoomLogic::PBCmdCodec::CodeCPULimit     | AVPARAM. AbilityOption. CPULimit. strName = Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz, dwMHz = 2494, dwCount = 4, u64ID = 1610811049, u64InstSet = 255, dwCacheL2 = 256, dwCacheL3 = -1.
+2016/06/04 21:10:13.123 | E | CWorkTaskSer | AVGSDK  | avgabilitycodec.cpp:415:AVGRoomLogic::PBCmdCodec::CodeGeneralLimit | AVPARAM. AbilityOption. GeneralLimit. cPeer = 0, cClientType = 5, dwDevice = 0, strOS = windows, bTCP = 0, strClientVersion = 1.7.0.2016031516.
+2016/06/04 21:10:13.123 | E | CWorkTaskSer | AVGSDK  | avgabilitycodec.cpp:450:AVGRoomLogic::PBCmdCodec::CodeAudioLimit   | AVPARAM. AbilityOption. AudioLimit. dwCheckInfo = 0, dwVersion = 1, dwChannel = 0, bufEncode.ulen = 4, bufDecode.ulen = 120.
+2016/06/04 21:10:13.123 | E | CWorkTaskSer | AVGSDK  | avgabilitycodec.cpp:617:AVGRoomLogic::PBCmdCodec::CodeCameraLimit  | AVPARAM. AbilityOption. CameraLimit. strName = vid_04f2&pid_b2e3&mi_00, dwSource = 1.
+2016/06/04 21:10:13.123 | E | CWorkTaskSer | AVGSDK  | avgabilitycodec.cpp:486:AVGRoomLogic::PBCmdCodec::CodeVideoLimit   | AVPARAM. AbilityOption. VideoLimit. dwWidth = 1360, dwHeight = 768, dwArq = 0, dwKalman = 0, dwQStar = 0, dwHwacc = 0, dwFECType = 0.
+2016/06/04 21:10:13.123 | E | CWorkTaskSer | AVGSDK  | avgabilitycodec.cpp:741:CodeSpeciVidParam                          | AVPARAM. AbilityOption. SpeciVidParam. dwProto = -1, dwWidth = 640, dwHeight = 480, dwFps = -1, dwBitrate = -1, dwMinqp = -1, dwMaxqp = 32, dwGop = -1, dwQClearswh = -1, dwQCleargrade = 0, dwFecswh = -1, dwMaxwidth = -1, dwMaxheight = -1, dwMinbitrate = -1, dwMaxbitrate = -1, dwSmallVideSwh = 1, dwAnchorType = 1.
+2016/06/04 21:10:13.123 | E | CWorkTaskSer | AVGSDK  | avgabilitycodec.cpp:777:CodeSpeciAudParam                          | AVPARAM. AbilityOption. SpeciAudParam. dwCodec = 4102, dwFs = 0, dwCh = 1, dwDuration = 0, dwBitrate = 0, dwAecFlag = 1, dwAgcFlag = 1, dwAnsFlag = 1, dwVadFlag = 1, dwFecFlag = 1, dwSpJitterMinmaxDelayMs = 0, dwSpJitterMaxmaxDelayMs = 0, dwSpJitterDropScalefactor = 0, dwSpJitterMinDelayMs = 0.
+2016/06/04 21:10:13.130 | E | CWorkTaskSer | AVGSDK  | avgroomlogic.cpp:211:CAVGRoomLogic::Request                        | Request Start
+2016/06/04 21:10:13.203 | E | Thread:8232  | AVGSDK  | avgroomlogic.cpp:342:CAVGRoomLogic::SetRoomState                   | Room State Changed - OldState = 1, NewState = 3
+2016/06/04 21:10:13.203 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:1416:RoomLogic_OnStateChanged               | eStateOld = 1, eStateNew = 3, room_state_ = 3.
+2016/06/04 21:10:13.203 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:396:OnRoomRequestCallbackInternal           | OnRequestCallback: OK! relation_id = 100005, eResult = 0, room_id = 1512859
+2016/06/04 21:10:13.205 | E | CWorkTaskSer | CAVGVid | avgvideologic.cpp:2074:CAVGVideoLogic::GetCameraCtrller            | CAVGVideoLogic::GetCameraCtrller m_pCameraCtrller = 0531A1E8
+2016/06/04 21:10:13.205 | E | CWorkTaskSer | CAVGVid | avgvideologic.cpp:1269:CAVGVideoLogic::GetAVCamera                 | CAVGVideoLogic::GetAVCamera m_pAVCamera = 03C035B0
+2016/06/04 21:10:13.397 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [CaptureImpl] BindToDeviceByIdx(0))
+2016/06/04 21:10:13.412 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [Camera] Property: "FriendlyName"="USB2.0 0.3M UVC WebCam")
+2016/06/04 21:10:13.413 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [Camera] Property: "DevicePath"="\\?\usb#vid_04f2&pid_b2e3&mi_00#7&36e6906d&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global")
+2016/06/04 21:10:13.414 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [Camera] Property: "CLSID"="{17CCA71B-ECD7-11D0-B908-00A0C9223196}")
+2016/06/04 21:10:13.414 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [CaptureImpl] IsSameSrc(\\?\usb#vid_04f2&pid_b2e3&mi_00#7&36e6906d&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global, Camera) == true)
+2016/06/04 21:10:13.415 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [CaptureImpl] BindToDeviceByIdx(1))
+2016/06/04 21:10:13.425 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [Camera] Property: "FriendlyName"="XSplitBroadcaster")
+2016/06/04 21:10:13.426 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [Camera] Property: "DevicePath"="@device:sw:{860BB310-5D01-11D0-BD3B-00A0C911CE86}\{VHSplitProc}_XSplitBroadcaster_1_staticsource_VIDEO")
+2016/06/04 21:10:13.426 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [Camera] Property: "CLSID"="{65014ED9-3651-483A-94AA-0DDDE28B6154}")
+2016/06/04 21:10:13.429 | E | CWorkTaskSer | AVGSDK  | avgaudiologic.cpp:1267:CAVGAudioLogic::OnRecvQosPush               | AudioQos SampleRate:16000 CodecType:4102 ChnNum:1 Bitrate:20000 Duration:20 Lost:0 RECN:6 RECM:1 	rate_type:0 MTU:0 aec:1 agc:1 ns:1 DTX:1 VAD:1 lostfb:1 Jitter MinDelay:120ms, MaxDelay:400ms--1000ms, scale:40
+2016/06/04 21:10:13.431 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][WinWasapiCapture][SetOutputFormat]: Request Format [SR=16000, CH=1], Actual Format [SR=44100, CH=2]
+2016/06/04 21:10:13.431 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] Prep -- VAD [ON ]
+2016/06/04 21:10:13.431 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] Prep -- AGC [ON ]
+2016/06/04 21:10:13.431 | E | CWorkTaskSer | CAVGVid | avgvideologic.cpp:1858:CAVGVideoLogic::OnRecvVidQosPush            | AVPARAM. FLOWCTRL PUSH. MAINVIDEO. Small: codec = 1, w = 0, h = 0, fps = 0, br = 0, gop = 0, minqp = 0, maxqp = 0.Others: uiFecType = 0, uiIMtu = 0, uiSPMtu = 0, uiPMtu = 0, uiIFecPrecent = 0, uiSPFecPercent = 0, uiPFecPercent = 0, uiIFecMinPkg = 0, uiSPFecMinPkg = 0, uiPFecMinPkg = 0, uiIMinPkgSize = 0, uiSPMinPkgSize = 0, uiPMinPkgSize = 0, uiGop = 0, uiMinQP = 0, uiMaxQP = 0, uiEncMode = 0, uiUseHWAccelerate = 0, uiUseQstar = 0, nQclearSwitch = 3435973836, nQclearGrade = 3435973836, uiFms = 0.
+2016/06/04 21:10:13.431 | E | CWorkTaskSer | CAVGVid | avgvideologic.cpp:1918:CAVGVideoLogic::OnRecvVidQosPush            | AVPARAM. FLOWCTRL PUSH. MAINVIDEO. Big: codec = 5, w = 640, h = 480, fps = 10, br = 145, gop = 1, minqp = 0, maxqp = 32. Others: uiFecType = 0, uiIMtu = 1000, uiSPMtu = 1000, uiPMtu = 1000, uiIFecPrecent = 20, uiSPFecPercent = 20, uiPFecPercent = 0, uiIFecMinPkg = 2, uiSPFecMinPkg = 1, uiPFecMinPkg = 0, uiIMinPkgSize = 700, uiSPMinPkgSize = 650, uiPMinPkgSize = 600, uiGop = 30, uiMinQP = 0, uiMaxQP = 0, uiEncMode = 0, uiUseHWAccelerate = 0, uiUseQstar = 0, nQclearSwitch = 3435973836, nQclearGrade = 3435973836, uiFms = 0.
+2016/06/04 21:10:13.431 | E | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:1080:CMultiMediaEngine::SetVidParam          | CODEC_CONTROL. Video Encoder. CreateVidEncArg. bRet = 0.
+2016/06/04 21:10:13.431 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [CaptureImpl] RequestOutputSize(640x480) bsSrcPath[@device:sw:{860BB310-5D01-11D0-BD3B-00A0C911CE86}\{VHSplitProc}_XSplitBroadcaster_1_staticsource_VIDEO] m_eCapType[0])
+2016/06/04 21:10:13.432 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:526:ChangeAVState                           | ChangeAVState. av_state = 1.
+2016/06/04 21:10:13.432 | E | Thread:8232  | AVGSDK  | cs0x25_0x26.cpp:17:CAVGRoomLogic::ChangeAVState                    | CAVGRoomLogic::ChangeAVState 62900352
+2016/06/04 21:10:13.432 | E | Thread:8232  | Client  | av_endpoint_impl.cpp:44:CreateInstance                             | ViewListOperImpl::CreateInstance.
+2016/06/04 21:10:13.432 | E | Thread:8232  | Client  | av_endpoint_impl.cpp:83:ViewListOperImpl                           | ViewListOperImpl::ViewListOperImpl. this = 06AEF4C8
+2016/06/04 21:10:13.432 | I | Thread:8232  | Client  | av_context_impl.cpp:931:OnEnterRoomCompleteInternal                | ******EnterRoom OK. ret_code = 0, room_state_ = 2.
+2016/06/04 21:10:13.448 | A | Thread:8644  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CPrep]: New Format: 16000 -- 1
+2016/06/04 21:10:13.449 | I | Thread:8232  | Client  | av_device_mgr_impl.cpp:1950:SelectInputDevice                      | ******SelectInputDevice. device_id = \\?\usb#vid_04f2&pid_b2e3&mi_00#7&36e6906d&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global, is_select = 1.
+2016/06/04 21:10:13.450 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:1974:SelectInputDevice                      | cur_oper_device_type = \video\camera.
+2016/06/04 21:10:13.450 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:2022:CheckVideoInputDeviceOperationConfict  | CheckVideoInputDeviceOperationConfict. device_type = \video\camera
+2016/06/04 21:10:13.450 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:2109:SelectCamera                           | ******SelectCamera. device_id = \\?\usb#vid_04f2&pid_b2e3&mi_00#7&36e6906d&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global, is_select = 1.
+2016/06/04 21:10:13.450 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:2118:SelectCamera                           | is_camera_device_operating_ == true
+2016/06/04 21:10:13.450 | I | Thread:8232  | unnamed | av_camera_device.cpp:91:tencent::av::AVCameraDeviceImpl::Enable    | Enable. is_select = 1.
+2016/06/04 21:10:13.450 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:526:ChangeAVState                           | ChangeAVState. av_state = 3.
+2016/06/04 21:10:13.450 | E | Thread:8232  | unnamed | av_camera_device.cpp:146:tencent::av::AVCameraDeviceImpl::Enable   | ChangeAVState OK. request_change_ret_code = 0.
+2016/06/04 21:10:13.450 | E | Thread:8232  | Client  | av_camera_device_win.cpp:129:EnableCamera                          | AVCameraDeviceWin::EnableCamera. camera_id = 0, is_select = 1
+2016/06/04 21:10:13.450 | E | Thread:8232  | CAVGVid | avgvideologic.cpp:2074:CAVGVideoLogic::GetCameraCtrller            | CAVGVideoLogic::GetCameraCtrller m_pCameraCtrller = 0531A1E8
+2016/06/04 21:10:13.450 | E | Thread:8232  | AVGSDK  | cameractrller.cpp:84:CCameraCtrller::SetDeviceID                   | CCameraCtrller::SetCameSetDeviceIDraDeviceID(0)
+2016/06/04 21:10:13.450 | E | Thread:8232  | CAVGVid | avgvideologic.cpp:1269:CAVGVideoLogic::GetAVCamera                 | CAVGVideoLogic::GetAVCamera m_pAVCamera = 03C035B0
+2016/06/04 21:10:13.450 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [CaptureMgr] Stop(bsSrcPath[@device:sw:{860BB310-5D01-11D0-BD3B-00A0C911CE86}\{VHSplitProc}_XSplitBroadcaster_1_staticsource_VIDEO], pSession[054BFEA0], Type[0]))
+2016/06/04 21:10:13.450 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [Camera] Stop())
+2016/06/04 21:10:13.451 | E | CWorkTaskSer | CAVGVid | avgvideologic.cpp:169:CAVGVideoLogic::AsynStartStream              | CAVGVideoLogic::AsynStartStream dwStreamFlags = 1
+2016/06/04 21:10:13.451 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [GraphBasic] UtilStop() if(HasGraph()) - else)
+2016/06/04 21:10:13.451 | E | Thread:8232  | AVGSDK  | cameractrller.cpp:171:CCameraCtrller::CanStart                     | CCameraCtrller::CanStart m_bUseGUID = 0 m_nID = 0
+2016/06/04 21:10:13.451 | E | Thread:8232  | AVGSDK  | cameractrller.cpp:121:CCameraCtrller::Start                        | CCameraCtrller::Start pCamera = 03C035B0 m_bUseGUID = 0
+2016/06/04 21:10:13.451 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [CaptureImpl] BindToDeviceByIdx(0))
+2016/06/04 21:10:13.462 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [Camera] Property: "FriendlyName"="USB2.0 0.3M UVC WebCam")
+2016/06/04 21:10:13.464 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [Camera] Property: "DevicePath"="\\?\usb#vid_04f2&pid_b2e3&mi_00#7&36e6906d&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global")
+2016/06/04 21:10:13.466 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [Camera] Property: "CLSID"="{17CCA71B-ECD7-11D0-B908-00A0C9223196}")
+2016/06/04 21:10:13.467 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [CaptureMgr] UserFilter(1))
+2016/06/04 21:10:13.467 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [CaptureImpl] Start() bsSrcPath[\\?\usb#vid_04f2&pid_b2e3&mi_00#7&36e6906d&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global] m_eCapType[0] paramCamera[2,640x480])
+2016/06/04 21:10:13.476 | A | Thread:8644  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info] CPrep::ProcessInput lastmic:capability is 15,stepdb is 10.000000,rvol is 65535.000000
+2016/06/04 21:10:14.321 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [Camera] _GeneralSearch({0x32595559, 640x480}) defualt[0x32595559,640x480,30fps,640x480,30fps] other[0x32595559,65535x65535,0fps,0x32595559,0x0,0fps])
+2016/06/04 21:10:14.325 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [CapDxDump] SetMediaType(subtype[0x32595559] size[640x480]) graph[USB2.0 0.3M UVC WebCam ->> DumpDX],fps(30))
+2016/06/04 21:10:14.604 | E | Thread:7956  | CAVGVid | avgvideologic.cpp:379:CAVGVideoLogic::OnCaptureEvent               | AVCameraEvt_Log : [Camera] Start(640x480) done)
+2016/06/04 21:10:15.219 | E | Thread:8232  | AVGSDK  | cameractrller.cpp:165:CCameraCtrller::Start                        | CCameraCtrller::Start bBind = 1 bRes = 1
+2016/06/04 21:10:15.220 | I | Thread:8232  | unnamed | av_camera_device.cpp:253:tencent::av::AVCameraDeviceImpl::Enable   | EnableCamera OK.
+2016/06/04 21:10:15.220 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:2149:SelectCamera                           | SelectCamera. ret_code = 0.
+2016/06/04 21:10:15.220 | I | Thread:8232  | Client  | av_device_mgr_impl.cpp:2015:SelectInputDevice                      | ******SelectInputDeviceing...
+2016/06/04 21:10:15.220 | I | Thread:8232  | Client  | av_device_mgr_impl.cpp:696:SelectInputDevice                       | ******SelectInputDevice. device_id = {0.0.1.00000000}.{4924d6ed-651d-4958-abe2-948e6f7c0e81}, is_select = 1.
+2016/06/04 21:10:15.220 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:726:SelectInputDevice                       | cur_oper_device_type = \audio\mic.
+2016/06/04 21:10:15.221 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:794:SelectMic                               | SelectMic. device_id = {0.0.1.00000000}.{4924d6ed-651d-4958-abe2-948e6f7c0e81}, is_select = 1.
+2016/06/04 21:10:15.221 | E | CWorkTaskSer | CAVGVid | avgvideologic.cpp:1524:CAVGVideoLogic::OnEnableCamera              | OnOpenCamera, device id = 0, ret code = 0.
+2016/06/04 21:10:15.221 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:803:SelectMic                               | is_mic_device_operating_ == true
+2016/06/04 21:10:15.221 | I | Thread:8232  | unnamed | av_mic_device.cpp:33:tencent::av::AVMicDeviceImpl::Enable          | Enable. is_select = 1.
+2016/06/04 21:10:15.221 | I | Thread:8232  | unnamed | av_mic_device.cpp:89:tencent::av::AVMicDeviceImpl::Enable          | Enableing...
+2016/06/04 21:10:15.221 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:834:SelectMic                               | SelectMic. ret_code = 0.
+2016/06/04 21:10:15.221 | I | Thread:8232  | Client  | av_device_mgr_impl.cpp:743:SelectInputDevice                       | ******SelectInputDeviceing...
+2016/06/04 21:10:15.221 | I | Thread:8232  | Client  | av_device_mgr_impl.cpp:750:SelectOutputDevice                      | ******SelectOutputDevice. device_id = {0.0.0.00000000}.{b7bd7120-6851-412c-943e-c32aee12ee53}, is_select = 1.
+2016/06/04 21:10:15.221 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:774:SelectOutputDevice                      | cur_oper_device_type = \audio\player.
+2016/06/04 21:10:15.221 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:840:SelectPlayer                            | SelectPlayer. device_id = {0.0.0.00000000}.{b7bd7120-6851-412c-943e-c32aee12ee53}, is_select = 1.
+2016/06/04 21:10:15.221 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:849:SelectPlayer                            | is_player_device_operating_ == true
+2016/06/04 21:10:15.221 | I | Thread:8232  | unnamed | av_player_device.cpp:21:tencent::av::AVPlayerDeviceImpl::Enable    | Enable. is_select = 1.
+2016/06/04 21:10:15.221 | I | Thread:8232  | unnamed | av_player_device.cpp:77:tencent::av::AVPlayerDeviceImpl::Enable    | Enableing...
+2016/06/04 21:10:15.221 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:879:SelectPlayer                            | SelectPlayer. ret_code = 0.
+2016/06/04 21:10:15.221 | I | Thread:8232  | Client  | av_device_mgr_impl.cpp:787:SelectOutputDevice                      | ******SelectOutputDeviceing...
+2016/06/04 21:10:15.227 | E | Thread:8232  | Client  | av_audio_ctrl_impl.cpp:803:GetAudioDataFormat                      | ******GetAudioDataFormat. src_type = 0 
+2016/06/04 21:10:15.228 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog CMicCtrl, CMicCtrl::SelectDevice
+2016/06/04 21:10:15.231 | E | Thread:8232  | Client  | av_audio_ctrl_impl.cpp:899:GetAudioDataVolume                      | ******GetAudioDataVolume. src_type = 0 
+2016/06/04 21:10:15.233 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:1577:RoomLogic_OnUserJoinInternal           | OnUserJoin. identifier = lx, tiny id = 144115197360545593, cFlag = 0x2, HasCameraVideo = 0, HasScreenVideo = 0.
+2016/06/04 21:10:15.233 | E | Thread:8232  | Client  | av_endpoint_impl.cpp:734:AVEndpointImpl                            | AVEndpointImpl::AVEndpointImpl. this = 06AEDFB0
+2016/06/04 21:10:15.234 | E | Thread:8232  | Client  | av_endpoint_impl.cpp:741:AVEndpointImpl                            | identifier = lx, tiny id = 144115197360545593.
+2016/06/04 21:10:15.234 | E | Thread:8232  | Client  | av_context_impl.cpp:1375:OnEndpointsUpdateInfo                     | OnEndpointsUpdateInfo. eventid = 1, identifier = lx
+2016/06/04 21:10:15.234 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:1032:EndpointsEnter                         | EVENT_ID_ENDPOINT_ENTER
+2016/06/04 21:10:15.234 | F | Thread:8232  | Client  | av_room_multi_impl.cpp:1034:EndpointsEnter                         | lx
+2016/06/04 21:10:15.234 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:602:OnChangeAVStateCallbackInternal         | OnChangeAVStateCallback.OK. result = 0, retCode = 0, request av state = 1, respone av state = 2.
+2016/06/04 21:10:15.234 | E | Thread:8232  | Client  | av_camera_device_win.cpp:247:OnOpenCamera                          | OnOpenCamera. ret_code = 0, camera_id = 0.
+2016/06/04 21:10:15.235 | I | Thread:8232  | Client  | av_device_mgr_impl.cpp:2378:OnDeviceOperation                      | ******OnDeviceOperation. device id = \\?\usb#vid_04f2&pid_b2e3&mi_00#7&36e6906d&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global, oper = 1, ret code = 0.
+2016/06/04 21:10:15.235 | I | Thread:8232  | Client  | av_device_mgr_impl.cpp:2388:OnDeviceOperation                      | ******DeviceOperation OK. ret_code = 0.
+2016/06/04 21:10:15.235 | I | Thread:8232  | Client  | av_device_mgr_impl.cpp:2456:OnDeviceOperation                      | ******is_camera_device_operating_ == false
+2016/06/04 21:10:15.235 | I | Thread:8232  | Client  | av_room_multi_impl.cpp:738:GetEndpointList                         | GetEndpointList. count = 1.
+2016/06/04 21:10:15.246 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] WinWasapiCapture -- SelDev index 0.
+2016/06/04 21:10:15.250 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] WinWasapiCapture -- Real index 0.
+2016/06/04 21:10:15.251 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [WARNING] CWinWasapiCapture::GetOutputType: Device support multiple channels [2]
+2016/06/04 21:10:15.251 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [!!!!!]TRAE CWinWasapiCapture::GetOutputType output type sr= 44100,ch = 2
+2016/06/04 21:10:15.251 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [!!!!!]TRAE nSr = 44100, nCh = 2
+2016/06/04 21:10:15.251 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [!!!!!]TRAE m_nFrameSize = 3528
+2016/06/04 21:10:15.261 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [!!!!!]TRAE nSr = 44100, nCh = 2
+2016/06/04 21:10:15.261 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [!!!!!]TRAE m_nFrameSize = 3528
+2016/06/04 21:10:15.262 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [WARNING] CWinWasapiCapture::GetOutputType: Device support multiple channels [2]
+2016/06/04 21:10:15.262 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [!!!!!]TRAE CWinWasapiCapture::GetOutputType output type sr= 44100,ch = 2
+2016/06/04 21:10:15.270 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:562:ChangeAVStateNext                       | ChangeAVStateNext. av_state = 3.
+2016/06/04 21:10:15.270 | E | Thread:8232  | AVGSDK  | cs0x25_0x26.cpp:17:CAVGRoomLogic::ChangeAVState                    | CAVGRoomLogic::ChangeAVState 62900352
+2016/06/04 21:10:15.302 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog capture vol = 65535
+2016/06/04 21:10:15.303 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][Error][CoreCapture] SetMute Failed
+2016/06/04 21:10:15.304 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][TRAE] CAuxInMix::SetMicOpen = off
+2016/06/04 21:10:15.304 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableMic Off
+2016/06/04 21:10:15.304 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableSpeaker Off
+2016/06/04 21:10:15.304 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog CMicCtrl, CMicCtrl::SelectDevice OK
+2016/06/04 21:10:15.304 | E | CWorkTaskSer | AVGSDK  | avgaudiologic.cpp:680:CAVGAudioLogic::AsynStartStream              | AsynStartStream. dwDeviceFlags = 1, m_oRecDevice.nID = -2, m_oRecDevice.strID = {, m_oPlayDevice.nID = -2, m_oPlayDevice.strID = {
+2016/06/04 21:10:15.304 | E | CWorkTaskSer | AVGSDK  | avgaudiologic.cpp:685:CAVGAudioLogic::AsynStartStream              | Start Record
+2016/06/04 21:10:15.304 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][TRAE] CAuxInMix::SetMicOpen = on
+2016/06/04 21:10:15.304 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableMic On
+2016/06/04 21:10:15.308 | E | CWorkTaskSer | AVGSDK  | avgaudiologic.cpp:725:CAVGAudioLogic::AsynStartStream              | OnDeviceStart. device id = {0.0.1.00000000}.{4924d6ed-651d-4958-abe2-948e6f7c0e81}, ret code = 0.
+2016/06/04 21:10:15.309 | I | Thread:8232  | Client  | av_device_mgr_impl.cpp:979:OnDeviceOperation                       | ******OnDeviceOperation. device id = {0.0.1.00000000}.{4924d6ed-651d-4958-abe2-948e6f7c0e81}, oper = 1, ret code = 0.
+2016/06/04 21:10:15.309 | I | Thread:8232  | Client  | av_device_mgr_impl.cpp:990:OnDeviceOperation                       | ******DeviceOperation OK. ret_code = 0.
+2016/06/04 21:10:15.309 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:1002:OnDeviceOperation                      | cur_oper_device_type = \audio\mic.
+2016/06/04 21:10:15.309 | I | Thread:8232  | Client  | av_device_mgr_impl.cpp:1010:OnDeviceOperation                      | ******is_mic_device_operating_ == false
+2016/06/04 21:10:15.310 | E | CWorkTaskSer | AVGSDK  | avgaudiologic.cpp:680:CAVGAudioLogic::AsynStartStream              | AsynStartStream. dwDeviceFlags = 1, m_oRecDevice.nID = -2, m_oRecDevice.strID = {, m_oPlayDevice.nID = -2, m_oPlayDevice.strID = {
+2016/06/04 21:10:15.310 | E | CWorkTaskSer | AVGSDK  | avgaudiologic.cpp:685:CAVGAudioLogic::AsynStartStream              | Start Record
+2016/06/04 21:10:15.310 | E | CWorkTaskSer | AVGSDK  | avgaudiologic.cpp:725:CAVGAudioLogic::AsynStartStream              | OnDeviceStart. device id = {0.0.1.00000000}.{4924d6ed-651d-4958-abe2-948e6f7c0e81}, ret code = 0.
+2016/06/04 21:10:15.311 | I | Thread:8232  | unnamed | av_mic_device.cpp:141:tencent::av::AVMicDeviceImpl::GetVolume      | GetVolume. volume = 100.
+2016/06/04 21:10:15.313 | I | Thread:8232  | Client  | av_device_mgr_impl.cpp:979:OnDeviceOperation                       | ******OnDeviceOperation. device id = {0.0.1.00000000}.{4924d6ed-651d-4958-abe2-948e6f7c0e81}, oper = 1, ret code = 0.
+2016/06/04 21:10:15.313 | I | Thread:8232  | Client  | av_device_mgr_impl.cpp:990:OnDeviceOperation                       | ******DeviceOperation OK. ret_code = 0.
+2016/06/04 21:10:15.313 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:1002:OnDeviceOperation                      | cur_oper_device_type = \audio\mic.
+2016/06/04 21:10:15.313 | I | Thread:8232  | Client  | av_device_mgr_impl.cpp:1010:OnDeviceOperation                      | ******is_mic_device_operating_ == false
+2016/06/04 21:10:15.314 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog CSpkCtrl, CSpkCtrl::SelectDevice
+2016/06/04 21:10:15.315 | I | Thread:8232  | unnamed | av_mic_device.cpp:141:tencent::av::AVMicDeviceImpl::GetVolume      | GetVolume. volume = 100.
+2016/06/04 21:10:15.318 | A | Thread:3104  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] AudRnd -- State Change [STARTED  -> STOPPED ]
+2016/06/04 21:10:15.318 | A | Thread:3104  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO][CAudRndBase] ****** Playout Event Timeout Counts: 0, 49109278 ******.
+2016/06/04 21:10:15.327 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] WinWasapiRender -- SelDev index 0.
+2016/06/04 21:10:15.329 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] WinWasapiRender -- Real index 0.
+2016/06/04 21:10:15.331 | A | Thread:6464  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] Prep -- VAD Voice [Active] Detected
+2016/06/04 21:10:15.331 | A | Thread:6464  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CAuxInMix]: Cap, ProcessInput, New Format: 16000 -- 1
+2016/06/04 21:10:15.331 | A | Thread:6464  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CAuxInMix]: Cap, AVCheckInputType: 16000 -- 1
+2016/06/04 21:10:15.331 | A | Thread:6464  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CAutoEnc]: New Format: 16000 -- 1
+2016/06/04 21:10:15.331 | A | Thread:6464  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] SILKEnc::ResetEncoder
+2016/06/04 21:10:15.331 | A | Thread:6464  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] SILKEnc: Create [SampleRate=16000, Ch=1, BitRate=42200]
+2016/06/04 21:10:15.331 | A | Thread:6464  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CAutoEnc]: Codec Change, new codec is 4102
+2016/06/04 21:10:15.331 | A | Thread:6464  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO][AUTOENC] SILKEnc::SetPacketSizeInband [PacketSizeInband=1]
+2016/06/04 21:10:15.386 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender] Success Set Digtal Volume = 65535
+2016/06/04 21:10:15.386 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender][SpeakerCfg] DigtalVolume = 65535 volume range [0-65535]
+2016/06/04 21:10:15.388 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender][SpeakerCfg] RenderSeesionVolume = 100 volume range [0-100]
+2016/06/04 21:10:15.390 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender][SpeakerCfg] RenderSeesionMute IsMute = 0 
+2016/06/04 21:10:15.391 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender][SpeakerCfg] AudioEndpointVolume = 20 volume range [0-100]
+2016/06/04 21:10:15.392 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][CoreRender][SpeakerCfg] AudioEndpointMute IsMute = 0 
+2016/06/04 21:10:15.392 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][TRAE] CAuxInMix::SetMicOpen = on
+2016/06/04 21:10:15.392 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableMic On
+2016/06/04 21:10:15.392 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableSpeaker Off
+2016/06/04 21:10:15.392 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog CSpkCtrl, CSpkCtrl::SelectDevice OK
+2016/06/04 21:10:15.392 | E | CWorkTaskSer | AVGSDK  | avgaudiologic.cpp:680:CAVGAudioLogic::AsynStartStream              | AsynStartStream. dwDeviceFlags = 2, m_oRecDevice.nID = -2, m_oRecDevice.strID = {, m_oPlayDevice.nID = -2, m_oPlayDevice.strID = {
+2016/06/04 21:10:15.393 | E | CWorkTaskSer | AVGSDK  | avgaudiologic.cpp:736:CAVGAudioLogic::AsynStartStream              | Start Play
+2016/06/04 21:10:15.393 | A | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableSpeaker On
+2016/06/04 21:10:15.393 | A | Thread:4604  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] AudRnd -- State Change [STOPPED  -> STARTING]
+2016/06/04 21:10:15.393 | A | Thread:4604  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] AudRnd -- State Change [STARTING -> STARTED ]
+2016/06/04 21:10:15.393 | A | Thread:4604  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info] SetOutputFormat CParser = mix  OutputIdx = 0 nSampleRate = 48000 nCh = 2
+2016/06/04 21:10:15.396 | E | CWorkTaskSer | AVGSDK  | avgaudiologic.cpp:764:CAVGAudioLogic::AsynStartStream              | OnDeviceStart. device id = {0.0.0.00000000}.{b7bd7120-6851-412c-943e-c32aee12ee53}, ret code = 0.
+2016/06/04 21:10:15.396 | I | Thread:8232  | Client  | av_device_mgr_impl.cpp:979:OnDeviceOperation                       | ******OnDeviceOperation. device id = {0.0.0.00000000}.{b7bd7120-6851-412c-943e-c32aee12ee53}, oper = 1, ret code = 0.
+2016/06/04 21:10:15.396 | I | Thread:8232  | Client  | av_device_mgr_impl.cpp:990:OnDeviceOperation                       | ******DeviceOperation OK. ret_code = 0.
+2016/06/04 21:10:15.396 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:1002:OnDeviceOperation                      | cur_oper_device_type = \audio\player.
+2016/06/04 21:10:15.396 | I | Thread:8232  | Client  | av_device_mgr_impl.cpp:1020:OnDeviceOperation                      | ******is_player_device_operating_ == false
+2016/06/04 21:10:15.397 | I | Thread:8232  | unnamed | av_player_device.cpp:127:GetVolume                                 | GetVolume. volume = 100.
+2016/06/04 21:10:15.399 | E | CWorkTaskSer | AVGSDK  | avgaudiologic.cpp:680:CAVGAudioLogic::AsynStartStream              | AsynStartStream. dwDeviceFlags = 2, m_oRecDevice.nID = -2, m_oRecDevice.strID = {, m_oPlayDevice.nID = -2, m_oPlayDevice.strID = {
+2016/06/04 21:10:15.444 | E | CWorkTaskSer | Client  | av_room_multi_impl.cpp:1770:RoomLogic_OnHelloBegin                 | pwExeCpuRate=0,pwSysCpuRate=0
+2016/06/04 21:10:15.444 | E | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:1812:CMultiMediaEngine::GetAudioStat         | ChannelNum: 1 weightedAudQuality: 0
+2016/06/04 21:10:15.446 | E | CWorkTaskSer | CVideoE | videoencsession.cpp:58:CVideoEncSession::CVideoEncSession          | CVideoEncSession::CVideoEncSession. this = 063D0040.
+2016/06/04 21:10:15.447 | E | CWorkTaskSer | CVideoE | videoencsession.cpp:76:CVideoEncSession::Init                      | THREAD. Enc thread start. thread pointer = 063D0100.
+2016/06/04 21:10:15.447 | E | CWorkTaskSer | CVideoE | videoencsession.cpp:102:CVideoEncSession::Init                     | THREAD. Enc Timer(for sending encoded frame data.) Started. timer pointer = 063D018C.
+2016/06/04 21:10:15.448 | E | Thread:7380  | CVideoE | videoencsession.cpp:300:CVideoEncSession::OnEncThread              | enCmdCreatVidEncArg
+2016/06/04 21:10:15.448 | E | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:1080:CMultiMediaEngine::SetVidParam          | CODEC_CONTROL. Video Encoder. CreateVidEncArg. bRet = 1.
+2016/06/04 21:10:15.449 | E | Thread:8232  | Client  | av_context_impl.cpp:1375:OnEndpointsUpdateInfo                     | OnEndpointsUpdateInfo. eventid = 3, identifier = lx
+2016/06/04 21:10:15.449 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:1702:RoomLogic_OnUserVideoStateChangedInter | EVENT_ID_ENDPOINT_HAS_CAMERA_VIDEO
+2016/06/04 21:10:15.449 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:1704:RoomLogic_OnUserVideoStateChangedInter | lx
+2016/06/04 21:10:15.449 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:602:OnChangeAVStateCallbackInternal         | OnChangeAVStateCallback.OK. result = 0, retCode = 0, request av state = 3, respone av state = 3.
+2016/06/04 21:10:15.450 | I | Thread:8232  | Client  | av_room_multi_impl.cpp:738:GetEndpointList                         | GetEndpointList. count = 1.
+2016/06/04 21:10:15.491 | E | CWorkTaskSer | CAVGVid | avgvideologic.cpp:1858:CAVGVideoLogic::OnRecvVidQosPush            | AVPARAM. FLOWCTRL PUSH. MAINVIDEO. Small: codec = 5, w = 192, h = 144, fps = 7, br = 50, gop = 5, minqp = 26, maxqp = 40.Others: uiFecType = 0, uiIMtu = 1000, uiSPMtu = 1000, uiPMtu = 1000, uiIFecPrecent = 20, uiSPFecPercent = 20, uiPFecPercent = 0, uiIFecMinPkg = 2, uiSPFecMinPkg = 1, uiPFecMinPkg = 0, uiIMinPkgSize = 700, uiSPMinPkgSize = 650, uiPMinPkgSize = 600, uiGop = 30, uiMinQP = 0, uiMaxQP = 0, uiEncMode = 0, uiUseHWAccelerate = 0, uiUseQstar = 0, nQclearSwitch = 3435973836, nQclearGrade = 3435973836, uiFms = 0.
+2016/06/04 21:10:15.491 | E | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:1108:CMultiMediaEngine::SetVidParam          | CODEC_CONTROL. Video Encoder. CreateVidSmallEncArg. bRet = 1.
+2016/06/04 21:10:15.491 | E | Thread:7380  | CVideoE | videoencsession.cpp:331:CVideoEncSession::OnEncThread              | enCmdCreatSmallVidEncArg
+2016/06/04 21:10:16.998 | E | CWorkTaskSer | CAVGVid | avgvideologic.cpp:1918:CAVGVideoLogic::OnRecvVidQosPush            | AVPARAM. FLOWCTRL PUSH. MAINVIDEO. Big: codec = 5, w = 640, h = 480, fps = 10, br = 145, gop = 1, minqp = 0, maxqp = 32. Others: uiFecType = 0, uiIMtu = 1000, uiSPMtu = 1000, uiPMtu = 1000, uiIFecPrecent = 20, uiSPFecPercent = 20, uiPFecPercent = 0, uiIFecMinPkg = 2, uiSPFecMinPkg = 1, uiPFecMinPkg = 0, uiIMinPkgSize = 700, uiSPMinPkgSize = 650, uiPMinPkgSize = 600, uiGop = 30, uiMinQP = 0, uiMaxQP = 0, uiEncMode = 0, uiUseHWAccelerate = 0, uiUseQstar = 0, nQclearSwitch = 3435973836, nQclearGrade = 3435973836, uiFms = 0.
+2016/06/04 21:10:17.456 | E | CWorkTaskSer | Client  | av_room_multi_impl.cpp:1770:RoomLogic_OnHelloBegin                 | pwExeCpuRate=4012,pwSysCpuRate=5667
+2016/06/04 21:10:17.457 | E | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:1812:CMultiMediaEngine::GetAudioStat         | ChannelNum: 1 weightedAudQuality: 0
+2016/06/04 21:10:17.459 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:1833:RoomLogic_OnSelfAudioBeSelected        | OnSelfAudioBeSelected bSelected[1]
+2016/06/04 21:10:17.460 | E | Thread:8232  | Client  | av_context_impl.cpp:1375:OnEndpointsUpdateInfo                     | OnEndpointsUpdateInfo. eventid = 5, identifier = lx
+2016/06/04 21:10:17.460 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:974:UpdateSpeakingEndpointList              | EVENT_ID_ENDPOINT_HAS_AUDIO
+2016/06/04 21:10:17.460 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:976:UpdateSpeakingEndpointList              | lx
+2016/06/04 21:10:17.460 | I | Thread:8232  | Client  | av_room_multi_impl.cpp:738:GetEndpointList                         | GetEndpointList. count = 1.
+2016/06/04 21:10:17.787 | A | Thread:8376  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Warning][CNetSrc] Wait Data Time Out.= 1 
+,RecvAudCnt = 0
+2016/06/04 21:10:17.787 | A | Thread:8376  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] CFECDec: DBF_EOS.
+2016/06/04 21:10:17.787 | A | Thread:8376  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] CFECDec: DBF_EOS.
+2016/06/04 21:10:17.787 | A | Thread:8376  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] CFECDec: DBF_EOS.
+2016/06/04 21:10:17.787 | A | Thread:8376  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] CFECDec: DBF_EOS.
+2016/06/04 21:10:17.787 | A | Thread:8376  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] CFECDec: DBF_EOS.
+2016/06/04 21:10:17.788 | A | Thread:8376  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] CFECDec: DBF_EOS.
+2016/06/04 21:10:18.993 | E | CWorkTaskSer | CAVGVid | avgvideologic.cpp:1918:CAVGVideoLogic::OnRecvVidQosPush            | AVPARAM. FLOWCTRL PUSH. MAINVIDEO. Big: codec = 5, w = 640, h = 480, fps = 15, br = 160, gop = 1, minqp = 0, maxqp = 32. Others: uiFecType = 0, uiIMtu = 1000, uiSPMtu = 1000, uiPMtu = 1000, uiIFecPrecent = 20, uiSPFecPercent = 20, uiPFecPercent = 0, uiIFecMinPkg = 2, uiSPFecMinPkg = 1, uiPFecMinPkg = 0, uiIMinPkgSize = 700, uiSPMinPkgSize = 650, uiPMinPkgSize = 600, uiGop = 30, uiMinQP = 0, uiMaxQP = 0, uiEncMode = 0, uiUseHWAccelerate = 0, uiUseQstar = 0, nQclearSwitch = 3435973836, nQclearGrade = 3435973836, uiFms = 0.
+2016/06/04 21:10:18.993 | E | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:1092:CMultiMediaEngine::SetVidParam          | CODEC_CONTROL. Video Encoder. ReSetVidEncArg. bRet = 1.
+2016/06/04 21:10:18.993 | E | Thread:7380  | CVideoE | videoencsession.cpp:359:CVideoEncSession::OnEncThread              | enCmdResetVidEncArg
+2016/06/04 21:10:19.042 | I | Thread:8232  | Client  | av_room_multi_impl.cpp:688:GetRoomInfo                             | GetRoomInfo. room_type = 2, relation_id = 100005, room_id = 1512859, audio_category = 0, av_control_role = .
+2016/06/04 21:10:19.042 | I | Thread:8232  | Client  | av_room_multi_impl.cpp:688:GetRoomInfo                             | GetRoomInfo. room_type = 2, relation_id = 100005, room_id = 1512859, audio_category = 0, av_control_role = .
+2016/06/04 21:10:19.469 | E | CWorkTaskSer | Client  | av_room_multi_impl.cpp:1770:RoomLogic_OnHelloBegin                 | pwExeCpuRate=4823,pwSysCpuRate=5775
+2016/06/04 21:10:19.469 | E | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:1812:CMultiMediaEngine::GetAudioStat         | ChannelNum: 1 weightedAudQuality: 0
+2016/06/04 21:10:20.999 | E | CWorkTaskSer | CAVGVid | avgvideologic.cpp:1918:CAVGVideoLogic::OnRecvVidQosPush            | AVPARAM. FLOWCTRL PUSH. MAINVIDEO. Big: codec = 5, w = 640, h = 480, fps = 15, br = 180, gop = 1, minqp = 0, maxqp = 32. Others: uiFecType = 0, uiIMtu = 1000, uiSPMtu = 1000, uiPMtu = 1000, uiIFecPrecent = 20, uiSPFecPercent = 20, uiPFecPercent = 0, uiIFecMinPkg = 2, uiSPFecMinPkg = 1, uiPFecMinPkg = 0, uiIMinPkgSize = 700, uiSPMinPkgSize = 650, uiPMinPkgSize = 600, uiGop = 30, uiMinQP = 0, uiMaxQP = 0, uiEncMode = 0, uiUseHWAccelerate = 0, uiUseQstar = 0, nQclearSwitch = 3435973836, nQclearGrade = 3435973836, uiFms = 0.
+2016/06/04 21:10:20.999 | E | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:1092:CMultiMediaEngine::SetVidParam          | CODEC_CONTROL. Video Encoder. ReSetVidEncArg. bRet = 1.
+2016/06/04 21:10:20.999 | E | Thread:7380  | CVideoE | videoencsession.cpp:359:CVideoEncSession::OnEncThread              | enCmdResetVidEncArg
+2016/06/04 21:10:21.483 | E | CWorkTaskSer | Client  | av_room_multi_impl.cpp:1770:RoomLogic_OnHelloBegin                 | pwExeCpuRate=3446,pwSysCpuRate=4554
+2016/06/04 21:10:21.483 | E | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:1812:CMultiMediaEngine::GetAudioStat         | ChannelNum: 1 weightedAudQuality: 0
+2016/06/04 21:10:21.815 | A | Thread:4604  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO]OutDevMeter:0,0,0,0,0
+2016/06/04 21:10:22.543 | A | Thread:6464  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO]InDevMeter:31731,6797,8148,9371,32606
+2016/06/04 21:10:22.994 | E | CWorkTaskSer | CAVGVid | avgvideologic.cpp:1918:CAVGVideoLogic::OnRecvVidQosPush            | AVPARAM. FLOWCTRL PUSH. MAINVIDEO. Big: codec = 5, w = 640, h = 480, fps = 15, br = 200, gop = 1, minqp = 0, maxqp = 32. Others: uiFecType = 0, uiIMtu = 1000, uiSPMtu = 1000, uiPMtu = 1000, uiIFecPrecent = 20, uiSPFecPercent = 20, uiPFecPercent = 0, uiIFecMinPkg = 2, uiSPFecMinPkg = 1, uiPFecMinPkg = 0, uiIMinPkgSize = 700, uiSPMinPkgSize = 650, uiPMinPkgSize = 600, uiGop = 30, uiMinQP = 0, uiMaxQP = 0, uiEncMode = 0, uiUseHWAccelerate = 0, uiUseQstar = 0, nQclearSwitch = 3435973836, nQclearGrade = 3435973836, uiFms = 0.
+2016/06/04 21:10:22.994 | E | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:1092:CMultiMediaEngine::SetVidParam          | CODEC_CONTROL. Video Encoder. ReSetVidEncArg. bRet = 1.
+2016/06/04 21:10:22.994 | E | Thread:7380  | CVideoE | videoencsession.cpp:359:CVideoEncSession::OnEncThread              | enCmdResetVidEncArg
+2016/06/04 21:10:23.453 | E | CWorkTaskSer | AVGSDK  | avgroomlogic.cpp:918:CAVGRoomLogic::OnTimer                        | AVDATA in 10 secs.  sendAudPkgCnt = 462 sendVidPkgCnt = 259.
+2016/06/04 21:10:23.494 | E | CWorkTaskSer | Client  | av_room_multi_impl.cpp:1770:RoomLogic_OnHelloBegin                 | pwExeCpuRate=2714,pwSysCpuRate=3197
+2016/06/04 21:10:23.494 | E | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:1812:CMultiMediaEngine::GetAudioStat         | ChannelNum: 1 weightedAudQuality: 0
+2016/06/04 21:10:23.788 | A | Thread:8376  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Warning][CNetSrc] Wait Data Time Out.= 2 
+,RecvAudCnt = 0
+2016/06/04 21:10:24.981 | E | CWorkTaskSer | CAVGVid | avgvideologic.cpp:1918:CAVGVideoLogic::OnRecvVidQosPush            | AVPARAM. FLOWCTRL PUSH. MAINVIDEO. Big: codec = 5, w = 640, h = 480, fps = 15, br = 220, gop = 1, minqp = 0, maxqp = 32. Others: uiFecType = 0, uiIMtu = 1000, uiSPMtu = 1000, uiPMtu = 1000, uiIFecPrecent = 20, uiSPFecPercent = 20, uiPFecPercent = 0, uiIFecMinPkg = 2, uiSPFecMinPkg = 1, uiPFecMinPkg = 0, uiIMinPkgSize = 700, uiSPMinPkgSize = 650, uiPMinPkgSize = 600, uiGop = 30, uiMinQP = 0, uiMaxQP = 0, uiEncMode = 0, uiUseHWAccelerate = 0, uiUseQstar = 0, nQclearSwitch = 3435973836, nQclearGrade = 3435973836, uiFms = 0.
+2016/06/04 21:10:24.981 | E | CWorkTaskSer | CMultiM | cmultimediaengine.cpp:1092:CMultiMediaEngine::SetVidParam          | CODEC_CONTROL. Video Encoder. ReSetVidEncArg. bRet = 1.
+2016/06/04 21:10:24.989 | E | Thread:7380  | CVideoE | videoencsession.cpp:359:CVideoEncSession::OnEncThread              | enCmdResetVidEncArg
+2016/06/04 21:10:25.401 | I | Thread:8232  | Client  | av_context_impl.cpp:1192:tencent::av::AVContextImpl::ExitRoom      | ******ExitRoom.
+2016/06/04 21:10:25.401 | E | Thread:8232  | Client  | av_audio_ctrl_impl.cpp:692:UnregistAudioDataCallback               | ******UnregistAudioDataCallback. src_type = 0 
+2016/06/04 21:10:25.402 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]Unreg  src = eSrcMic ,fcb = 527D41F6
+2016/06/04 21:10:25.402 | E | Thread:8232  | Client  | av_audio_ctrl_impl.cpp:692:UnregistAudioDataCallback               | ******UnregistAudioDataCallback. src_type = 1 
+2016/06/04 21:10:25.402 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]Unreg  src = eSrcMixToSend ,fcb = 527DDE04
+2016/06/04 21:10:25.402 | E | Thread:8232  | Client  | av_audio_ctrl_impl.cpp:692:UnregistAudioDataCallback               | ******UnregistAudioDataCallback. src_type = 2 
+2016/06/04 21:10:25.402 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]Unreg  src = eSrcSend ,fcb = 527D6E15
+2016/06/04 21:10:25.402 | E | Thread:8232  | Client  | av_audio_ctrl_impl.cpp:692:UnregistAudioDataCallback               | ******UnregistAudioDataCallback. src_type = 3 
+2016/06/04 21:10:25.402 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]Unreg  src = eSrcMixToPlay ,fcb = 527DEDE5
+2016/06/04 21:10:25.402 | E | Thread:8232  | Client  | av_audio_ctrl_impl.cpp:692:UnregistAudioDataCallback               | ******UnregistAudioDataCallback. src_type = 4 
+2016/06/04 21:10:25.402 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]Unreg  src = eSrcPlay ,fcb = 527D6F5A
+2016/06/04 21:10:25.402 | E | Thread:8232  | Client  | av_audio_ctrl_impl.cpp:692:UnregistAudioDataCallback               | ******UnregistAudioDataCallback. src_type = 5 
+2016/06/04 21:10:25.402 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]Unreg  src = eSrcNetStream ,fcb = 527E21D9
+2016/06/04 21:10:25.402 | I | Thread:8232  | Client  | av_context_impl.cpp:1227:tencent::av::AVContextImpl::ExitRoom      | ******ExitRooming...
+2016/06/04 21:10:25.435 | E | Thread:8232  | Client  | av_context_impl.cpp:1295:RequestToExitRoom                         | RequestToExitRoom. reason = 0.
+2016/06/04 21:10:25.435 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:434:tencent::av::AVRoomMultiImpl::ExitRoom  | ExitRoom. reason = 0.
+2016/06/04 21:10:25.464 | E | Thread:8232  | CAVGVid | avgvideologic.cpp:287:CAVGVideoLogic::ClearVideoRender             | CAVGVideoLogic::ClearVideoRender()
+2016/06/04 21:10:25.464 | E | Thread:8232  | AVGSDK  | avgsession.cpp:505:CAVGSession::Close                              | CloseSession
+2016/06/04 21:10:25.464 | E | Thread:8232  | AVGSDK  | avgroomlogicproxy.cpp:241:CAVGRoomLogicProxy::Close                | Close Room
+2016/06/04 21:10:25.486 | E | Thread:8232  | AVGSDK  | avgroomlogic.cpp:342:CAVGRoomLogic::SetRoomState                   | Room State Changed - OldState = 3, NewState = 4
+2016/06/04 21:10:25.486 | E | Thread:8232  | AVGSDK  | avgroomlogic.cpp:292:CAVGRoomLogic::Quit                           | Quit Start(dwRoomID=1512859)
+2016/06/04 21:10:25.486 | E | Thread:8232  | AVGSDK  | avgsession.cpp:517:CAVGSession::CloseAV                            | CloseAV.
+2016/06/04 21:10:25.486 | E | Thread:8232  | AVGSDK  | avgsession.cpp:531:CAVGSession::CloseAV                            | Close Audio.
+2016/06/04 21:10:25.486 | E | Thread:8232  | AVGSDK  | avgaudiologic.cpp:817:CAVGAudioLogic::Destroy                      | CAVGAudioLogic::Destroy Start.
+2016/06/04 21:10:25.490 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][TRAE] CAuxInMix::SetMicOpen = off
+2016/06/04 21:10:25.490 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableMic Off
+2016/06/04 21:10:25.490 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableSpeaker Off
+2016/06/04 21:10:25.490 | E | Thread:8232  | AVGSDK  | avgaudiologic.cpp:835:CAVGAudioLogic::Destroy                      | CAVGAudioLogic::Destroy End.
+2016/06/04 21:10:25.490 | E | Thread:8232  | CAVGVid | avgvideologic.cpp:308:CAVGVideoLogic::Destroy                      | *CAVGVideoLogic::Destroy Start.
+2016/06/04 21:10:25.490 | E | Thread:8232  | AVGSDK  | avgsubvideologic.cpp:136:CAVGSubVideoLogic::StopEncode             | StopEncode
+2016/06/04 21:10:25.490 | E | Thread:8232  | AVGSDK  | avgsubvideologic.cpp:164:CAVGSubVideoLogic::StopDecode             | StopDecode
+2016/06/04 21:10:25.490 | E | Thread:8232  | CAVGVid | avgvideologic.cpp:313:CAVGVideoLogic::Destroy                      | *CAVGVideoLogic::Destroy - StopStream
+2016/06/04 21:10:25.490 | E | Thread:8232  | CVideoE | videoencsession.cpp:116:CVideoEncSession::UnInit                   | THREAD. Enc Timer(for sending encoded frame data.) Stoped. timer pointer = 063D018C.
+2016/06/04 21:10:25.491 | E | Thread:8232  | CVideoE | videoencsession.cpp:119:CVideoEncSession::UnInit                   | THREAD. Enc thread end. thread pointer = 063D0100.
+2016/06/04 21:10:25.496 | E | Thread:8232  | CVideoE | videoencsession.cpp:69:CVideoEncSession::~CVideoEncSession         | CVideoEncSession::~CVideoEncSession. this = 063D0040.
+2016/06/04 21:10:25.497 | E | Thread:8232  | CAVGVid | avgvideologic.cpp:331:CAVGVideoLogic::Destroy                      | *CAVGVideoLogic::Destroy - StopCamera
+2016/06/04 21:10:25.504 | A | Thread:6464  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] Prep -- VAD Voice [Inactive] Detected
+2016/06/04 21:10:25.699 | E | Thread:8232  | CAVGVid | avgvideologic.cpp:362:CAVGVideoLogic::Destroy                      | *CAVGVideoLogic::Destroy End.
+2016/06/04 21:10:25.700 | E | Thread:8232  | AVGSDK  | avgroomlogic.cpp:342:CAVGRoomLogic::SetRoomState                   | Room State Changed - OldState = 4, NewState = 0
+2016/06/04 21:10:25.701 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:490:OnRoomQuitCallbackInternal              | OnRoomQuitCallback: OK! relation_id = 100005, eResult = 0, room_id = 1512859
+2016/06/04 21:10:25.701 | E | Thread:8232  | Client  | av_context_impl.cpp:1339:tencent::av::AVContextImpl::UninitForRoom | UninitForRoom
+2016/06/04 21:10:25.701 | E | Thread:8232  | Client  | av_context_impl.cpp:1015:tencent::av::AVContextImpl::UninitDevice  | UninitDevice
+2016/06/04 21:10:25.701 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:314:Uninit                                  | Uninit. is_inited_ = 1
+2016/06/04 21:10:25.702 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:374:Uninit                                  | THREAD. AVAudioDeviceMgrImpl task stop.
+2016/06/04 21:10:25.702 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:1549:Uninit                                 | Uninit. is_inited_ = 1
+2016/06/04 21:10:25.702 | E | Thread:8232  | unnamed | av_local_screen_video_device.h:56:~AVLocalScreenVideoDeviceImpl    | AVLocalScreenVideoDeviceImpl::~AVLocalScreenVideoDeviceImpl
+2016/06/04 21:10:25.702 | E | Thread:8232  | unnamed | av_camera_device.cpp:59:~AVCameraDeviceImpl                        | AVCameraDeviceImpl::~AVCameraDeviceImpl
+2016/06/04 21:10:25.703 | E | Thread:8232  | unnamed | av_remote_screen_video_device.h:31:~AVRemoteScreenVideoDeviceImpl  | AVRemoteScreenVideoDeviceImpl::~AVRemoteScreenVideoDeviceImpl
+2016/06/04 21:10:25.703 | E | Thread:8232  | CAVGVid | avgvideologic.cpp:2074:CAVGVideoLogic::GetCameraCtrller            | CAVGVideoLogic::GetCameraCtrller m_pCameraCtrller = 0531A1E8
+2016/06/04 21:10:25.703 | E | Thread:8232  | AVGSDK  | cameractrller.cpp:84:CCameraCtrller::SetDeviceID                   | CCameraCtrller::SetCameSetDeviceIDraDeviceID(0)
+2016/06/04 21:10:25.703 | E | Thread:8232  | Client  | av_camera_device_win.cpp:105:~AVCameraDeviceWin                    | AVCameraDeviceWin::~AVCameraDeviceWin
+2016/06/04 21:10:25.704 | E | Thread:8232  | Client  | av_device_mgr_impl.cpp:1500:~AVVideoDeviceMgrImpl                  | AVVideoDeviceMgrImpl::~AVVideoDeviceMgrImpl
+2016/06/04 21:10:25.704 | E | Thread:8232  | unnamed | av_remote_video_device.cpp:32:~AVRemoteVideoDeviceImpl             | AVRemoteVideoDeviceImpl::~AVRemoteVideoDeviceImpl
+2016/06/04 21:10:25.705 | E | Thread:8232  | unnamed | av_camera_device.cpp:59:~AVCameraDeviceImpl                        | AVCameraDeviceImpl::~AVCameraDeviceImpl
+2016/06/04 21:10:25.705 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:266:tencent::av::AVRoomMultiImpl::Uninit    | Uninit Start.
+2016/06/04 21:10:25.705 | E | Thread:8232  | Client  | av_endpoint_impl.cpp:761:~AVEndpointImpl                           | AVEndpointImpl::~AVEndpointImpl. this = 06AEDFB0
+2016/06/04 21:10:25.705 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:299:tencent::av::AVRoomMultiImpl::Uninit    | audio_logic_ ref count = 1.
+2016/06/04 21:10:25.705 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:300:tencent::av::AVRoomMultiImpl::Uninit    | video_logic_ ref count = 1.
+2016/06/04 21:10:25.705 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:301:tencent::av::AVRoomMultiImpl::Uninit    | session_ ref count = 1.
+2016/06/04 21:10:25.705 | E | Thread:8232  | AVGSDK  | avgaudiologic.cpp:302:CAVGAudioLogic::~CAVGAudioLogic              | CAVGAudioLogic::~CAVGAudioLogic
+2016/06/04 21:10:25.705 | E | Thread:8232  | CAVGVid | avgvideologic.cpp:138:CAVGVideoLogic::~CAVGVideoLogic              | CAVGVideoLogic::~CAVGVideoLogic
+2016/06/04 21:10:25.705 | E | Thread:8232  | AVGSDK  | avgsession.cpp:505:CAVGSession::Close                              | CloseSession
+2016/06/04 21:10:25.705 | E | Thread:8232  | AVGSDK  | avgroomlogicproxy.cpp:241:CAVGRoomLogicProxy::Close                | Close Room
+2016/06/04 21:10:25.705 | E | Thread:8232  | AVGSDK  | avgsession.cpp:517:CAVGSession::CloseAV                            | CloseAV.
+2016/06/04 21:10:25.707 | E | Thread:8232  | AVGSDK  | avgroomlogic.cpp:108:CAVGRoomLogic::~CAVGRoomLogic                 | CAVGRoomLogic::~CAVGRoomLogic()
+2016/06/04 21:10:25.707 | E | Thread:8232  | AVGSDK  | avgroomlogicproxy.cpp:140:CAVGRoomLogicProxy::~CAVGRoomLogicProxy  | CAVGRoomLogicProxy::~CAVGRoomLogicProxy()
+2016/06/04 21:10:25.710 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TRAE: StopEngine() [0x00aefee8]
+2016/06/04 21:10:25.714 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]UnregAll src = eSrcMic 
+2016/06/04 21:10:25.714 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]SetDataSrc eSrcMic to 0
+2016/06/04 21:10:25.714 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer] Clear old data,Src = eSrcMic
+2016/06/04 21:10:25.714 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]UnregAll src = eSrcMixToSend 
+2016/06/04 21:10:25.714 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]SetDataSrc eSrcMixToSend to 0
+2016/06/04 21:10:25.714 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer] Clear old data,Src = eSrcMixToSend
+2016/06/04 21:10:25.714 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer] emit bitstrem signal
+2016/06/04 21:10:25.714 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][TRAE] CAuxInMix::SetMicOpen = off
+2016/06/04 21:10:25.714 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info]!!!!EnableMic Off
+2016/06/04 21:10:25.714 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]UnregAll src = eSrcSend 
+2016/06/04 21:10:25.714 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]SetDataSrc eSrcSend to 0
+2016/06/04 21:10:25.714 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer] Clear old data,Src = eSrcSend
+2016/06/04 21:10:25.714 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]UnregAll src = eSrcMixToPlay 
+2016/06/04 21:10:25.714 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]SetDataSrc eSrcMixToPlay to 0
+2016/06/04 21:10:25.714 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer] Clear old data,Src = eSrcMixToPlay
+2016/06/04 21:10:25.714 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]UnregAll src = eSrcPlay 
+2016/06/04 21:10:25.714 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]SetDataSrc eSrcPlay to 0
+2016/06/04 21:10:25.714 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer] Clear old data,Src = eSrcPlay
+2016/06/04 21:10:25.714 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]UnregAll src = eSrcNetStream 
+2016/06/04 21:10:25.715 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer]SetDataSrc eSrcNetStream to 0
+2016/06/04 21:10:25.715 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObServer] Clear old data,Src = eSrcNetStream
+2016/06/04 21:10:25.715 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][DataObserver] Destroy DataObserver Thread Success and Dataobserver stop working
+2016/06/04 21:10:25.811 | A | Thread:8376  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO][CNetSrc] Time Out Count -- 2.
+2016/06/04 21:10:25.811 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [Info][NetSrc] Stop RecvAudCnt, totalRecvAudPkt= 0
+2016/06/04 21:10:25.813 | A | Thread:4604  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] AudRnd -- State Change [STARTED  -> STOPPED ]
+2016/06/04 21:10:25.813 | A | Thread:4604  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO][CAudRndBase] ****** Playout Event Timeout Counts: 0, 49119773 ******.
+2016/06/04 21:10:25.864 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] Prep -- VAD Voice [Inactive] Detected
+2016/06/04 21:10:25.864 | A | Thread:8232  | CMultiM | cmultimediaengine.cpp:26:MultiSpeechEngineLog                      | AudioEngineLog [INFO] TRAE: UninitEngine() [0x00aefee8]
+2016/06/04 21:10:25.879 | E | Thread:8232  | AVGSDK  | avgsession.cpp:85:CAVGSession::~CAVGSession                        | CAVGSession::~CAVGSession
+2016/06/04 21:10:25.879 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:314:tencent::av::AVRoomMultiImpl::Uninit    | Uninit End.
+2016/06/04 21:10:25.879 | E | Thread:8232  | Client  | av_room_multi_impl.cpp:190:~AVRoomMultiImpl                        | AVRoomMultiImpl::~AVRoomMultiImpl
+2016/06/04 21:10:25.879 | E | Thread:8232  | Client  | av_endpoint_impl.cpp:99:~ViewListOperImpl                          | ViewListOperImpl::~ViewListOperImpl. this = 06AEF4C8
+2016/06/04 21:10:25.879 | E | Thread:8232  | Client  | av_endpoint_impl.cpp:71:DestroyInstance                            | ViewListOperImpl::DestroyInstance()
+2016/06/04 21:10:25.879 | I | Thread:8232  | Client  | av_context_impl.cpp:1281:OnExitRoomCompleteInternal                | ******ExitRoom OK. ret_code = 0, room_state_ = 0.
+2016/06/04 21:10:26.004 | I | Thread:8232  | Client  | av_context_impl.cpp:537:tencent::av::AVContextImpl::StopContext    | ******StopContext. close_complete_callback = 00FC5298, custom_data = 0035EFEC.
+2016/06/04 21:10:26.004 | I | Thread:8232  | Client  | av_context_impl.cpp:576:tencent::av::AVContextImpl::StopContext    | ******StopContexting...
+2016/06/04 21:10:26.004 | E | Thread:8232  | Client  | av_context_impl.cpp:587:OnStopContextComplete                      | ******OnStopContextComplete.
+2016/06/04 21:10:26.004 | E | Thread:8232  | Client  | av_context_impl.cpp:994:tencent::av::AVContextImpl::UninitAVCtrl   | UninitAVCtrl
+2016/06/04 21:10:26.004 | E | Thread:8232  | Client  | av_audio_ctrl_impl.cpp:692:UnregistAudioDataCallback               | ******UnregistAudioDataCallback. src_type = 0 
+2016/06/04 21:10:26.004 | I | Thread:8232  | Client  | av_context_impl.cpp:338:tencent::av::AVContextImpl::GetRoom        | AV_ERR_CONTEXT_NOT_EXIST.
+2016/06/04 21:10:26.004 | I | Thread:8232  | Client  | av_audio_ctrl_impl.cpp:704:UnregistAudioDataCallback               | ******ERROR. AV_ERR_ROOM_NOT_EXIST. logic == NULL.
+2016/06/04 21:10:26.004 | E | Thread:8232  | Client  | av_audio_ctrl_impl.cpp:692:UnregistAudioDataCallback               | ******UnregistAudioDataCallback. src_type = 1 
+2016/06/04 21:10:26.004 | I | Thread:8232  | Client  | av_context_impl.cpp:338:tencent::av::AVContextImpl::GetRoom        | AV_ERR_CONTEXT_NOT_EXIST.
+2016/06/04 21:10:26.004 | I | Thread:8232  | Client  | av_audio_ctrl_impl.cpp:704:UnregistAudioDataCallback               | ******ERROR. AV_ERR_ROOM_NOT_EXIST. logic == NULL.
+2016/06/04 21:10:26.004 | E | Thread:8232  | Client  | av_audio_ctrl_impl.cpp:692:UnregistAudioDataCallback               | ******UnregistAudioDataCallback. src_type = 2 
+2016/06/04 21:10:26.004 | I | Thread:8232  | Client  | av_context_impl.cpp:338:tencent::av::AVContextImpl::GetRoom        | AV_ERR_CONTEXT_NOT_EXIST.
+2016/06/04 21:10:26.004 | I | Thread:8232  | Client  | av_audio_ctrl_impl.cpp:704:UnregistAudioDataCallback               | ******ERROR. AV_ERR_ROOM_NOT_EXIST. logic == NULL.
+2016/06/04 21:10:26.004 | E | Thread:8232  | Client  | av_audio_ctrl_impl.cpp:692:UnregistAudioDataCallback               | ******UnregistAudioDataCallback. src_type = 3 
+2016/06/04 21:10:26.004 | I | Thread:8232  | Client  | av_context_impl.cpp:338:tencent::av::AVContextImpl::GetRoom        | AV_ERR_CONTEXT_NOT_EXIST.
+2016/06/04 21:10:26.004 | I | Thread:8232  | Client  | av_audio_ctrl_impl.cpp:704:UnregistAudioDataCallback               | ******ERROR. AV_ERR_ROOM_NOT_EXIST. logic == NULL.
+2016/06/04 21:10:26.004 | E | Thread:8232  | Client  | av_audio_ctrl_impl.cpp:692:UnregistAudioDataCallback               | ******UnregistAudioDataCallback. src_type = 4 
+2016/06/04 21:10:26.004 | I | Thread:8232  | Client  | av_context_impl.cpp:338:tencent::av::AVContextImpl::GetRoom        | AV_ERR_CONTEXT_NOT_EXIST.
+2016/06/04 21:10:26.004 | I | Thread:8232  | Client  | av_audio_ctrl_impl.cpp:704:UnregistAudioDataCallback               | ******ERROR. AV_ERR_ROOM_NOT_EXIST. logic == NULL.
+2016/06/04 21:10:26.004 | E | Thread:8232  | Client  | av_audio_ctrl_impl.cpp:692:UnregistAudioDataCallback               | ******UnregistAudioDataCallback. src_type = 5 
+2016/06/04 21:10:26.004 | I | Thread:8232  | Client  | av_context_impl.cpp:338:tencent::av::AVContextImpl::GetRoom        | AV_ERR_CONTEXT_NOT_EXIST.
+2016/06/04 21:10:26.004 | I | Thread:8232  | Client  | av_audio_ctrl_impl.cpp:704:UnregistAudioDataCallback               | ******ERROR. AV_ERR_ROOM_NOT_EXIST. logic == NULL.
+2016/06/04 21:10:26.004 | E | Thread:8232  | Client  | av_audio_ctrl_impl.cpp:53:~AVAudioCtrlImpl                         | AVAudioCtrlImpl::~AVAudioCtrlImpl
+2016/06/04 21:10:26.004 | E | Thread:8232  | Client  | av_video_ctrl_impl.cpp:84:~AVVideoCtrlImpl                         | AVVideoCtrlImpl::~AVVideoCtrlImpl
+2016/06/04 21:10:26.004 | I | Thread:8232  | Client  | av_context_impl.cpp:656:OnStopContextComplete                      | ******StopContext OK.
+2016/06/04 21:10:26.004 | E | Thread:8232  | Client  | av_context_impl.cpp:228:tencent::av::AVContextImpl::~AVContextImpl | AVContextImpl::~AVContextImpl

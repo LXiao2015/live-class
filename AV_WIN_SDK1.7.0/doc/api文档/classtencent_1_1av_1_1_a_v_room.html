@@ -1,0 +1,613 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>音视频通讯SDK API参考手册: tencent::av::AVRoom类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">音视频通讯SDK API参考手册
+   &#160;<span id="projectnumber">Windows 1.7.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classtencent_1_1av_1_1_a_v_room.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="classtencent_1_1av_1_1_a_v_room-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">tencent::av::AVRoom类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>音视频通话房间基类。  
+ <a href="classtencent_1_1av_1_1_a_v_room.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="av__room_8h_source.html">av_room.h</a>&gt;</code></p>
+<div class="dynheader">
+类 tencent::av::AVRoom 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classtencent_1_1av_1_1_a_v_room.png" usemap="#tencent::av::AVRoom_map" alt=""/>
+  <map id="tencent::av::AVRoom_map" name="tencent::av::AVRoom_map">
+<area href="classtencent_1_1av_1_1_a_v_room_multi.html" title="多人音视频房间类。 " alt="tencent::av::AVRoomMulti" shape="rect" coords="0,56,155,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtencent_1_1av_1_1_a_v_room_1_1_delegate.html">Delegate</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">房间委托基类。业务侧需要实现该基类来处理房间异步操作返回的结果。  <a href="structtencent_1_1av_1_1_a_v_room_1_1_delegate.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtencent_1_1av_1_1_a_v_room_1_1_enter_room_param.html">EnterRoomParam</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">调用AVContext::EnterRoom()进入房间时所需传入的参数。  <a href="structtencent_1_1av_1_1_a_v_room_1_1_enter_room_param.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtencent_1_1av_1_1_a_v_room_1_1_info.html">Info</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">房间信息。  <a href="structtencent_1_1av_1_1_a_v_room_1_1_info.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a7656ec1015b94f3f34dc3786af057e86"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_room.html#a7656ec1015b94f3f34dc3786af057e86">RoomType</a> { <a class="el" href="classtencent_1_1av_1_1_a_v_room.html#a7656ec1015b94f3f34dc3786af057e86a67934e6d79a9d12b1ebc582101a29ecc">ROOM_TYPE_NONE</a> = 0, 
+<a class="el" href="classtencent_1_1av_1_1_a_v_room.html#a7656ec1015b94f3f34dc3786af057e86aeff056618554b1773c5f8411688d8f32">ROOM_TYPE_PAIR</a> = 1, 
+<a class="el" href="classtencent_1_1av_1_1_a_v_room.html#a7656ec1015b94f3f34dc3786af057e86aea1b4c4bb59ba0ab35a84a91b057df6a">ROOM_TYPE_MULTI</a> = 2
+ }</td></tr>
+<tr class="memdesc:a7656ec1015b94f3f34dc3786af057e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">房间类型。  <a href="classtencent_1_1av_1_1_a_v_room.html#a7656ec1015b94f3f34dc3786af057e86">更多...</a><br /></td></tr>
+<tr class="separator:a7656ec1015b94f3f34dc3786af057e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa54e761edd404523dc7892d287a9a80e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_room.html#aa54e761edd404523dc7892d287a9a80e">Mode</a> { <a class="el" href="classtencent_1_1av_1_1_a_v_room.html#aa54e761edd404523dc7892d287a9a80ea8ed6890e75659b97973699dfcd6eed84">MODE_AUDIO</a> = 0, 
+<a class="el" href="classtencent_1_1av_1_1_a_v_room.html#aa54e761edd404523dc7892d287a9a80ea552204e6e63a98124657115223d210a1">MODE_VIDEO</a> = 1
+ }</td></tr>
+<tr class="memdesc:aa54e761edd404523dc7892d287a9a80e"><td class="mdescLeft">&#160;</td><td class="mdescRight">通话模式。  <a href="classtencent_1_1av_1_1_a_v_room.html#aa54e761edd404523dc7892d287a9a80e">更多...</a><br /></td></tr>
+<tr class="separator:aa54e761edd404523dc7892d287a9a80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f33508e5b6efa767e53ff1f624577b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_room.html#a12f33508e5b6efa767e53ff1f624577b">AudioCategory</a> { <a class="el" href="classtencent_1_1av_1_1_a_v_room.html#a12f33508e5b6efa767e53ff1f624577baeaa27e55a8cb17eef955db3b63d7b01e">AUDIO_CATEGORY_VOICECHAT</a> = 0, 
+<a class="el" href="classtencent_1_1av_1_1_a_v_room.html#a12f33508e5b6efa767e53ff1f624577ba2de37f6211344eea6480cbdcaefc1c72">AUDIO_CATEGORY_MEDIA_PLAY_AND_RECORD</a> = 1, 
+<a class="el" href="classtencent_1_1av_1_1_a_v_room.html#a12f33508e5b6efa767e53ff1f624577baedbd5bbaccf61ce42f27c47948b04bba">AUDIO_CATEGORY_MEDIA_PLAYBACK</a> = 2
+ }</td></tr>
+<tr class="memdesc:a12f33508e5b6efa767e53ff1f624577b"><td class="mdescLeft">&#160;</td><td class="mdescRight">音频场景策略。  <a href="classtencent_1_1av_1_1_a_v_room.html#a12f33508e5b6efa767e53ff1f624577b">更多...</a><br /></td></tr>
+<tr class="separator:a12f33508e5b6efa767e53ff1f624577b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5dccf983660bdbe49d4a5dd020ff558"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_room.html#ac5dccf983660bdbe49d4a5dd020ff558">EndpointEventId</a> { <br />
+&#160;&#160;<a class="el" href="classtencent_1_1av_1_1_a_v_room.html#ac5dccf983660bdbe49d4a5dd020ff558aba3d1be7202d4b618230af0b49bd2ac8">EVENT_ID_NONE</a> = 0, 
+<a class="el" href="classtencent_1_1av_1_1_a_v_room.html#ac5dccf983660bdbe49d4a5dd020ff558acc1882018047c3c7a047869dc0d9d9a8">EVENT_ID_ENDPOINT_ENTER</a> = 1, 
+<a class="el" href="classtencent_1_1av_1_1_a_v_room.html#ac5dccf983660bdbe49d4a5dd020ff558a33672213e957551258eead00acfdfdca">EVENT_ID_ENDPOINT_EXIT</a> = 2, 
+<a class="el" href="classtencent_1_1av_1_1_a_v_room.html#ac5dccf983660bdbe49d4a5dd020ff558ac3d2202d4b91d561dab68d924bc71f64">EVENT_ID_ENDPOINT_HAS_CAMERA_VIDEO</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="classtencent_1_1av_1_1_a_v_room.html#ac5dccf983660bdbe49d4a5dd020ff558acac09f84b434e29c484a6df4252462ac">EVENT_ID_ENDPOINT_NO_CAMERA_VIDEO</a> = 4, 
+<a class="el" href="classtencent_1_1av_1_1_a_v_room.html#ac5dccf983660bdbe49d4a5dd020ff558a75ec0b37b35903132c8a3db3f9eda069">EVENT_ID_ENDPOINT_HAS_AUDIO</a> = 5, 
+<a class="el" href="classtencent_1_1av_1_1_a_v_room.html#ac5dccf983660bdbe49d4a5dd020ff558a39ecaee86280913436a62dc6d223ac61">EVENT_ID_ENDPOINT_NO_AUDIO</a> = 6, 
+<a class="el" href="classtencent_1_1av_1_1_a_v_room.html#ac5dccf983660bdbe49d4a5dd020ff558a2c3146bfa6a00ff61b07b22343dc8e0e">EVENT_ID_ENDPOINT_HAS_SCREEN_VIDEO</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="classtencent_1_1av_1_1_a_v_room.html#ac5dccf983660bdbe49d4a5dd020ff558a143ff22ff3bab8ddd159279313055a3c">EVENT_ID_ENDPOINT_NO_SCREEN_VIDEO</a> = 8
+<br />
+ }</td></tr>
+<tr class="memdesc:ac5dccf983660bdbe49d4a5dd020ff558"><td class="mdescLeft">&#160;</td><td class="mdescRight">成员事件id。  <a href="classtencent_1_1av_1_1_a_v_room.html#ac5dccf983660bdbe49d4a5dd020ff558">更多...</a><br /></td></tr>
+<tr class="separator:ac5dccf983660bdbe49d4a5dd020ff558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a5d970a3bca4a4640f312e5746066c233"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="structtencent_1_1av_1_1_a_v_room_1_1_info.html">Info</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_room.html#a5d970a3bca4a4640f312e5746066c233">GetRoomInfo</a> ()=0</td></tr>
+<tr class="memdesc:a5d970a3bca4a4640f312e5746066c233"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取房间信息。  <a href="#a5d970a3bca4a4640f312e5746066c233">更多...</a><br /></td></tr>
+<tr class="separator:a5d970a3bca4a4640f312e5746066c233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcb09a573907999ffe98291258145a59"><td class="memItemLeft" align="right" valign="top">virtual uint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_room.html#afcb09a573907999ffe98291258145a59">GetRoomId</a> ()=0</td></tr>
+<tr class="memdesc:afcb09a573907999ffe98291258145a59"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取SDK侧的房间id。  <a href="#afcb09a573907999ffe98291258145a59">更多...</a><br /></td></tr>
+<tr class="separator:afcb09a573907999ffe98291258145a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cffa7fc39b13723638f163d78b2f7e8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_room.html#a7656ec1015b94f3f34dc3786af057e86">RoomType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_room.html#a3cffa7fc39b13723638f163d78b2f7e8">GetRoomType</a> ()=0</td></tr>
+<tr class="memdesc:a3cffa7fc39b13723638f163d78b2f7e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取房间类型。  <a href="#a3cffa7fc39b13723638f163d78b2f7e8">更多...</a><br /></td></tr>
+<tr class="separator:a3cffa7fc39b13723638f163d78b2f7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fb2822478321ce657f96a5c9db57f18"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_room.html#a6fb2822478321ce657f96a5c9db57f18">GetQualityTips</a> ()=0</td></tr>
+<tr class="memdesc:a6fb2822478321ce657f96a5c9db57f18"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取音视频通话的实时通话质量的相关信息。该函数主要用来查看实时通话质量、排查问题等，业务侧可以不用关心它。  <a href="#a6fb2822478321ce657f96a5c9db57f18">更多...</a><br /></td></tr>
+<tr class="separator:a6fb2822478321ce657f96a5c9db57f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77a7708c64b191b81e2e764124a3423a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_room.html#a77a7708c64b191b81e2e764124a3423a">GetStatParam</a> (<a class="el" href="namespacetencent_1_1av.html#structtencent_1_1av_1_1_room_stat_param">RoomStatParam</a> *param)=0</td></tr>
+<tr class="memdesc:a77a7708c64b191b81e2e764124a3423a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取音视频通话的实时通话质量的相关信息。该函数主要用来查看实时通话质量、排查问题等，业务侧可以用其来做些提高用户体验的功能，如提示网络差，通话质量也较差。  <a href="#a77a7708c64b191b81e2e764124a3423a">更多...</a><br /></td></tr>
+<tr class="separator:a77a7708c64b191b81e2e764124a3423a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a708f4e88fcfc9a17c91ab81070e03f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_room.html#a9a708f4e88fcfc9a17c91ab81070e03f">SetNetType</a> (<a class="el" href="namespacetencent_1_1av.html#a5507e0f69c381601d3193db58174ccc0">NetStateType</a> type)=0</td></tr>
+<tr class="memdesc:a9a708f4e88fcfc9a17c91ab81070e03f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置当前网络类型。  <a href="#a9a708f4e88fcfc9a17c91ab81070e03f">更多...</a><br /></td></tr>
+<tr class="separator:a9a708f4e88fcfc9a17c91ab81070e03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a719a2d13030dfad67634ac3954223031"><td class="memItemLeft" align="right" valign="top">virtual int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_room.html#a719a2d13030dfad67634ac3954223031">RequestViewList</a> (const std::vector&lt; std::string &gt; identifier_list, const std::vector&lt; <a class="el" href="structtencent_1_1av_1_1_view.html">View</a> &gt; view_list, <a class="el" href="classtencent_1_1av_1_1_a_v_endpoint.html#aea2fe9f6ad89ba261d36c510aadf20f6">AVEndpoint::RequestViewListCompleteCallback</a> complete_callback, void *custom_data)=0</td></tr>
+<tr class="memdesc:a719a2d13030dfad67634ac3954223031"><td class="mdescLeft">&#160;</td><td class="mdescRight">同时请求一个或多个成员的视频画面。  <a href="#a719a2d13030dfad67634ac3954223031">更多...</a><br /></td></tr>
+<tr class="separator:a719a2d13030dfad67634ac3954223031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6878a1489a22c1f64ef04cef75199d1c"><td class="memItemLeft" align="right" valign="top">virtual int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_room.html#a6878a1489a22c1f64ef04cef75199d1c">CancelAllView</a> (<a class="el" href="classtencent_1_1av_1_1_a_v_endpoint.html#a4e8441358bf150306dbdb3ef8a6d6281">AVEndpoint::CancelAllViewCompleteCallback</a> complete_callback, void *custom_data)=0</td></tr>
+<tr class="memdesc:a6878a1489a22c1f64ef04cef75199d1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消所有请求的视频画面。  <a href="#a6878a1489a22c1f64ef04cef75199d1c">更多...</a><br /></td></tr>
+<tr class="separator:a6878a1489a22c1f64ef04cef75199d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a4280703ea81eef86f28969a292d5a346"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_room.html#a4280703ea81eef86f28969a292d5a346">~AVRoom</a> ()</td></tr>
+<tr class="separator:a4280703ea81eef86f28969a292d5a346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>音视频通话房间基类。要进行音视频通话，必须先创建并进入一个房间，然后才可进行发送和接收音视频数据，以进行音视频通话。 </p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a class="anchor" id="a12f33508e5b6efa767e53ff1f624577b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classtencent_1_1av_1_1_a_v_room.html#a12f33508e5b6efa767e53ff1f624577b">tencent::av::AVRoom::AudioCategory</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a12f33508e5b6efa767e53ff1f624577baeaa27e55a8cb17eef955db3b63d7b01e"></a>AUDIO_CATEGORY_VOICECHAT&#160;</td><td class="fielddoc">
+<p>VoIP模式。适合于实时音频通信场景，如实时语音通话。 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a12f33508e5b6efa767e53ff1f624577ba2de37f6211344eea6480cbdcaefc1c72"></a>AUDIO_CATEGORY_MEDIA_PLAY_AND_RECORD&#160;</td><td class="fielddoc">
+<p>媒体采集与播放模式。适合于那些对音质要求比较高的直播场景，如主播场景中的主播人员。 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a12f33508e5b6efa767e53ff1f624577baedbd5bbaccf61ce42f27c47948b04bba"></a>AUDIO_CATEGORY_MEDIA_PLAYBACK&#160;</td><td class="fielddoc">
+<p>媒体播放模式。适合于那些对音质要求比较高的直播场景，如主播场景中的听众。 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="ac5dccf983660bdbe49d4a5dd020ff558"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classtencent_1_1av_1_1_a_v_room.html#ac5dccf983660bdbe49d4a5dd020ff558">tencent::av::AVRoom::EndpointEventId</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="ac5dccf983660bdbe49d4a5dd020ff558aba3d1be7202d4b618230af0b49bd2ac8"></a>EVENT_ID_NONE&#160;</td><td class="fielddoc">
+<p>无。 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac5dccf983660bdbe49d4a5dd020ff558acc1882018047c3c7a047869dc0d9d9a8"></a>EVENT_ID_ENDPOINT_ENTER&#160;</td><td class="fielddoc">
+<p>进入房间事件。 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac5dccf983660bdbe49d4a5dd020ff558a33672213e957551258eead00acfdfdca"></a>EVENT_ID_ENDPOINT_EXIT&#160;</td><td class="fielddoc">
+<p>退出房间事件。 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac5dccf983660bdbe49d4a5dd020ff558ac3d2202d4b91d561dab68d924bc71f64"></a>EVENT_ID_ENDPOINT_HAS_CAMERA_VIDEO&#160;</td><td class="fielddoc">
+<p>有发摄像头视频(也就是来至摄像头设备AVCameraDevice或外部视频捕获设备AVExternalCapture的视频)事件。 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac5dccf983660bdbe49d4a5dd020ff558acac09f84b434e29c484a6df4252462ac"></a>EVENT_ID_ENDPOINT_NO_CAMERA_VIDEO&#160;</td><td class="fielddoc">
+<p>无发摄像头视频(也就是来至摄像头设备AVCameraDevice或外部视频捕获设备AVExternalCapture的视频)事件。 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac5dccf983660bdbe49d4a5dd020ff558a75ec0b37b35903132c8a3db3f9eda069"></a>EVENT_ID_ENDPOINT_HAS_AUDIO&#160;</td><td class="fielddoc">
+<p>有发音频事件。 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac5dccf983660bdbe49d4a5dd020ff558a39ecaee86280913436a62dc6d223ac61"></a>EVENT_ID_ENDPOINT_NO_AUDIO&#160;</td><td class="fielddoc">
+<p>无发音频事件。 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac5dccf983660bdbe49d4a5dd020ff558a2c3146bfa6a00ff61b07b22343dc8e0e"></a>EVENT_ID_ENDPOINT_HAS_SCREEN_VIDEO&#160;</td><td class="fielddoc">
+<p>有发屏幕视频(也就是捕获计算机屏幕画面所得到的视频)事件。 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac5dccf983660bdbe49d4a5dd020ff558a143ff22ff3bab8ddd159279313055a3c"></a>EVENT_ID_ENDPOINT_NO_SCREEN_VIDEO&#160;</td><td class="fielddoc">
+<p>无发屏幕视频(也就是捕获计算机屏幕画面所得到的视频)事件。 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="aa54e761edd404523dc7892d287a9a80e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classtencent_1_1av_1_1_a_v_room.html#aa54e761edd404523dc7892d287a9a80e">tencent::av::AVRoom::Mode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="aa54e761edd404523dc7892d287a9a80ea8ed6890e75659b97973699dfcd6eed84"></a>MODE_AUDIO&#160;</td><td class="fielddoc">
+<p>音频模式，只可收发音频的通话模式。如整个音视频通话过程中，自始至终都只允许收发音频，则可设置为这种模式。 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa54e761edd404523dc7892d287a9a80ea552204e6e63a98124657115223d210a1"></a>MODE_VIDEO&#160;</td><td class="fielddoc">
+<p>视频模式，可收发音频亦可同时收发视频的通话模式。如整个音视频通话过程中，可收发音频，亦可收发视频，则可设置为这种模式。 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a7656ec1015b94f3f34dc3786af057e86"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classtencent_1_1av_1_1_a_v_room.html#a7656ec1015b94f3f34dc3786af057e86">tencent::av::AVRoom::RoomType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a7656ec1015b94f3f34dc3786af057e86a67934e6d79a9d12b1ebc582101a29ecc"></a>ROOM_TYPE_NONE&#160;</td><td class="fielddoc">
+<p>无。 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7656ec1015b94f3f34dc3786af057e86aeff056618554b1773c5f8411688d8f32"></a>ROOM_TYPE_PAIR&#160;</td><td class="fielddoc">
+<p>双人房间。暂不支持。可以用多人房间来模拟双人通话，也就是创建一个多人房间，然后通话双方都进入房间就可以进行双人通话。 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7656ec1015b94f3f34dc3786af057e86aea1b4c4bb59ba0ab35a84a91b057df6a"></a>ROOM_TYPE_MULTI&#160;</td><td class="fielddoc">
+<p>多人房间。 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a4280703ea81eef86f28969a292d5a346"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual tencent::av::AVRoom::~AVRoom </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a6878a1489a22c1f64ef04cef75199d1c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int32 tencent::av::AVRoom::CancelAllView </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtencent_1_1av_1_1_a_v_endpoint.html#a4e8441358bf150306dbdb3ef8a6d6281">AVEndpoint::CancelAllViewCompleteCallback</a>&#160;</td>
+          <td class="paramname"><em>complete_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>custom_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>取消所有请求的视频画面。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">complete_callback</td><td>该操作的回调函数。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">custom_data</td><td>业务侧自定义的参数，会在执行回调函数时原封不动地返回给业务侧。由于回调函数通常是某个类的静态函数，可以通过该参数指定当前所对应的类的具体对象。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>AV_OK表示调用成功；AV_ERR_BUSY表示上一次操作(包括RequestViewList和CancelAllView)还在进行中；AV_ERR_FAILED表示操作失败。</dd></dl>
+<dl class="section remark"><dt>备注</dt><dd>. RequestViewList和CancelAllView不能并发执行，即同一时刻只能进行一种操作。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6fb2822478321ce657f96a5c9db57f18"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string tencent::av::AVRoom::GetQualityTips </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>返回音视频通话的实时通话质量的相关参数，并以字符串形式返回。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afcb09a573907999ffe98291258145a59"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint64 tencent::av::AVRoom::GetRoomId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>返回SDK侧的房间id，详见Info.room_id的定义。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5d970a3bca4a4640f312e5746066c233"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="structtencent_1_1av_1_1_a_v_room_1_1_info.html">Info</a>* tencent::av::AVRoom::GetRoomInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>返回房间信息，详见Info的定义。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3cffa7fc39b13723638f163d78b2f7e8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_room.html#a7656ec1015b94f3f34dc3786af057e86">RoomType</a> tencent::av::AVRoom::GetRoomType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>返回房间类型，详见Info.room_type的定义。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a77a7708c64b191b81e2e764124a3423a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool tencent::av::AVRoom::GetStatParam </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacetencent_1_1av.html#structtencent_1_1av_1_1_room_stat_param">RoomStatParam</a> *&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">param</td><td>音视频通话的实时通话质量的相关参数。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回值为true时代表获取成功，否则代表获取失败。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a719a2d13030dfad67634ac3954223031"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int32 tencent::av::AVRoom::RequestViewList </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt;&#160;</td>
+          <td class="paramname"><em>identifier_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structtencent_1_1av_1_1_view.html">View</a> &gt;&#160;</td>
+          <td class="paramname"><em>view_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classtencent_1_1av_1_1_a_v_endpoint.html#aea2fe9f6ad89ba261d36c510aadf20f6">AVEndpoint::RequestViewListCompleteCallback</a>&#160;</td>
+          <td class="paramname"><em>complete_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>custom_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>同时请求一个或多个成员的视频画面。同一时刻只能请求一次成员的画面，并且必须等待异步结果返回后，才能进行新的请求画面操作。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">identifier_list</td><td>成员id列表。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">view_list</td><td>视频画面参数列表。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">complete_callback</td><td>该操作的回调函数。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">custom_data</td><td>业务侧自定义的参数，会在执行回调函数时原封不动地返回给业务侧。由于回调函数通常是某个类的静态函数，可以通过该参数指定当前所对应的类的具体对象。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>AV_OK表示调用成功；AV_ERR_BUSY表示上一次操作(包括RequestViewList和CancelAllView)还在进行中；AV_ERR_FAILED表示操作失败，可能是因为所请求的成员当前已经没有对应视频源的视频、所请求成员已经退出房间等。</dd></dl>
+<dl class="section remark"><dt>备注</dt><dd>. 画面大小可以根据业务层实际需要及硬件能力决定。 . 如果是手机，建议只有其中一路是大画面，其他都是小画面，这样硬件更容易扛得住，同时减少流量。 . 这边把320×240及以上大小的画面认为是大画面；反之，认为是小画面。 . 实际上请求到的画面大小，由发送方决定。如A传的画面是小画面，即使这边即使想请求它的大画面，也只能请求到的小画面。 . 发送方传的画面大小，是否同时有大画面和小画面，由其所设置的编解码参数、场景、硬件、网络等因素决定。 . RequestViewList和CancelAllView不能并发执行，即同一时刻只能进行一种操作。 . identifier_list和view_list的元素个数必须等于count，同时每个元素是一一对应的。 . 在请求画面前最好先检查该成员是否有对应的视频源。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9a708f4e88fcfc9a17c91ab81070e03f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void tencent::av::AVRoom::SetNetType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacetencent_1_1av.html#a5507e0f69c381601d3193db58174ccc0">NetStateType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section remark"><dt>备注</dt><dd>建议网络有变更时，就设置网络类型，以让SDK侧能够根据网络类型更佳地智能调优音视频通话质量。 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacetencent.html">tencent</a></li><li class="navelem"><a class="el" href="namespacetencent_1_1av.html">av</a></li><li class="navelem"><a class="el" href="classtencent_1_1av_1_1_a_v_room.html">AVRoom</a></li>
+    <li class="footer">生成于 2016年 二月 22日 星期一 14:41:37 , 为 音视频通讯SDK API参考手册使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

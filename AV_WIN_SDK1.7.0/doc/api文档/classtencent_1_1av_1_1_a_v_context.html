@@ -1,0 +1,825 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>音视频通讯SDK API参考手册: tencent::av::AVContext类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">音视频通讯SDK API参考手册
+   &#160;<span id="projectnumber">Windows 1.7.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classtencent_1_1av_1_1_a_v_context.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="classtencent_1_1av_1_1_a_v_context-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">tencent::av::AVContext类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>AVContext对象代表着一个SDK运行实例。  
+ <a href="classtencent_1_1av_1_1_a_v_context.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="av__context_8h_source.html">av_context.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html">Config</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#a012fed386da81537ebff20cd3d40e4d2" title="创建AVContext对象。 ">CreateContext()</a>的入参。  <a href="structtencent_1_1av_1_1_a_v_context_1_1_config.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a02d48719fb3495af6a0d345eb7045239"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#a02d48719fb3495af6a0d345eb7045239">StartCompleteCallback</a>) (int32 result, void *custom_data)</td></tr>
+<tr class="memdesc:a02d48719fb3495af6a0d345eb7045239"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#ae5d4f3b56d8ac768ab2932041ef4450d" title="启动AVContext对象。 ">StartContext()</a>的回调函数。  <a href="#a02d48719fb3495af6a0d345eb7045239">更多...</a><br /></td></tr>
+<tr class="separator:a02d48719fb3495af6a0d345eb7045239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a3ca7bdd23e53471df5a05526e23b964c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#a3ca7bdd23e53471df5a05526e23b964c">~AVContext</a> ()</td></tr>
+<tr class="separator:a3ca7bdd23e53471df5a05526e23b964c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5d4f3b56d8ac768ab2932041ef4450d"><td class="memItemLeft" align="right" valign="top">virtual int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#ae5d4f3b56d8ac768ab2932041ef4450d">StartContext</a> (<a class="el" href="classtencent_1_1av_1_1_a_v_context.html#a02d48719fb3495af6a0d345eb7045239">StartCompleteCallback</a> start_complete_callback, void *custom_data=NULL)=0</td></tr>
+<tr class="memdesc:ae5d4f3b56d8ac768ab2932041ef4450d"><td class="mdescLeft">&#160;</td><td class="mdescRight">启动AVContext对象。  <a href="#ae5d4f3b56d8ac768ab2932041ef4450d">更多...</a><br /></td></tr>
+<tr class="separator:ae5d4f3b56d8ac768ab2932041ef4450d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae87affbe5f15b870bd0a31282f23d6a4"><td class="memItemLeft" align="right" valign="top">virtual int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#ae87affbe5f15b870bd0a31282f23d6a4">StopContext</a> (<a class="el" href="namespacetencent_1_1av.html#a455fac4d6fbb386ce1270016a11dcc20">AVClosure</a> stop_complete_callback, void *custom_data=NULL)=0</td></tr>
+<tr class="memdesc:ae87affbe5f15b870bd0a31282f23d6a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">终止AVContext对象。  <a href="#ae87affbe5f15b870bd0a31282f23d6a4">更多...</a><br /></td></tr>
+<tr class="separator:ae87affbe5f15b870bd0a31282f23d6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41dff00ab829138edb5496f6a209f558"><td class="memItemLeft" align="right" valign="top">virtual int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#a41dff00ab829138edb5496f6a209f558">EnterRoom</a> (<a class="el" href="structtencent_1_1av_1_1_a_v_room_1_1_delegate.html">AVRoom::Delegate</a> *room_delegate, const <a class="el" href="structtencent_1_1av_1_1_a_v_room_1_1_enter_room_param.html">AVRoom::EnterRoomParam</a> *param)=0</td></tr>
+<tr class="memdesc:a41dff00ab829138edb5496f6a209f558"><td class="mdescLeft">&#160;</td><td class="mdescRight">进入音视频房间。  <a href="#a41dff00ab829138edb5496f6a209f558">更多...</a><br /></td></tr>
+<tr class="separator:a41dff00ab829138edb5496f6a209f558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dbefa03827874872d074206c39282f7"><td class="memItemLeft" align="right" valign="top">virtual int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#a4dbefa03827874872d074206c39282f7">ExitRoom</a> ()=0</td></tr>
+<tr class="memdesc:a4dbefa03827874872d074206c39282f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">退出音视频房间。  <a href="#a4dbefa03827874872d074206c39282f7">更多...</a><br /></td></tr>
+<tr class="separator:a4dbefa03827874872d074206c39282f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abba60ce250795f8271b635277d36b75c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_room.html">AVRoom</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#abba60ce250795f8271b635277d36b75c">GetRoom</a> () const =0</td></tr>
+<tr class="memdesc:abba60ce250795f8271b635277d36b75c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得AVRoom对象。  <a href="#abba60ce250795f8271b635277d36b75c">更多...</a><br /></td></tr>
+<tr class="separator:abba60ce250795f8271b635277d36b75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a910ffe1886c210d90ce32caeeb9fed7d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_audio_ctrl.html">AVAudioCtrl</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#a910ffe1886c210d90ce32caeeb9fed7d">GetAudioCtrl</a> ()=0</td></tr>
+<tr class="memdesc:a910ffe1886c210d90ce32caeeb9fed7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得AVAudioCtrl对象。  <a href="#a910ffe1886c210d90ce32caeeb9fed7d">更多...</a><br /></td></tr>
+<tr class="separator:a910ffe1886c210d90ce32caeeb9fed7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad010fb9969919afae9e20a089e1f260f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html">AVDeviceMgr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#ad010fb9969919afae9e20a089e1f260f">GetAudioDeviceMgr</a> ()=0</td></tr>
+<tr class="memdesc:ad010fb9969919afae9e20a089e1f260f"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得音频对应的AVDeviceMgr对象。  <a href="#ad010fb9969919afae9e20a089e1f260f">更多...</a><br /></td></tr>
+<tr class="separator:ad010fb9969919afae9e20a089e1f260f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12b488959c83a9b4e1a5fbcc9eaa5e96"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_video_ctrl.html">AVVideoCtrl</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#a12b488959c83a9b4e1a5fbcc9eaa5e96">GetVideoCtrl</a> ()=0</td></tr>
+<tr class="memdesc:a12b488959c83a9b4e1a5fbcc9eaa5e96"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得AVVideoCtrl对象。  <a href="#a12b488959c83a9b4e1a5fbcc9eaa5e96">更多...</a><br /></td></tr>
+<tr class="separator:a12b488959c83a9b4e1a5fbcc9eaa5e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a077dc940c37161715d29c68cfe9bfab6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html">AVDeviceMgr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#a077dc940c37161715d29c68cfe9bfab6">GetVideoDeviceMgr</a> ()=0</td></tr>
+<tr class="memdesc:a077dc940c37161715d29c68cfe9bfab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得视频对应的AVDeviceMgr对象。  <a href="#a077dc940c37161715d29c68cfe9bfab6">更多...</a><br /></td></tr>
+<tr class="separator:a077dc940c37161715d29c68cfe9bfab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf2be7e186aed60106781dd5456a9eb9"><td class="memItemLeft" align="right" valign="top">virtual int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#abf2be7e186aed60106781dd5456a9eb9">StartDeviceTest</a> (<a class="el" href="classtencent_1_1av_1_1_a_v_context.html#a02d48719fb3495af6a0d345eb7045239">StartCompleteCallback</a> start_complete_callback, void *custom_data=NULL)=0</td></tr>
+<tr class="memdesc:abf2be7e186aed60106781dd5456a9eb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始设备测试。  <a href="#abf2be7e186aed60106781dd5456a9eb9">更多...</a><br /></td></tr>
+<tr class="separator:abf2be7e186aed60106781dd5456a9eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d8a2f788dc7c2cb7253ac01bbd995b1"><td class="memItemLeft" align="right" valign="top">virtual int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#a8d8a2f788dc7c2cb7253ac01bbd995b1">StopDeviceTest</a> (<a class="el" href="namespacetencent_1_1av.html#a455fac4d6fbb386ce1270016a11dcc20">AVClosure</a> stop_complete_callback, void *custom_data=NULL)=0</td></tr>
+<tr class="memdesc:a8d8a2f788dc7c2cb7253ac01bbd995b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止设备测试。  <a href="#a8d8a2f788dc7c2cb7253ac01bbd995b1">更多...</a><br /></td></tr>
+<tr class="separator:a8d8a2f788dc7c2cb7253ac01bbd995b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bc68d92d4a2f42d75795dd83dd9a3b4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_device_test.html">AVDeviceTest</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#a4bc68d92d4a2f42d75795dd83dd9a3b4">GetDeviceTest</a> ()=0</td></tr>
+<tr class="memdesc:a4bc68d92d4a2f42d75795dd83dd9a3b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得AVDeviceTest对象。  <a href="#a4bc68d92d4a2f42d75795dd83dd9a3b4">更多...</a><br /></td></tr>
+<tr class="separator:a4bc68d92d4a2f42d75795dd83dd9a3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a213fa6b4a9f4081420237b3f66508a08"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#a213fa6b4a9f4081420237b3f66508a08">GetSDKVersion</a> ()</td></tr>
+<tr class="memdesc:a213fa6b4a9f4081420237b3f66508a08"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得SDK的版本信息。  <a href="#a213fa6b4a9f4081420237b3f66508a08">更多...</a><br /></td></tr>
+<tr class="separator:a213fa6b4a9f4081420237b3f66508a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a012fed386da81537ebff20cd3d40e4d2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classtencent_1_1av_1_1_a_v_context.html">AVContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#a012fed386da81537ebff20cd3d40e4d2">CreateContext</a> (const <a class="el" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html">AVContext::Config</a> &amp;config)</td></tr>
+<tr class="memdesc:a012fed386da81537ebff20cd3d40e4d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建AVContext对象。  <a href="#a012fed386da81537ebff20cd3d40e4d2">更多...</a><br /></td></tr>
+<tr class="separator:a012fed386da81537ebff20cd3d40e4d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ddf4cf38e55380037ba55ca474e22ae"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#a1ddf4cf38e55380037ba55ca474e22ae">DestroyContext</a> (<a class="el" href="classtencent_1_1av_1_1_a_v_context.html">AVContext</a> *context)</td></tr>
+<tr class="memdesc:a1ddf4cf38e55380037ba55ca474e22ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁AVContext对象。  <a href="#a1ddf4cf38e55380037ba55ca474e22ae">更多...</a><br /></td></tr>
+<tr class="separator:a1ddf4cf38e55380037ba55ca474e22ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>AVContext对内负责管理SDK的工作线程，控制各种内部对象的生命周期； 对外提供了一系列的接口方法，App可以通过AVContext的成员函数进一步访问SDK的其他对象。 </p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a class="anchor" id="a02d48719fb3495af6a0d345eb7045239"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* tencent::av::AVContext::StartCompleteCallback) (int32 result, void *custom_data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>此函数是和StartContext()一起使用的回调函数，用来异步返回执行结果。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">result</td><td>错误码： <br />
+ AV_OK 执行成功； <br />
+ AV_ERROR_INITSDKFAIL 一般原因为鉴权失败。 </td></tr>
+    <tr><td class="paramname">custom_data</td><td>值等于调用StartContext()时的入参custom_data。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a3ca7bdd23e53471df5a05526e23b964c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual tencent::av::AVContext::~AVContext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a012fed386da81537ebff20cd3d40e4d2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classtencent_1_1av_1_1_a_v_context.html">AVContext</a>* tencent::av::AVContext::CreateContext </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structtencent_1_1av_1_1_a_v_context_1_1_config.html">AVContext::Config</a> &amp;&#160;</td>
+          <td class="paramname"><em>config</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>App使用SDK总是从CreateContext()开始的，该静态成员函数返回一个新的AVContext实例。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>创建AVContext所需的配置信息。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功则返回AVContext的实例指针；否则返回NULL。</dd></dl>
+<dl class="section remark"><dt>备注</dt><dd><ul>
+<li>创建成功之后，App需要进一步调用StartContext()来启动AVContext对象。</li>
+<li>App必须保证AVContext实例的唯一性，同时创建多个AVContext实例可能会因为设备占用等方面的原因，出现无法预料的结果。</li>
+<li>由CreateContext()创建的AVContext对象必须调用DestroyContext()来销毁。 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1ddf4cf38e55380037ba55ca474e22ae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tencent::av::AVContext::DestroyContext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html">AVContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>App通过此静态成员函数来销毁由CreateContext()创建的AVContext对象。</p>
+<dl class="section remark"><dt>备注</dt><dd>App应该设法保证CreateContext()和DestroyContext()的配对调用。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a41dff00ab829138edb5496f6a209f558"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int32 tencent::av::AVContext::EnterRoom </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtencent_1_1av_1_1_a_v_room_1_1_delegate.html">AVRoom::Delegate</a> *&#160;</td>
+          <td class="paramname"><em>room_delegate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structtencent_1_1av_1_1_a_v_room_1_1_enter_room_param.html">AVRoom::EnterRoomParam</a> *&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#a41dff00ab829138edb5496f6a209f558" title="进入音视频房间。 ">EnterRoom()</a>是一个异步操作，内部会连接服务器，申请进入音视频房间。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">room_delegate</td><td>房间委托对象： <br />
+ 进入多人房间，必须传递AVRoomMulti::Delegate类型的委托对象。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>进入房间所需的参数： <br />
+ 进入多人房间，必须传递AVRoomMulti::EnterRoomParam类型的参数。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回值表示异步操作启动是否成功； 异步操作执行结果通过入参room_delegate的OnEnterRoomComplete()返回。</dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">AV_OK</td><td>启动成功。 </td></tr>
+    <tr><td class="paramname">AV_ERR_CONTEXT_NOT_STARTED</td><td><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#ae5d4f3b56d8ac768ab2932041ef4450d" title="启动AVContext对象。 ">StartContext()</a>没有执行成功。 </td></tr>
+    <tr><td class="paramname">AV_ERR_ALREADY_EXISTS</td><td>没有退出上一个音视频房间。 </td></tr>
+    <tr><td class="paramname">AV_ERR_INVALID_ARGUMENT</td><td>委托或房间配置信息为空，或者委托和房间类型不匹配。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#a41dff00ab829138edb5496f6a209f558" title="进入音视频房间。 ">EnterRoom()</a>必须在StartContext()执行成功之后调用才有效。 目前同一时刻只支持进入一个音视频房间，所以：<ul>
+<li>调用EnterRoom()之前，必须先退出上一个音视频房间；</li>
+<li>如果当前AVContext中已经存在一个音视频房间，调用EnterRoom()会同步返回失败。</li>
+</ul>
+</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>Windows版本的SDK暂时没有开放双人音视频房间的能力。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4dbefa03827874872d074206c39282f7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int32 tencent::av::AVContext::ExitRoom </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#a4dbefa03827874872d074206c39282f7" title="退出音视频房间。 ">ExitRoom()</a>是一个异步操作，内部会连接服务器，申请退出音视频房间。</p>
+<dl class="section return"><dt>返回</dt><dd>返回值表示异步操作启动是否成功； 异步操作执行结果通过EnterRoom()入参room_delegate的OnRoomExitComplete()返回。</dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">AV_OK</td><td>启动成功。 </td></tr>
+    <tr><td class="paramname">其他值</td><td>启动失败。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a910ffe1886c210d90ce32caeeb9fed7d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_audio_ctrl.html">AVAudioCtrl</a>* tencent::av::AVContext::GetAudioCtrl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#ae5d4f3b56d8ac768ab2932041ef4450d" title="启动AVContext对象。 ">StartContext()</a>执行成功之后，App可以通过此成员函数获得AVAudioCtrl对象。</p>
+<dl class="section return"><dt>返回</dt><dd>如果StartContext()执行成功，则返回AVAudioCtrl对象；否则返回NULL。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad010fb9969919afae9e20a089e1f260f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html">AVDeviceMgr</a>* tencent::av::AVContext::GetAudioDeviceMgr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#ae5d4f3b56d8ac768ab2932041ef4450d" title="启动AVContext对象。 ">StartContext()</a>执行成功之后，App可以通过此成员函数获得音频对应的AVDeviceMgr对象。</p>
+<dl class="section return"><dt>返回</dt><dd>如果StartContext()执行成功，则返回音频对应的AVDeviceMgr对象；否则返回NULL。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4bc68d92d4a2f42d75795dd83dd9a3b4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_device_test.html">AVDeviceTest</a>* tencent::av::AVContext::GetDeviceTest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#abf2be7e186aed60106781dd5456a9eb9" title="开始设备测试。 ">StartDeviceTest()</a>执行成功之后，App可以通过此成员函数获得AVDeviceTest对象。</p>
+<dl class="section return"><dt>返回</dt><dd>如果StartDeviceTest()执行成功，则返回AVDeviceTest对象；否则返回NULL。 </dd></dl>
+<dl class="section remark"><dt>备注</dt><dd><ul>
+<li>设备测试操作与房间进出操作是互斥的。在设备测试过程中，不能进入房间；如果要进入房间，必须先停止设备测试。在房间中，不能进行设备测试；如果要进行设备测试，必须先退出房间。 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abba60ce250795f8271b635277d36b75c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_room.html">AVRoom</a>* tencent::av::AVContext::GetRoom </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#a41dff00ab829138edb5496f6a209f558" title="进入音视频房间。 ">EnterRoom()</a>执行成功之后，App可以通过此成员函数获得当前音视频房间对应的AVRoom对象。</p>
+<dl class="section return"><dt>返回</dt><dd>如果EnterRoom()执行成功，则返回当前音视频房间对应的AVRoom对象；否则返回NULL。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a213fa6b4a9f4081420237b3f66508a08"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string tencent::av::AVContext::GetSDKVersion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>以字符串形式返回SDK的版本信息。 版本信息由三个数字组成，数字间以“.”分隔，比如“1.2.20150501”， 前两个数字“1.1”表示SDK版本号，最后一个数字表示SDK编译时间。</dd></dl>
+<dl class="section remark"><dt>备注</dt><dd>SDK在特性变化和bug修复之后，会更改版本信息重新发布。 一般来说，版本号代表特性的变化，SDK的对外接口和内部架构都可能有较大的变化和调整。 而对于同一个版本的SDK，编译时间能够体现bugfix的情况， 比如“1.0.20150501”和“1.0.20150601”，后者可以视作是前者的bugfix版本。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a12b488959c83a9b4e1a5fbcc9eaa5e96"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_video_ctrl.html">AVVideoCtrl</a>* tencent::av::AVContext::GetVideoCtrl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#ae5d4f3b56d8ac768ab2932041ef4450d" title="启动AVContext对象。 ">StartContext()</a>执行成功之后，App可以通过此成员函数获得指定的AVVideoCtrl对象。</p>
+<dl class="section return"><dt>返回</dt><dd>如果StartContext()执行成功，则返回指定的AVVideoCtrl对象；否则返回NULL。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a077dc940c37161715d29c68cfe9bfab6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtencent_1_1av_1_1_a_v_device_mgr.html">AVDeviceMgr</a>* tencent::av::AVContext::GetVideoDeviceMgr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#ae5d4f3b56d8ac768ab2932041ef4450d" title="启动AVContext对象。 ">StartContext()</a>执行成功之后，App可以通过此成员函数获得视频对应的AVDeviceMgr对象。</p>
+<dl class="section return"><dt>返回</dt><dd>如果StartContext()执行成功，则返回视频对应的AVDeviceMgr对象；否则返回NULL。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae5d4f3b56d8ac768ab2932041ef4450d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int32 tencent::av::AVContext::StartContext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#a02d48719fb3495af6a0d345eb7045239">StartCompleteCallback</a>&#160;</td>
+          <td class="paramname"><em>start_complete_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>custom_data</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#ae5d4f3b56d8ac768ab2932041ef4450d" title="启动AVContext对象。 ">StartContext()</a>是一个异步操作，内部会启动工作线程，创建各种内部对象。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">start_complete_callback</td><td>函数指针，指向App定义的回调函数。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">custom_data</td><td>App指定的一个没有类型的指针，SDK会在回调函数中把该值回传给App。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回值表示异步操作启动是否成功；异步操作执行结果通过回调函数返回。</dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">AV_OK</td><td>启动成功。 </td></tr>
+    <tr><td class="paramname">其他值</td><td>启动失败。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd><ul>
+<li>只有当异步操作启动成功的时候，才会通过回调函数异步返回执行结果。</li>
+<li>当异步操作启动失败的时候，直接通过StartContext()的返回值返回错误，不会再触发回调函数。</li>
+<li>App收到StartCompleteCallback回调的时候，表示StartContext()执行完毕。</li>
+<li><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#ae5d4f3b56d8ac768ab2932041ef4450d" title="启动AVContext对象。 ">StartContext()</a>执行成功之后，App才能进一步调用AVContext的其他成员函数。</li>
+<li><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#ae5d4f3b56d8ac768ab2932041ef4450d" title="启动AVContext对象。 ">StartContext()</a>执行成功之后，App必须调用StopContext()来终止AVContext对象。</li>
+</ul>
+</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>以下两点约定也适用于SDK的其他异步操作接口：<ol type="1">
+<li>只有当异步操作启动成功的时候，才会通过回调函数异步返回执行结果；</li>
+<li>当异步操作启动失败的时候，直接通过StartContext()的返回值返回错误，不会再触发回调函数。 </li>
+</ol>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abf2be7e186aed60106781dd5456a9eb9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int32 tencent::av::AVContext::StartDeviceTest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#a02d48719fb3495af6a0d345eb7045239">StartCompleteCallback</a>&#160;</td>
+          <td class="paramname"><em>start_complete_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>custom_data</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">start_complete_callback</td><td>函数指针，指向App定义的回调函数。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">custom_data</td><td>App指定的一个没有类型的指针，SDK会在回调函数中把该值回传给App。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回值表示异步操作启动是否成功；异步操作执行结果通过回调函数返回。</dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">AV_OK</td><td>启动成功。 </td></tr>
+    <tr><td class="paramname">其他值</td><td>启动失败。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd><ul>
+<li>只有当异步操作启动成功的时候，才会通过回调函数异步返回执行结果；</li>
+<li>当异步操作启动失败的时候，直接通过StartDeviceTest()的返回值返回错误，不会再触发回调函数；</li>
+<li>App收到StartCompleteCallback回调的时候，表示StartDeviceTest()执行完毕；</li>
+<li><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#abf2be7e186aed60106781dd5456a9eb9" title="开始设备测试。 ">StartDeviceTest()</a>执行成功之后，App才能通过GetAVDeviceTest()获取AVDeviceTest对象进行具体的设备测试；</li>
+<li><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#abf2be7e186aed60106781dd5456a9eb9" title="开始设备测试。 ">StartDeviceTest()</a>执行成功之后，App必须调用StopDeviceTest()来停止设备测试及释放AVDeviceTest对象。</li>
+</ul>
+</dd></dl>
+<ul>
+<li>设备测试操作与房间进出操作是互斥的。在设备测试过程中，不能进入房间；如果要进入房间，必须先停止设备测试。在房间中，不能进行设备测试；如果要进行设备测试，必须先退出房间。 <dl class="section attention"><dt>注意</dt><dd>以下两点约定也适用于SDK的其他异步操作接口：<ol type="1">
+<li>只有当异步操作启动成功的时候，才会通过回调函数异步返回执行结果；</li>
+<li>当异步操作启动失败的时候，直接通过StartDeviceTest()的返回值返回错误，不会再触发回调函数。 </li>
+</ol>
+</dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="ae87affbe5f15b870bd0a31282f23d6a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int32 tencent::av::AVContext::StopContext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacetencent_1_1av.html#a455fac4d6fbb386ce1270016a11dcc20">AVClosure</a>&#160;</td>
+          <td class="paramname"><em>stop_complete_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>custom_data</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#ae87affbe5f15b870bd0a31282f23d6a4" title="终止AVContext对象。 ">StopContext()</a>是一个异步操作，内部会终止工作线程，销毁各种内部对象。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stop_complete_callback</td><td>函数指针，指向App定义的回调函数。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">custom_data</td><td>App指定的一个没有类型的指针，SDK会在回调函数中把该值回传给App。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回值表示异步操作启动是否成功；异步操作执行结果通过回调函数返回。</dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">AV_OK</td><td>启动成功。 </td></tr>
+    <tr><td class="paramname">其他值</td><td>启动失败。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd><ul>
+<li>App应该设法保证StartContext()和StopContext()的配对调用；</li>
+<li><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#ae87affbe5f15b870bd0a31282f23d6a4" title="终止AVContext对象。 ">StopContext()</a>内部如果判断到当前还没退出音视频房间，会自动调用ExitRoom()；</li>
+<li><a class="el" href="classtencent_1_1av_1_1_a_v_context.html#ae87affbe5f15b870bd0a31282f23d6a4" title="终止AVContext对象。 ">StopContext()</a>执行成功之后，App必须调用DestroyContext()来销毁AVContext对象。 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8d8a2f788dc7c2cb7253ac01bbd995b1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int32 tencent::av::AVContext::StopDeviceTest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacetencent_1_1av.html#a455fac4d6fbb386ce1270016a11dcc20">AVClosure</a>&#160;</td>
+          <td class="paramname"><em>stop_complete_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>custom_data</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stop_complete_callback</td><td>函数指针，指向App定义的回调函数。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">custom_data</td><td>App指定的一个没有类型的指针，SDK会在回调函数中把该值回传给App。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回值表示异步操作启动是否成功；异步操作执行结果通过回调函数返回。</dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">AV_OK</td><td>启动成功。 </td></tr>
+    <tr><td class="paramname">其他值</td><td>启动失败。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd><ul>
+<li>App应该设法保证StartDeviceTest()和StopDeviceTest()的配对调用；</li>
+</ul>
+</dd></dl>
+<ul>
+<li>设备测试操作与房间进出操作是互斥的。在设备测试过程中，不能进入房间；如果要进入房间，必须先停止设备测试。在房间中，不能进行设备测试；如果要进行设备测试，必须先退出房间。 </li>
+</ul>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacetencent.html">tencent</a></li><li class="navelem"><a class="el" href="namespacetencent_1_1av.html">av</a></li><li class="navelem"><a class="el" href="classtencent_1_1av_1_1_a_v_context.html">AVContext</a></li>
+    <li class="footer">生成于 2016年 二月 22日 星期一 14:41:37 , 为 音视频通讯SDK API参考手册使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

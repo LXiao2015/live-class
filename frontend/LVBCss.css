@@ -1,0 +1,59 @@
+body{
+    background-color: #ffffff;
+}
+.head{
+    background-color: #008cca;
+    width: 100%;
+    height: 100px;
+}
+@font-face {
+    font-family: Calligraphy; /*这里是说明调用来的字体名字*/
+    src: url('myfont.ttf'); /*这里是字体文件路径*/
+}
+#headline{
+    color: #ffffff;
+    font-family: Calligraphy;
+    font-size: 65px;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 15px;
+}
+.container{
+    color: #ffffff;
+    margin: 10px auto;
+    width: 75%;
+    height: auto;
+    background-color: #9dbefc;
+    text-align: left;
+}
+.body{
+    margin: 10px auto;
+    width: 100%;
+    height: auto;
+}
+#search{
+    background-color: #008cca;
+    width: 100%;
+    height: 45px;
+    padding: 0;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+.input{
+    width: 400px;
+    height: 28px;
+    margin: 5px;
+}
+strong{
+    font-size: 20px;
+    font-weight: bold;
+}
+.footing{
+    margin: 10px auto;
+    width: 100%;
+    height: 55px;
+    background-color: #008cca;
+}
+#contact{
+    text-align: center;
+}
